@@ -16,3 +16,30 @@ For more details on data categorization, please check data-categorization[sectio
 
 ==== Data cleaning and mapping the data to the DwC standard
 
+Once a dataset class is selected, the data must be transformed to comply with a https://www.gbif.org/darwin-core[[.underline]#data standard#] that is accepted in GBIF, the most widely used standard in biodiversity is the https://www.tdwg.org/standards/dwc/[[.underline]#Darwin Core Standard#], there are over 180 Darwin Core https://dwc.tdwg.org/terms/[[.underline]#terms#] that are stable and provide vocabularies related to organisms and their related data. Most terms cover the wide range of variables present in vector collection, but some variables, such as environmental, genomic data, among others are best represented by https://rs.gbif.org/extensions.html[[.underline]#extensions#], which are sets of terms corresponding to a specific category of data.
+
+It is considered best practice to make a copy of the original data file to be transformed into a structured dataset, which is a table with headers in the first row and with no colours, comments, no merged cells or extra formatting, no macros. Unknown, absent and/or missing data must be left as blank cells, *DO NOT USE* N/A or zero, ? or anything else.
+
+Data transformation follows a set of steps necessary to format some terms, i.e. dates must follow ISO 8601 and geographical coordinates must be in decimal degrees, then we map the original column headers in the spreadsheet to Darwin Core terms. It is during this step that data cleaning and data quality checks can be performed, this step can be performed in any spreadsheet software such as Excel, LibreOffice or Modern CSV or with dedicated software such as https://openrefine.org/[[.underline]#OpenRefine#].
+
+[[fig-02]]
+.Example of DwC mapping to the original headers in a table. Suggested Darwin Core terms are mapped in the first row, original headers in the second row and examples are given in the following three rows.
+
+[[table-01]]
+.Date formatting under the ISO 8601 standard. Left column, original data in different formats; middle column, dates formatted using the ISO 8601 standard.
+[width="100%",cols="33%,32%,35%",options="header",]
+|===
+|*CollectionDate* |*dwc:eventDate* |*ISO 8601*
+|3 jan 2002 |2002-01-03 |YYYY-MM-DD
+|23/10/04 |2004-10-04 |YYYY-MM-DD
+|14-08-95 |1995-08-14 |YYYY-MM-DD
+|Dec 2012 |2012-12 |YYYY-MM
+|2015 |2015 |YYYY
+|23-24/Oct/2004 |2004-10-23/2004-10-24 |YYYY-MM-DD/YYYY-MM-DD
+|11/2009 to 12/2009 |2009-11/2009-12 |YYYY-MM/YYYY-MM
+|===
+
+[[fig-03]]
+.Mapping species names. In this example, three different publishers refer to species names using different headers (lines 2), when mapping to DwC, species names become the dwc:https://dwc.tdwg.org/terms/#dwc:scientificName[[.underline]#scientificName#] term.
+
+For detailed instructions on mapping vector data to the DwC standard please refer to sections <<2.1>>, <<2.2>> and <<2.3>> below.
