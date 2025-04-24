@@ -7,21 +7,19 @@ endif::backend-html5[]
 
 === Suggested citation
 
-Author U, Autore D & Auteur T. The special guide to something. Third edition. GBIF Secretariat: Copenhagen. 
+Shimabukuro PHF, Campbell L, Fouque F, Etang J, Cecarelli S, Groom Q, Ingenloff K, Svenningsen C, Grosjean M, Martínez JG &  Schigel D (2025) Publishing data on disease vectors, hosts and pathogens through biodiversity data platforms. GBIF Secretariat: Copenhagen. 
 // Uncomment once a DOI is assigned
 //https://doi.org/10.EXAMPLE/EXAMPLE
 
 === Authors
 
-Un Author, Due Autore & https://www.orcid.org/#[Troisième Auteur]
-
+http://orcid.org/0000-0002-5114-953X[Paloma Shimabukuro^], [Lindsay Campbell^], [Florence Fouque^], [Josiane Etang^], [Soledad Cecarelli^], [Quentin Groom^], [Kate Ingenloff^], [Cecilie Svenningsen^], [Marie Grosjean^], [Javier Gamboa Martínez^] & [Dmitry Schigel^]
 === Contributors
 
-James Joyce and Samuel Beckett of Trinity College, Dublin, contributed to this version of the document.
 
 === Licence
 
-The document _The special guide to something_ is licensed under https://creativecommons.org/licenses/by-sa/4.0[Creative Commons Attribution-ShareAlike 4.0 Unported License].
+The document _Publishing data on disease vectors, hosts and pathogens through biodiversity data platforms_ is licensed under https://creativecommons.org/licenses/by-sa/4.0[Creative Commons Attribution-ShareAlike 4.0 Unported License].
 
 === Persistent URI
 
@@ -31,12 +29,7 @@ The document _The special guide to something_ is licensed under https://creative
 
 === Document control
 
-Third edition, April 2020
-
-// include reference to provenance if possible/relevant
-https://doi.org/10.EXAMPLE/2ND-EXAMPLE[Second edition], March 2015, by Due Autore and https://orcid.org/0000-0000-0000-0000[Troisième Auteur].
-
-Originally based on an earlier publication, _Towards establishing the special guide to something_.
+Community review edition, v0.1, May 2025
 
 === Cover image
 
