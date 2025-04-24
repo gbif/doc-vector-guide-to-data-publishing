@@ -1,13 +1,218 @@
 [bibliography]
 == References
 
-//The bibliography list is a style of AsciiDoc bulleted list.
-
-- [[carrillo]] Carrillo Trueba C (1995) El Pedregal de San Ángel. Mexico City: Universidad Nacional Autonoma de Mexico.
-- [[eggener]]	Keith Eggener (2001) Luis Barragán’s Gardens of el Pedregal Princeton, N.J., USA: Princeton Architectural Press.
-- [[heizer]]Heizer RF & Bennyhoff JA (1958) Archeological Investigation of Cuicuilco, Valley of Mexico, 1957. Science 127(3292): 232-233. https://doi.org/10.1126/science.127.3292.232
-- [[palacio]] Palacio Prieto JL & Guilbaud M-N (2015) Patrimonio natural de la Reserva Ecológica del Pedregal de San Ángel y áreas cercanas: sitios de interés geológico y geomorfológico al sur de la Cuenca de México. Boletín de la Sociedad Geológica Mexicana 67(2):227-244. http://www.scielo.org.mx/scielo.php?script=sci_arttext&pid=S1405-33222015000200008
 - [[salas05]] Salas Portugal A (2005) Armando Salas Portugal. Mexico City: Lunwerg Editores.
 - [[salas06]] Salas Portugal A (2006) Morada de Lava: las colecciones fotográficas del Pedregal de San Ángel y la Ciudad Universitaria. Mexico City: Universidad Nacional Autonoma de Mexico.
+- [[aguilar]] Aguilar-Vega C, Rivera B, Lucientes J, Gutiérrez-Boada I & Sánchez-Vizcaíno JM (2021) A study of the composition of the Obsoletus complex and genetic diversity of _Culicoides obsoletus_ populations in Spain. Parasites & Vectors 14(1): 351. https://doi.org/10.1186/s13071-021-04841-z
 
 <<<
+
+Ashford RW. (2003) When Is a Reservoir Not a Reservoir? Emerg Infect Dis, 9(11):1495–6. Available from: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3035539/[[.underline]#https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3035539/#]
+
+Astorga F, Groom Q, Shimabukuro PHF, Manguin S, Noesgaard D, Orrell T et
+al. (2023) Biodiversity data supports research on human infectious
+diseases: Global trends, challenges, and opportunities. One Health,
+16:100484.
+https://doi.org/10.1016/j.onehlt.2023.100484[[.underline]#https://doi.org/10.1016/j.onehlt.2023.100484#]
+
+Brazilian Zoology G (2025). Catálogo Taxonômico da Fauna do Brasil.
+Version 1.30. Instituto de Pesquisas Jardim Botânico do Rio de Janeiro.
+Checklist dataset
+https://doi.org/10.15468/c4cauy[[.underline]#https://doi.org/10.15468/c4cauy#]
+accessed via GBIF.org on 2025-01-17.
+
+Ceccarelli S, Balsalobre A, Cano M E, Vicente M E, Rabinovich J E,
+Medone P, Rocchi V M, Galliari J G, Marti G A (2022). Datos de
+ocurrencia de triatominos americanos del Laboratorio de Triatominos del
+CEPAVE (CONICET-UNLP). Version 1.6. Centro de Estudios Parasitológicos y
+de Vectores (CEPAVE). Occurrence dataset
+https://doi.org/10.15468/fbywtn[[.underline]#https://doi.org/10.15468/fbywtn#]
+accessed via GBIF.org on 2025-04-07.
+
+Colón-González FJ, Sewe MO, Tompkins AM, Sjödin H, Casallas A, Rocklöv
+J, et al. (2021) Projecting the risk of mosquito-borne diseases in a
+warmer and more populated world: a multi-model, multi-scenario
+intercomparison modelling study. The Lancet Planetary Health, 5(7):
+e404–14.
+https://www.thelancet.com/journals/lanplh/article/PIIS2542-5196(21)00132-7/fulltext[[.underline]#https://www.thelancet.com/journals/lanplh/article/PIIS2542-5196(21)00132-7/fulltext#]
+
+Cotes-Perdomo AP, Nava S, Castro LR, Rivera-Paéz FA, Cortés-Vecino JA,
+Uribe JE (2023) Phylogenetic relationships of the Amblyomma cajennense
+complex (Acari: Ixodidae) at mitogenomic resolution. Ticks and Tick
+Borne Diseases, 14(3): 102125.
+https://doi.org/10.1016/j.ttbdis.2023.102125.
+
+Dilermando J (2023) Fiocruz/COLFLEB - Coleção de Flebotomíneos. Version
+1.59. FIOCRUZ - Oswaldo Cruz Foundation. Occurrence dataset.
+https://doi.org/10.15468/sxcpfp[[.underline]#https://doi.org/10.15468/sxcpfp#]
+
+Edmunds SC, Fouque F, Copas KA, Hirsch T, Shimabukuro PHF, Andrade-filho
+JD, et al. (2022). Publishing data to support the fight against human
+vector-borne diseases. GigaScience, 11: giac114.
+https://doi.org/10.1093/gigascience/giac114[[.underline]#https://doi.org/10.1093/gigascience/giac114#]
+
+Estrada-Franco JG, Fernández-Santos NA, Adebiyi AA, López-López MJ,
+Aguilar-Durán JA, Hernández-Triana LM et al. (2020) Vertebrate-Aedes
+aegypti and Culex quinquefasciatus (Diptera)-arbovirus transmission
+networks: Non-human feeding revealed by meta-barcoding and
+next-generation sequencing. PLoS Neglected Tropical Diseases, 14(12):
+e0008867.
+https://doi.org/10.1371/journal.pntd.0008867[[.underline]#https://doi.org/10.1371/journal.pntd.0008867#]
+
+Garros C, Harbach RE & Manguin S (2005) Morphological assessment and
+molecular phylogenetics of the Funestus and Minimus groups of Anopheles
+(Cellia). J Med Entomol, 42(4):522-36. doi: 10.1093/jmedent/42.4.522.
+PMID: 16119539.
+
+​​GBIF (2011). A Beginner’s Guide to Persistent Identifiers, version 1.0.
+Released on 9
+
+February 2011. Authors Kevin Richards, Richard White, Nicola Nicolson,
+Richard Pyle,
+
+Copenhagen: Global Biodiversity Information Facility, 33 pp, accessible
+online at
+
+http://links.gbif.org/persistent_identifiers_guide_en_v1.pdf[[.underline]#http://links.gbif.org/persistent_identifiers_guide_en_v1.pdf#]
+
+Groom Q, Desmet P, Reyserhove L, Adriaens T, Oldoni D, Vanderhoeven S,
+et al. (2019) Improving Darwin Core for research and management of alien
+species. Biodiversity Information Science and Standards, 10;3:e38084.
+
+Gutierrez MAC, Lopez ROH, Ramos AT, Vélez ID, Gomez RV,
+Arrivillaga-Henríquez J, Uribe S. (2021) DNA barcoding of Lutzomyia
+longipalpis species complex (Diptera: Psychodidae), suggests the
+existence of 8 candidate species. Acta Trop., 221:105983. doi:
+10.1016/j.actatropica.2021.105983.
+
+Harbach RE (2012) Culex pipiens: species versus species complex
+taxonomic history and perspective. J Am Mosq Control Assoc, 28(4
+Suppl):10-23. doi: 10.2987/8756-971X-28.4.10. PMID: 23401941.
+
+IPBES (2020) Workshop Report on Biodiversity and Pandemics of the
+Intergovernmental Platform on Biodiversity and Ecosystem Services.
+Daszak, P., Amuasi, J., das Neves, C. G., Hayman, D., Kuiken, T., Roche,
+B., Zambrana-Torrelio, C., Buss, P., Dundarova, H., Feferholtz, Y.,
+Földvári, G., Igbinosa, E., Junglen, S., Liu, Q., Suzan, G., Uhart, M.,
+Wannous, C., Woolaston, K., Mosig Reidl, P., O’Brien, K., Pascual, U.,
+Stoett, P., Li, H., Ngo, H. T., IPBES secretariat, Bonn, Germany,
+DOI:10.5281/zenodo.4147317.
+
+Kelly ET, Mack LK, Campos M, Grippin C, Chen TY, Romero-Weaver AL, et
+al. (2021) Evidence of Local Extinction and Reintroduction of _Aedes
+aegypti_ in Exeter, California. Front Trop Dis, 2. Available from:
+https://www.frontiersin.org/journals/tropical-diseases/articles/10.3389/fitd.2021.703873/full[[.underline]#https://www.frontiersin.org/journals/tropical-diseases/articles/10.3389/fitd.2021.703873/full#]
+
+Marceló-Díaz C, Morales C A, Fuya O P, Salamanca J A, Lesmes M C,
+Mendez-Cardona S A, Cadena H, Sanchez Gutierrez C, Santamaría E (2023):
+Registros de los dípteros causantes de la transmisión del agente
+etiológico del dengue en el departamento del Cauca, Colombia. v1.10.
+Instituto Nacional de Salud. Dataset/Occurrence.
+https://doi.org/10.15472/dxbowv
+
+Motoki MT, Wilkerson RC, Sallum MA (2009) The Anopheles albitarsis
+complex with the recognition of Anopheles oryzalimnetes Wilkerson and
+Motoki, n. sp. and Anopheles janconnae Wilkerson and Sallum, n. sp.
+(Diptera: Culicidae). Mem Inst Oswaldo Cruz, 104(6):823-50. doi:
+10.1590/s0074-02762009000600004. PMID: 19876554.
+
+Paull S (2022). NEON ticks sampled using drag cloths and tick pathogen
+status. National Ecological Observatory Network. Sampling event dataset
+https://doi.org/10.15468/b52b9z accessed via GBIF.org on 2025-01-17.
+
+Raele, D.A., Severini, F., Toma, L. _et al._ (2024) _Anopheles
+sacharovi_ in Italy: first record of the historical malaria vector after
+over 50 years. Parasites & Vectors, 17, 182.
+https://doi.org/10.1186/s13071-024-06252-2
+
+Shimabukuro P, Groom Q, Fouque F, Campbell L, Chareonviriyaphap T, Etang
+J, et al. (2024) Bridging Biodiversity and Health: The Global
+Biodiversity Information Facility’s initiative on open data on vectors
+of human diseases. Gigabyte, 11;2024:1–11.
+
+​​Shorthouse, David P. 2010. SimpleMappr, an online tool to produce
+publication-quality point maps. [Retrieved from
+https://www.simplemappr.net. Accessed August 02, 2024].
+
+Shorthouse D (2020). Slinging With Four Giants on a Quest to Credit
+Natural Historians for our Museums and Collections. Biodiversity
+Information Science and Standards, 4 doi: 10.3897/biss.4.59167.
+
+Simons D, Attfield L A, Jones K E, Watson-Jones D, Kock R (2023). Data
+from: Rodent trapping studies as an overlooked information source for
+understanding endemic and novel zoonotic spillover. GigaScience Press.
+Occurrence dataset https://doi.org/10.15468/zr6frj accessed via GBIF.org
+on 2024-12-16.
+
+Sinka ME, Pironon S, Massey NC, Longbottom J, Hemingway J, Moyes CL, et
+al. (2020) A new malaria vector in Africa: Predicting the expansion
+range of Anopheles stephensi and identifying the urban populations at
+risk. Proc Natl Acad Sci USA, 6;117(40):24900–8.
+
+​​Soma D D, Zogo B, Taconet P, Mouline K, Ahoua Alou L P, Dabiré R K,
+Amanan Koffi A, Pennetier C, Moiroux N (2024). Anopheles collections in
+the health districts of Korhogo (Côte d'Ivoire) and Diébougou (Burkina
+Faso) (2016-2018). Version 1.1. IRD - Institute of Research for
+Development. Sampling event dataset https://doi.org/10.15468/v8fvyn
+accessed via GBIF.org on 2024-12-16.
+
+Sukkanon C, Suwonkerd W, Thanispong K, Saeung M, Jhaiaun P, Pimnon S,
+Manguin S, Chareonviriyaphap T (2023). Mosquitoes (Diptera: Culicidae)
+Distribution in Thailand. Version 1.1. Walailak University, School of
+Allied Health Sciences. Sampling event dataset
+https://doi.org/10.15468/tbd7fz accessed via GBIF.org on 2025-01-15.
+
+Stevens T, Zimmerman R, Albery G, Becker DJ, Kading R, Keiser CN, et al.
+(2024) A minimum data standard for wildlife disease studies. Available
+from:
+https://ecoevorxiv.org/repository/view/7150/[[.underline]#https://ecoevorxiv.org/repository/view/7150/#]
+
+VectorNet, European Centre for Disease Prevention and Control, European
+Food Safety Authority (2025). VectorNet. VectorNet. Occurrence dataset
+https://doi.org/10.15468/f3k8r9[[.underline]#https://doi.org/10.15468/f3k8r9#]
+accessed via GBIF.org on 2025-04-14.
+
+Wieczorek J, RobertsonT. Diversifying the GBIF Data Model. 2023;
+https://www.gbif.org/new-data-model[[.underline]#https://www.gbif.org/new-data-model#].
+
+World Health Organization. Sharing and reuse of health-related data for
+research purposes: WHO policy and implementation guidance [Internet].
+World Health Organization; 2022 [cited 2025 Jan 2]. Available from:
+https://iris.who.int/handle/10665/352859[[.underline]#https://iris.who.int/handle/10665/352859#]
+
+World Health Organization. Global vector control response 2017–2030.
+Geneva: World Health Organization; 2017. Licence: CC BY-NC-SA 3.0 IGO.
+Available from:
+https://www.who.int/publications-detail-redirect/9789241512978[[.underline]#https://www.who.int/publications-detail-redirect/9789241512978#]
+
+World Health Organization. Guidelines for malaria vector control.
+Geneva; 2019. Licence: CC BY-NC-SA 3.0 IGO
+
+World Health Organization. Malaria surveillance, monitoring &
+evaluation: a reference manual.
+
+Geneva: 2018. Licence: CC BY-NC-SA 3.0 IGO.
+
+World Health Organization, Regional Office for South-East Asia.
+Comprehensive guidelines for prevention and control of dengue and dengue
+haemorrhagic fever. Revised and expanded edition (SEARO Technical
+Publication Series No. 60) 2011.
+
+World Health Organization (2007) Anopheline species complexes in South
+and
+
+South-East Asia. SEARO Technical Publication No. 57. WHO Regional Office
+for
+
+South-East Asia, New Delhi. 102 p.
+
+1.
+
+World Health Organization (2024) World malaria report. Available from:
+https://www.who.int/publications/i/item/9789240104440[[.underline]#https://www.who.int/publications/i/item/9789240104440#]
+
+​​Zanga J, Metelo E, Mvuama N, Nsabatien V, Mvudi V, Banzulu D, Mansiangi
+O, Bamba M, Basosila N, Agossa F, Wumba R (2023). Species composition
+and distribution of anopheles gambiae complex circulating in Kinshasa.
+Version 1.2. University of Kinshasa. Sampling event dataset
+https://doi.org/10.15468/excax3 accessed via GBIF.org on 2024-12-16.
