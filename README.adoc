@@ -6,7 +6,7 @@ https://creativecommons.org/licenses/by-sa/4.0/[image:https://img.shields.io/bad
 // Build status badge: In the text below, please update "doc-template" to "doc-your-document-name", and remove this line.
 https://builds.gbif.org/job/doc-template/lastBuild/console[image:https://builds.gbif.org/job/doc-template/badge/icon[Build status]]
 
-= GBIF Document Template
+= Publishing data on disease vectors, hosts and pathogens through biodiversity data platforms
 
 ////////////////////////////////////////////////////////////////////////////////
 // Please delete this text after cloning the repository for a new document!
