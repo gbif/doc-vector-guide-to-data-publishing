@@ -1,14 +1,257 @@
-[appendix]
-== Example
+[appendices]
+== Appendices
 
-An AsciiDoc appendix is just a document section with a 'specialsection' title.
+`"Tables B-F" are really just lists: discuss`
 
-Place non-essential information that supports your analysis, validates your conclusions or pursues a related point in an appendix. Examples could include: 
+Table A. Suggested controlled vocabulary for degree of establishment
+(from Groom et al. 2019).
 
-* figures/tables/charts/graphs of results
-* statistics
-* questionnaires 
-* transcripts of interviews
-* survey results
-* maps
-* software installation instructions
+[width="100%",cols="76%,24%",options="header",]
+|===
+|https://dwc.tdwg.org/list/#dwciri_degreeOfEstablishment[[.underline]#degreeOfEstablishment#]
+|
+|*Definition* |*Controlled value string*
+
+|Not transported beyond limits of native range |native
+
+|Individuals in captivity or quarantine (i.e. individuals provided with
+conditions suitable for them, but explicit measures of containment are
+in place) |captive
+
+|Individuals in cultivation (i.e. individuals provided with conditions
+suitable for them, but explicit measures to prevent dispersal are
+limited at best) |cultivated
+
+|Individuals directly released into novel environment |released
+
+|Individuals released outside of captivity or cultivation in a location,
+but incapable of surviving for a significant period |failing
+
+|Individuals surviving outside of captivity or cultivation in a
+location, no reproduction |casual
+
+|Individuals surviving outside of captivity or cultivation in a
+location, reproduction is occurring, but population not self-sustaining
+|reproducing
+
+|Individuals surviving outside of captivity or cultivation in a
+location, reproduction occurring, and population self-sustaining
+|established
+
+|Self-sustaining population outside of captivity or cultivation, with
+individuals surviving a significant distance from the original point of
+introduction |colonising
+
+|Self-sustaining population outside of captivity or cultivation, with
+individuals surviving and reproducing a significant distance from the
+original point of introduction |invasive
+
+|Fully invasive species, with individuals dispersing, surviving and
+reproducing at multiple sites across a greater or lesser spectrum of
+habitats and extent of occurrence |widespreadInvasive
+|===
+
+Table B. Suggested controlled vocabulary for traps (from VectorNet).
+
+[width="100%",cols="100%",options="header",]
+|===
+|https://www.gbif.org/data-quality-requirements-sampling-events#dcSamplingProtocol[[.underline]#samplingProtocol*#]
+|Active collections
+
+|Aedes gravid trap
+
+|Aspiration from animal bait
+
+|Aspirator collection from resting places
+
+|BG sentinel (+ UV light) trap
+
+|BG Sentinel + CO2
+
+|BG Sentinel trap with chemical lure
+
+|BG Sentinel trap with lure and CO2
+
+|Blacklight
+
+|Box animal baited trap
+
+|Carbon dioxide trap without light
+
+|CDC Light trap
+
+|CDC Light trap + CO2
+
+|CO2 baited trap
+
+|Collection from live/dead hosts
+
+|Cone animal baited trap
+
+|Disney animal baited trap
+
+|Dragging/flagging by surface
+
+|Dragging/flagging by time
+
+|Emergence trap
+
+|EVS Light trap
+
+|EVS Light trap + CO2
+
+|Gravid trap
+
+|Hair dryer by area
+
+|Hair dryer by time
+
+|Host-baited trap
+
+|Human landing catches
+
+|IMT trap
+
+|Lethal ovitrap
+
+|Light CO2 sticky
+
+|Light sticky trap
+
+|Light trap
+
+|Light trap + CO2
+
+|Malaise trap
+
+|Mosquito magnet trap
+
+|Netting
+
+|Non-standard dipping
+
+|NS trap + CO2
+
+|Onderstepoort Veterinary Institute (OVI) black-light trap
+
+|Other
+
+|Other CO2 trap
+
+|Other sticky trap
+
+|Ovitrap
+
+|Resting catch (outdoor/indoor)
+
+|RIEB light trap
+
+|Rothamsted trap
+
+|Soil sampling
+
+|Soil screening by surface
+
+|Soil screening by weight
+
+|Soil screening by weight
+
+|Standard dipping
+
+|Sticky trap
+
+|UK light trap
+
+|Unknown
+
+|Updraft box trap with light
+|===
+
+Table C. Suggested controlled vocabulary for life stage.
+
+[width="100%",cols="100%",options="header",]
+|===
+|https://dwc.tdwg.org/list/#dwc_lifeStage[[.underline]#lifeStage#]
+|egg
+|larva
+|nymph
+|pupa
+|adult
+|subadult
+|juvenile
+|===
+
+Table D. Suggested controlled vocabulary for sex.
+
+[width="100%",cols="100%",options="header",]
+|===
+|https://dwc.tdwg.org/list/#dwc_sex[[.underline]#sex#]
+|female
+|male
+|hermaphrodite
+|===
+
+Table E. Suggested controlled vocabulary for production sites for
+mosquitoes from the [.underline]#Comprehensive Guidelines for Prevention
+and Control of Dengue and Dengue Haemorrhagic Fever#.
+
+[width="100%",cols="100%",options="header",]
+|===
+|[.underline]#habitat#
+|Water evaporation cooler
+|Water storage tank/cisternrelation
+|Drum (40–55 gallons)
+|Flower vase with water
+|Potted plants with saucers
+|Ornamental pool/fountain
+|Roof gutter/sun shades
+|Animal water container
+|Ant-trap
+|Used tyres
+|Discarded large appliances
+|Discarded buckets
+|Discarded food and drink containers
+|Tree holes
+|Rock holes
+|===
+
+Table F. Suggested controlled vocabulary for depicting relationships,
+based on the
+[.underline]#https://purl.obolibrary.org/obo/ro/subsets/ro-interaction.owl[OBO
+Ontology].#
+
+[width="100%",cols="100%",options="header",]
+|===
+|https://purl.obolibrary.org/obo/ro/subsets/ro-interaction.owl[[.underline]#resourceRelationshipID#]
+|http://purl.obolibrary.org/obo/RO_0002227[[.underline]#obligate
+parasite of#]
+
+|http://purl.obolibrary.org/obo/RO_0002459[[.underline]#is vector for#]
+
+|http://purl.obolibrary.org/obo/RO_0002640[[.underline]#intracellular
+endoparasite of#]
+
+|http://purl.obolibrary.org/obo/RO_0002803[[.underline]#has reservoir
+host#]
+
+|http://purl.obolibrary.org/obo/RO_0002802[[.underline]#reservoir_host_of#]
+
+|http://purl.obolibrary.org/obo/RO_0002460[[.underline]#has vector#]
+
+|http://purl.obolibrary.org/obo/RO_0002557[[.underline]#has pathogen#]
+
+|http://purl.obolibrary.org/obo/RO_0002227[[.underline]#obligate
+parasite of#]
+
+|http://purl.obolibrary.org/obo/RO_0002228[[.underline]#facultative
+parasite of#]
+
+|http://purl.obolibrary.org/obo/RO_0002443[[.underline]#interacts with
+via parasite-host interaction#]
+
+|http://purl.obolibrary.org/obo/RO_0002444[[.underline]#parasite of#]
+
+|http://purl.obolibrary.org/obo/RO_0002453[[.underline]#host of#]
+
+|http://purl.obolibrary.org/obo/RO_0002556[[.underline]#pathogen of#]
+|===
