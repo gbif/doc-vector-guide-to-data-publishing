@@ -1,4 +1,51 @@
-[[short-id-for-section]]
-== Section/chapter title 
+== Introduction
 
-It was a dark and stormy night, the rain fell in torrents — except at occasional intervals, when it was checked by a violent gust of wind which swept up the streets (for it is in London that our scene lies), rattling along the house-tops, and fiercely agitating the scanty flame of the lamps that struggled against the darkness. Through one of the obscurest quarters of London, and among haunts little loved by the gentlemen of the police, a man evidently of the lowest orders was wending his solitary way. He stopped twice or thrice at different shops and houses of a description correspondent with the appearance of the _quartier_ in which they were situated, — and tended inquiry for some article or another which did not seem easily to be met with. All the answers he received were couched in the negative; and as he turned from each door he muttered to himself, in no very elegant phraseology, his disappointment and discontent. At length, at one house, the landlord, a sturdy butcher, after rendering the same reply the inquirer had hitherto received, added, — “But if _this_ vill do as vell, Dummie, it is quite at your sarvice!” Pausing reflectively for a moment, Dummie responded that he thought the thing proffered _might_ do as well; and thrusting it into his ample pocket, he strode away with as rapid a motion as the wind and the rain would allow. He soon came to a nest of low and dingy buildings, at the entrance to which, in half-effaced characters, was written “Thames Court.” Halting at the most conspicuous of these buildings, an inn or alehouse, through the half-closed windows of which blazed out in ruddy comfort the beams of the hospitable hearth, he knocked hastily at the door. He was admitted by a lady of a certain age, and endowed with a comely rotundity of face and person.
+=== Rationale
+
+Vector-borne diseases (VBDs) are responsible for approximately 17% of the global burden of all infectious diseases (WHO, 2017) posing a significant threat to public health and economies, particularly in tropical regions where many of these diseases are endemic. While some VBDs like malaria remain endemic in many countries. In 2023, there were an estimated 263 million new malaria cases in 83 countries worldwide. Malaria case incidence, which accounts for population growth, rose in the period 2015-2023 from 58 to 60.4 cases per 1000 population at risk (WHO, 2024), other VBDs like dengue are re-emerging in previously endemic areas and are continuing to expand in geographic range. In 2020, a https://www.gbif.org/news/4jj1iKMn5llVnM6cUr8Y2m/[task group^] of experts was established to help the GBIF network improve the discovery, access and use of biodiversity data of species linked to human diseases with a strong focus on arthropod vector data.
+
+In 2023, GBIF-commissioned a review published by Astorga et al (2023) that compared studies related to human health that used GBIF-mediated data on biodiversity - "positives" and "negatives" that did not. The authors found visible differences as the positive list came from biological and ecological sciences and used data on host and vector species. The negative list, on the other hand, focused on medicine, public health and veterinary science, suggesting that data shared through GBIF is contributing to more broad scale ecological analyses and less to health-related studies (Astorga et al. 2023).
+
+With this guide, we hope to encourage the publication of vector data under the FAIR principles, to contribute not only to a better understanding of disease biology, ecology, and transmission , but also to inform epidemic preparedness and response, as well VBD control and elimination strategies.
+
+Publishing vector, host and pathogen data as occurrences under the FAIR principles, has many benefits:
+
+* Recognition for work carried out at the forefront, such as laboratory and field activities, with attribution and credit
+* Increased awareness of the importance of producing good quality data by learning about the steps involved in producing and reusing data
+* Increased visibility of institutions and compliance with regional, national and international standards/guidelines on open data
+* Contribution to global knowledge of biodiversity
+* Expanded possibilities for collaboration through exposure in an international repository
+* Tracking of data use that can contribute to metrics and impact indicators of the work carried out
+* Increased citation since datasets published in GBIF are assigned a DOI
+
+=== Target audiences
+
+This guide has been developed for researchers, students and health workers involved in the collection of data related to arthropods vectors of pathogens.
+
+We aim to provide guidance on publishing data on vectors, hosts and pathogens that cause human and animal diseases through GBIF—the Global Biodiversity Information Facility.
+
+In this guide, we provide two ways of data publication:
+
+* A simplified way to publish all available data in a single file
+* A complex way using extensions to accommodate the diversity of variables recorded along with vector records.
+
+=== Introduction to vector data
+
+This guide is focused on data from vectors of diseases and associated data content related but not limited to hosts/reservoirsfootnote:[For the purpose of this guide, we will refer to both host and reservoir as simply ‘host’. For a detailed discussion on the concept of host and reservoir see: Ashford RW. When Is a Reservoir Not a Reservoir? Emerg Infect Dis. 2003 Nov;9(11):1495–6. 10.3201/eid0911.030088; Haydon DT, Cleaveland S, Taylor LH, Laurenson MK. Identifying reservoirs of infection: a conceptual and practical challenge. Emerg Infect Dis. 2002 Dec;8(12):1468–73. 10.3201/eid0812.010317.] and pathogens, often assessed directly from fieldwork or field observations or from laboratory detection assays.
+
+Vector data can be a mixture of the currently supported https://ipt.gbif.org/manual/en/ipt/latest/occurrence-data[occurrence^] and https://www.gbif.org/sampling-event-data[sampling-event^] classes that can also include interaction data between vectors, hosts and pathogens. These data can be layered with information on environmental variables and/or host/vector morphological measurements, molecular data such as genomics or host/pathogen detection assays, combined vector/host/pathogen data and surveillance design data that would require the use of extensions, such as extendedMeasurementorFact/MeasurementorFact, ResourceRelationship, and Humboldt, respectively.
+
+Vectors are most commonly sampled for research purposes or for disease surveillance and monitoring, as well as for early-warning systems. Trapping most often occurs in a systematic way, and it is possible to infer species diversity, density, abundance, infection rates, biting rates, resting/biting habits, etc, from such collections. In most countries, both researchers and health programmes follow (WHO 2011, 2018, 2019) WHO standardized sampling protocols and guidelines used for day-night/indoor-outdoor/domestic-sylvatic collection of vectors. Thus the data output is appropriate for publication as a sampling event dataset. However, opportunistic, sporadic sampling is not uncommon and the output of such sampling is more appropriate to be published as occurrence datasets.
+
+The detection of human pathogens in arthropod vectors is generally called xenomonitoring and it is used to estimate the risk of human exposure to transmission of different vector-borne pathogens. Therefore, pathogen data are most commonly obtained from laboratory screening/detection assays, e.g. qPCR or traditional PCR from midgut/tissue/blood samples from both vectors and hosts, serological tests, or direct observation after dissection (microscopy).
+
+While data on hosts is often obtained from traps for blood seeking stage of the vectors, blood meals are analysed either through serology, e.g. precipitin tests, Enzyme-Linked Immunosorbent Assay (ELISA) or genomic techniques, e.g. PCR, high throughput sequencing. Host data might include body measurements, like weight, length, body mass and the axis of measurement for the organism, e.g. snout-vent length, wing length.
+
+A number of variables related to bionomics (species, human biting rate, anthropo-/zoophily, endo-/exophily, endo-/exophagy), physiological (parity), epidemiological (sporozoite rate, proportion of blood meals on humans, entomological inoculation rate), insecticide resistance status and genetic (molecular forms, haplotypes, resistance alleles and genes) data may be available; these variables are important for the understanding of disease transmission dynamics and for implementing evidence-based vector control approaches.
+
+And finally, environmental parameters are also recorded, e.g. air temperature and air humidity, water variables such as pH, dissolved oxygen concentration (DOC), conductivity, turbidity.
+
+GBIF's current data model does not support the publication of all the variables described, i.e. interaction data, bio-ecological and environmental data. Darwin Core terms do not include an appropriate description for interaction data. However, it is possible to publish these types of data by using different extensions, such as the https://dwc.tdwg.org/terms/#resourcerelationship[Resource Relationship^], https://dwc.tdwg.org/terms/#measurementorfact[MeasurementOrFact^],
+and the newly ratified https://eco.tdwg.org/terms/[Humboldt Extension^], they can be used to accommodate interactions, different types of measurements, but they can be challenging to use and can result in highly complex formats stemming from individual sampling events.
+
+For more information on the terms used in this guide, please refer to the <<glossary,Glossary>>.
