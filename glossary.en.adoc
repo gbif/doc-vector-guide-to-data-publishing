@@ -1,12 +1,106 @@
 [glossary][#glossary]
 == Glossary
 
-//Glossaries are optional. Glossaries entries are an example of a style of AsciiDoc labeled lists.
-
 [glossary]
 [[anchor]]term:: add short tags corresponding to an anchor name in HTML between brackets (no spaces allowed), then list the term, which should be written as you wish it to appear.
-[[authorization]]authorization:: refers to the process of determining which individuals can be afforded different access rights for authentication and data access.
-[[decimal-degrees]]decimal degrees:: degrees expressed as a single real number (e.g. −22.343456°). Note that latitudes south of the equator are negative, as are longitudes west of the prime meridian to −180 degrees.
-[[generalization]]generalization:: refers here to any modifications carried out to source data to conceal sensitive content, typically by reducing the precision of the data (such as reporting at the level of a watershed, grid or county, citing just the nearest named place, or by deleting some parts of the data). In geographic terms it refers to the conversion of a geographic representation to one with less resolution and less information content; traditionally associated with a change in scale. Also referred elsewhere to as: _fuzzying_, _dummying-up_, etc.
+[[anthropophily]]anthropophily:: description of vectors that show a preference for feeding on humans, even when non-human hosts are available.
+[[biting-rate]]biting rate:: average number of vector bites a host receives in a unit of time, specified according to host and vector species (usually measured by human landing catch).
 
 <<<
+
+
+*Darwin Core Archive (DwC-A)*
+
+Compressed (ZIP) file format for exchange of biodiversity data compiled in accordance with the https://docs.gbif.org/publishing-dna-derived-data/en/#dwc-standard[[.underline]#Darwin Core (DwC) standard#]. It is a self-contained set of interconnected CSV files and an XML document describing included files and data columns, and their mutual relationships.
+
+*Darwin Core (DwC) standard*
+
+Standard for sharing and publishing biodiversity data, originating from the Biodiversity Information Standards (TDWG) community. It is a set of identifiers, labels, and definitions to describe biodiversity data. Please refer to the https://dwc.tdwg.org/terms/[[.underline]#Quick Reference Guide#] for more information.
+
+*Endophagy*
+
+Tendency of vectors to blood-feed indoors.
+
+*Endophily*
+
+Tendency of vectors to rest indoors; usually quantified as the proportion of vectors resting indoors; important when assessing indoor residual spraying effectiveness.
+
+*Entomological surveillance*
+
+The regular, systematic collection, analysis and interpretation of entomological data for risk assessment, planning, implementation, monitoring and evaluation of vector control interventions.
+
+*Event*
+
+In GBIF context, species occurrences in time and space together with details of sampling effort.
+
+*Exophagy*
+
+Tendency of vectors to blood feed outdoors.
+
+*Exophily*
+
+Tendency of vectors to rest outdoors; usually quantified as the proportion of mosquitoes resting outdoors versus indoors; important when estimating outdoor transmission risks.
+
+*Host*
+
+An ecologic system in which an infectious agent survives indefinitely (after Ashford 2003).
+
+*Human biting rate*
+
+The number of adult female vectors that attempt to feed or are freshly blood-fed, per person per unit time.
+
+*IPT*
+
+https://www.gbif.org/ipt[[.underline]#Integrated Publishing Toolkit#], software developed and maintained by GBIF for managing and publishing open biodiversity data.
+
+*One Health*
+
+Integrated approach that considers that the health of humans, non-humans animals, plants, and the environment are closely linked and interdependent.
+
+*Occurrence*
+
+In GBIF context, it is the occurrence of a species at a particular place and a specified date.
+
+*Parity*
+
+The number of offspring a female has borne. In medical entomology, parity works as a proxy for the survival time of adult female vectors, mainly mosquitoes, and establishes whether a parasite has sufficient time to complete its life cycle within the vector, assisting in determining if the insect will serve as an effective vector.
+
+*Parasite*
+
+Invertebrate organisms that live on or in another organism (the host), and benefit at the expense of the other. Traditionally excluded from definition of parasites are pathogenic https://decs.bvsalud.org/en/ths/resource/?id=0&filter=ths_exact_term&q=BACTERIA[bacteria&#44; fungi&#44; viruses and pl]ants though they may live parasitically, which are termed pathogens.
+
+*Reservoir*
+
+Sources which harbor disease-causing organisms and thus serve as potential sources of disease outbreaks.
+
+*Resource*
+
+In the GBIF context, resources are datasets.
+
+*Sampling event*
+
+Investigating the presence/absence of an organism in a particular time and place, the investigation is well-documented by protocols and documentation of the sampling effort. Sampling events produce quantitative, calibrated data. The data can be very simple—a single event with a single occurrence (or no occurrences)—to highly hierarchical, with multiple parent-child event relationships.
+
+*Species complex*
+
+A group of closely related organisms that are morphologically indistinguishable, and often other identification methods are employed to allow identification at species level.
+
+*Sporozoite rate*
+
+Proportion of adult female vectors with sporozoites (motile stage of the malaria parasite) in their salivary glands.
+
+*Vector*
+
+Invertebrates or non-human vertebrates which transmit infective organisms from one host to another.
+
+*Vector Borne Diseases (VBDs)*
+
+Infectious diseases transmitted by vectors.
+
+*Zoophily*
+
+Preferring or seeking a non-human host over another animal.
+
+*World Health Organization (WHO)*
+
+The World Health Organization is a specialized agency of the United Nations responsible for international public health.
