@@ -1,8 +1,6 @@
 [bibliography]
 == References
 
-- [[salas05]] Salas Portugal A (2005) Armando Salas Portugal. Mexico City: Lunwerg Editores.
-- [[salas06]] Salas Portugal A (2006) Morada de Lava: las colecciones fotográficas del Pedregal de San Ángel y la Ciudad Universitaria. Mexico City: Universidad Nacional Autonoma de Mexico.
 - [[aguilar]] Aguilar-Vega C, Rivera B, Lucientes J, Gutiérrez-Boada I & Sánchez-Vizcaíno JM (2021) A study of the composition of the Obsoletus complex and genetic diversity of _Culicoides obsoletus_ populations in Spain. Parasites & Vectors 14(1): 351. https://doi.org/10.1186/s13071-021-04841-z
 - [[ashford]] Ashford RW (2003) When Is a Reservoir Not a Reservoir? Emerging Infectious Diseases 9(11): 1495-1496. https://doi.org/10.3201/eid0911.030088
 - [[astorga]] Astorga F, Groom Q, Shimabukuro PHF, Manguin S, Noesgaard D, Orrell T et al. (2023) Biodiversity data supports research on human infectious diseases: Global trends, challenges, and opportunities. One Health 16:100484. https://doi.org/10.1016/j.onehlt.2023.100484
