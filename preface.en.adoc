@@ -2,5 +2,5 @@
 
 The work on this guide is based on the work and discussions of the https://assets.ctfassets.net/uo17ejk9rkwj/3qrvu3fyrXdRAmkFvHgLNo/4703e960997e81664cc399d14801a249/human-disease-task-group-TOR_2.pdf[task group^] on mobilization and use of biodiversity data for research and policy on human diseases that was active between 2020-2025. Input from other resources were used, such as:
 
-* https://discourse.gbif.org/t/health-data-publishing-gbif-technical-support-hour-for-nodes/4237[Health data publishing[GBIF technical support hour for Nodes^]
+* https://discourse.gbif.org/t/health-data-publishing-gbif-technical-support-hour-for-nodes/4237[Health data publishing (GBIF technical support hour for Nodes)^]
 * TDR/WHO/GBIF/Gigabyte https://gigabytejournal.com/articles/series/GIGABYTE_SERIES_0002[special issue^] and https://doi.org/10.1093/gigascience/giac114[paper^] on data papers describing datasets on vectors of human diseases
