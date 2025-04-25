@@ -9,7 +9,7 @@
 [[dwc]]Darwin Core (DwC) standard:: Exchange standard for sharing and publishing biodiversity data comprising a set of identifiers, labels, and definitions to describe biodiversity data, originating from the https://www.tdwg.org[Biodiversity Information Standards^] (TDWG) community. See the https://dwc.tdwg.org/terms/[_Quick Reference Guide_^] for more information.
 [[endophagy]]endophagy:: Tendency of vectors to blood-feed indoors.
 [[endophily]]endophily:: Tendency of vectors to rest indoors; usually quantified as the proportion of vectors resting indoors; important when assessing indoor residual spraying effectiveness.
-[[entomological surveillance]]entomological surveillance:: The regular, systematic collection, analysis and interpretation of entomological data for risk assessment, planning, implementation, monitoring and evaluation of vector control interventions.
+[[entomological-surveillance]]entomological surveillance:: The regular, systematic collection, analysis and interpretation of entomological data for risk assessment, planning, implementation, monitoring and evaluation of vector control interventions.
 [[event]]event:: In GBIF context, species occurrences in time and space together with details of sampling effort.
 [[exophagy]]exophagy:: Tendency of vectors to blood feed outdoors.
 [[exophily]]exophily:: Tendency of vectors to rest outdoors; usually quantified as the proportion of mosquitoes resting outdoors versus indoors; important when estimating outdoor transmission risks.
