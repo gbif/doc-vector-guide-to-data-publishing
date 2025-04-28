@@ -47,211 +47,212 @@ following terms can be used `dwc:verbatimLatitude`, `dwc:verbatimLongitude`, and
 |===
 |*Term name* |*Examples* |*Description* |*Status*
 
-|`dwc:eventID`
+|term:dwc[dwc:eventID]`
 |E-AL-Tr-1-200518 
 |An identifier for the set of information associated with an event (something that occurs at a place and time). May be a global unique identifier or an identifier specific to the data set.
 |Required
 
-|`eventDate`]
+|term:dwc[dwc:eventDate]
 |2016-10-02
 |It is the date-time when the dwc:Event was recorded. Recommended best practice is to use a date that conforms to ISO 8601-1:2019.
 |Required
 
-|https://dwc.tdwg.org/terms/#dwc:samplingProtocol[[.underline]#samplingProtocol#]
+|term:dwc[dwc:samplingProtocol]
 |Human landing catches
 |Sampling method
 |Required
 
-|https://dwc.tdwg.org/terms/#dwc:sampleSizeValue[[.underline]#samplingSizeValue#]
+|term:dwc[dwc:samplingSizeValue]
 |32
 |Sample size, N, #, No.
 |Required
 
-|https://dwc.tdwg.org/terms/#dwc:sampleSizeUnit[[.underline]#samplingSizeUnit#]
+|term:dwc[dwc:samplingSizeUnit]
 |hour
 |The unit of measurement of the size (time duration, length, area, or volume) of a sample in a sampling dwc:Event.
 |Required
 
-|https://dwc.tdwg.org/terms/#dwc:samplingEffort[[.underline]#samplingEffort#]
+|term:dwc[dwc:samplingEffort]
 |1 Night of Human Landing Catch indoors and outdoors (2 x 16 observer-hours)
 |The amount of effort expended during a dwc:Event.
 |Strongly recommended
 
-|https://dwc.tdwg.org/terms/#dwc:scientificName[[.underline]#scientificName#]
+|term:dwc[dwc:scientificName]
 |Anopheles (Cellia) funestus Giles, 1900
 |The full scientific name, with authorship and date information if known. This term should not contain identification qualifications, which should instead be supplied in the dwc:identificationQualifier term. It also should not contain the scope of a taxon when it has been used to define more than one set of lower-level taxons, such as species complexes, sibling species, i.e. sensu lato, s.l., etc.
 |Required
 
-|https://dwc.tdwg.org/terms/#dwc:higherClassification[[.underline]#higherClassification#]
+|term:dwc[dwc:higherClassification]
 |Animalia `|` Insecta `|` Hemiptera `|` Reduviidae `|` Triatoma 
 |A list (concatenated and separated) of taxa names terminating at the rank immediately superior to the referenced dwc:Taxon. Recommended best practice is to separate the values in a list with space vertical bar space ( `|` ), with terms in order from the highest taxonomic rank to the lowest.
 |Share if available
 
-|https://dwc.tdwg.org/terms/#dwc:parentEventID[[.underline]#parentEventID#]
+|term:dwc[dwc:parentEventID]
 |E-AL-Tr-1
 |An identifier for the broader dwc:Event that groups this and potentially other dwc:Events. Use a globally unique identifier for a dwc:Event or an identifier for a dwc:Event that is specific to the data set.
 |Strongly recommended
 
-|https://dwc.tdwg.org/terms/#dwc:recordedBy[[.underline]#recordedBy#]
+|term:dwc[dwc:recordedBy]
 |Erika Santamaría
 |Harold Fernández |Person/ people that recorded the original occurrence
 |Share if available
 
-|https://dwc.tdwg.org/terms/#dwc:recordedByID[[.underline]#recordedByID#]
+|term:dwc[dwc:recordedByID]
 |https://orcid.org/0000-0002-7232-718X[[.underline]#https://orcid.org/0000-0002-7232-718X#]
 |ORCID iD of person/ people that recorded the original occurrence
 |Share if available
 
-|https://dwc.tdwg.org/terms/#dwc:individualCount[[.underline]#individualCount#]
+|term:dwc[dwc:individualCount]
 |1
 |The number of individuals present at the time of the dwc:Occurrence.
 |Strongly recommended
 
-|https://dwc.tdwg.org/terms/#dwc:organismQuantity[[.underline]#organismQuantity#]
+|term:dwc[dwc:organismQuantity]
 |10
 |A number or enumeration value for the quantity of dwc:Organisms.
 |Share if available
 
-|https://dwc.tdwg.org/terms/#dwc:organismQuantityType[[.underline]#organismQuantityType#]
+|term:dwc[dwc:organismQuantityType]
 |individuals
 |The type of quantification system used for the quantity of dwc:Organisms.
 |Share if available
 
-|https://dwc.tdwg.org/terms/#dwc:sex[[.underline]#sex#]
+|term:dwc[dwc:sex]
 |female
 |The sex of the organism. Recommended best practice is to use a controlled vocabulary: male, female.
 |Share if available
 
-|https://dwc.tdwg.org/terms/#dwc:lifeStage[[.underline]#lifeStage#]
+|term:dwc[dwc:lifeStage]
 |adult
 |The age class or life stage of the dwc:Organism(s) at the time the dwc:Occurrence was recorded. Recommended best practice is to use a controlled vocabulary: egg, larva, nymph, pupa, adult.
 |Share if available
 
-|https://dwc.tdwg.org/terms/#dwc:reproductiveCondition[[.underline]#reproductiveCondition#]
+|term:dwc[dwc:reproductiveCondition]
 |unfed
 |The reproductive condition of the biological individual(s) represented in the occurrence. Comments or notes about the organism. Data on parity (nulliparous, parous females); stages of the gonotrophic cycle (unfed, fully fed, semi-gravid, gravid); fecundity (number of eggs laid per batch.
 |Share if available
 
-|https://dwc.tdwg.org/terms/#dwciri:degreeOfEstablishment[[.underline]#degreeOfEstablishment#]
+|term:dwc[dwc:degreeOfEstablishment]
 |invasive
 |The degree to which a organism survives, reproduces, and expands its range at the given place and time. Recommended best practice is to use controlled value strings from the controlled vocabulary designated for use with this term, listed at http://rs.tdwg.org/dwc/doc/doe/[[.underline]#http://rs.tdwg.org/dwc/doc/doe/.#] For details, refer to https://doi.org/10.3897/biss.3.38084[[.underline]#https://doi.org/10.3897/biss.3.38084#]
 |Share if available
 
-|https://dwc.tdwg.org/terms/#dwc:associatedTaxa[[.underline]#associatedTaxa#]
+|term:dwc[dwc:associatedTaxa]
 |"host":"Homo sapiens"
 |A list of identifiers or names of the record and the associations of this occurrence to each of them. The ResourceRelationship extension can alternatively be used.This term should not be used to establish relationships between records, only between the specific occurrences with other taxon.
 |Share if available
 
-|https://dwc.tdwg.org/terms/#dwc:occurrenceRemarks[[.underline]#occurrenceRemarks#]
+|term:dwc[dwc:occurrenceRemarks]
 |`Abdomen missing` `Female taking in blood meal` `Vouchered: Registered Collection` `found dead` 
 |Comments or notes about the dwc:Occurrence.
 |Share if available
 
-|https://dwc.tdwg.org/terms/#dwc:habitat[[.underline]#habitat#] |`rural environment` `outdoor` `plastic container`
+|term:dwc[dwc:habitat] 
+|`rural environment` `outdoor` `plastic container`
 |A category or description of the habitat in which the dwc:Event occurred. Can include outdoor/indoor collection, urban/rural environments. Recommended practice is to use https://www.ebi.ac.uk/ols4/ontologies/envo?viewMode=list[[.underline]#ENVO environmental ontology#].
 |Strongly recommended
 
-|https://dwc.tdwg.org/terms/#dwc:eventRemarks[[.underline]#eventRemarks#]
-|Rain 
-|TrapStatus:Valid |Comments or notes about the dwc:Event.
+|term:dwc[dwc:eventRemarks]
+|`Rain` , `TrapStatus:Valid`
+|Comments or notes about the dwc:Event.
 |Share if available
 
-|https://dwc.tdwg.org/terms/#dwc:countryCode[[.underline]#countryCode#]
+|term:dwc[dwc:countryCode]
 |TH
 |The standard code for the country in which the dcterms:Location occurs. Recommended best practice is to use an ISO 3166-1-alpha-2 country code.
 |Strongly recommended
 
-|https://dwc.tdwg.org/terms/#dwc:stateProvince[[.underline]#stateProvince#]
+|term:dwc[dwc:stateProvince]
 |Kinshasa
 |The name of the next smaller administrative region than country (state, province, canton, department, region, etc.) in which the dcterms:Location occurs.
 |Share if available
 
-|https://dwc.tdwg.org/terms/#dwc:locality[[.underline]#locality#]
+|term:dwc[dwc:locality]
 |Vallée de la Funa
 |The specific description of the place.
 |Strongly recommended
 
-|https://dwc.tdwg.org/terms/#dwc:locationID[[.underline]#locationID#]
+|term:dwc[dwc:locationID]
 |BG323
 |An identifier for the set of dcterms:Location information. May be a global unique identifier or an identifier specific to the data set.
 |Strongly recommended
 
-|https://dwc.tdwg.org/terms/#dwc:verbatimLocality[[.underline]#verbatimLocality#]
+|term:dwc[dwc:verbatimLocality]
 |Farm located in 265 km of Transnational Road
 |The original textual description of the place.
 |Share if available
 
-|https://dwc.tdwg.org/terms/#dwc:identifiedBy[[.underline]#identifiedBy#]
+|term:dwc[dwc:identifiedBy]
 |Victoire Nsabatien Nsongtsa
 |Person/ people that identified the organism
 |Share if available
 
-|https://dwc.tdwg.org/terms/#dwc:identifiedByID[[.underline]#identifiedByID#]
+|term:dwc[dwc:identifiedByID]
 |https://orcid.org/0000-0002-0750-6106[[.underline]#https://orcid.org/0000-0002-0750-6106#]
 |ORCID iD of person/ people that identified the organism
 |Share if available
 
-|https://dwc.tdwg.org/terms/#dwc:identificationRemarks[[.underline]#IdentificationRemarks#]
+|term:dwc[dwc:IdentificationRemarks]
 |It was identified by the presence of a pair of white longitudinal submedial lyres on the scutum, the clypeus with white scales (females), the separate scales on the mesanepimeron and the tarsomeres of the third leg or hind leg with white basal scales.
 |Comments or notes about the dwc:Identification.
 |Share if available
 
-|https://dwc.tdwg.org/terms/#dwc:identificationReferences[[.underline]#identificationReferences#]
+|term:dwc[dwc:identificationReferences]
 |Gillies M, Meillon D. 1968. The Anophelinae of Africa south of the Sahara. Publication of the South African Institute for Medical Research, Johannesburg, 54, 1–343. Gillies MT. 1987. A supplement to the Anophelinae of Africa south of the Sahara (Afrotropical Region). Publications of the South African Institute for Medical Research, 55, 1–143 
 |A list (concatenated and separated) of references (publication, global unique identifier, URI) used in the dwc:Identification.
 |Share if available
 
-|https://dwc.tdwg.org/terms/#dwc:taxonRank[[.underline]#taxonRank#]
+|term:dwc[dwc:taxonRank]
 |species
 |The taxonomic rank of the most specific name in the dwc:scientificName. Recommended best practice is to use a controlled vocabulary. The taxon ranks of algae, fungi and plants are defined in the International Code of Nomenclature for algae, fungi, and plants (Schenzhen Code Articles H3.2, H4.4 and H.3.1).
 |Share if available
 
-|https://dwc.tdwg.org/terms/#dwc:taxonRemarks[[.underline]#taxonRemarks#]
+|term:dwc[dwc:taxonRemarks]
 |Previously mentioned as _Triatoma lecticularia_
 |Comments or notes about the taxon or name.
 |Share if available
 
-|https://dwc.tdwg.org/terms/#dcterms:bibliographicCitation[[.underline]#bibliographicCitation#]
+|term:dwc[dwc:bibliographicCitation]
 |Diatta, G., Duplantier, JM, Granjon, L., Ba, K., Chauvancy, G., Ndiaye, M., Trape, JF. Borrelia infection in small mammals in West Africa and its relationship with tick occurrence inside burrows. Acta Trop 152 131--140. (2015). DOI/ISSN/ISBN: 10.1016/j.actatropica.2015.08.016
 |A bibliographic reference for the resource.
 |Share if available
 
-|https://dwc.tdwg.org/terms/#dwc:decimalLatitude[[.underline]#decimalLatitude#]
+|term:dwc[dwc:decimalLatitude]
 |9.236691273
 |The geographic latitude (in decimal degrees, using the spatial reference system given in dwc:geodeticDatum) of the geographic center of a dcterms:Location. Positive values are north of the Equator, negative values are south of it. Legal values lie between -90 and 90, inclusive.
 |Strongly recommended
 
-|https://dwc.tdwg.org/terms/#dwc:decimalLongitude[[.underline]#decimalLongitude#]
+|term:dwc[dwc:decimalLongitude]
 |-5.668395403
 |The geographic longitude (in decimal degrees, using the spatial reference system given in dwc:geodeticDatum) of the geographic center of a dcterms:Location. Positive values are east of the Greenwich Meridian, negative values are west of it. Legal values lie between -180 and 180, inclusive.
 |Strongly recommended
 
-|https://dwc.tdwg.org/terms/#dwc:geodeticDatum[[.underline]#geodeticDatum#]
+|term:dwc[dwc:geodeticDatum]
 |WGS84
 |The ellipsoid, geodetic datum, or spatial reference system (SRS) upon which the geographic coordinates given in dwc:decimalLatitude and EPSG code of the SRS, if known. Otherwise use a controlled vocabulary for the name or code of the geodetic datum, if known. If none of these is known, use the value unknown. dwc:decimalLongitude are based. Recommended best practice is to use the
 |Strongly recommended
 
-|https://dwc.tdwg.org/terms/#dwc:coordinateUncertaintyInMeters[[.underline]#coordinateUncertaintyInMeters#]
+|term:dwc[dwc:coordinateUncertaintyInMeters]
 |100
 |The horizontal distance (in meters) from the given dwc:decimalLatitude and dwc:decimalLongitude describing the smallest circle containing the whole of the dcterms:Location. Leave the value empty if the uncertainty is unknown, cannot be estimated, or is not applicable (because there are no coordinates). Zero is not a valid value for this term. 
 |Strongly recommended
 
-|https://dwc.tdwg.org/terms/#dwc:occurrenceStatus[[.underline]#occurrenceStatus#]
+|term:dwc[dwc:occurrenceStatus]
 |present
 |Presence, absence information
 |Strongly recommended
 
-|https://dwc.tdwg.org/terms/#dwc:verbatimIdentification[[.underline]#verbatimIdentification#]
+|term:dwc[dwc:verbatimIdentification]
 |_Anopheles gambiae_ complex
 |A string representing the taxonomic identification as it appeared in the original record.
 |Strongly recommended
 
-|https://dwc.tdwg.org/terms/#dwc:verbatimTaxonRank[[.underline]#verbatimTaxonRank#]
+|term:dwc[dwc:verbatimTaxonRank]
 |s.l. 
 |The taxonomic rank of the most specific name in the dwc:scientificName as it appears in the original record. 
 |Share if available
 
-|https://dwc.tdwg.org/terms/#dwc:dynamicProperties `dynamicProperties`
+|term:dwc[dwc:dynamicProperties]
 |"TemperatureInCelsius":"26.5", "relativeHumidity":"64.2"
 |A list of additional measurements, facts, characteristics, or assertions about the record. Meant to provide a mechanism for structured content. Recommended best practice is to use a key:value encoding schema for a data interchange format such as JSON.
 |Share if available
@@ -264,45 +265,7 @@ which all available data can be published as a single file.
 
 `DwC shortlinks`
 
-We recommend using the following terms presented in table 3:
-https://dwc.tdwg.org/terms/#dwc:eventDate[[.underline]#eventDate#],
-https://dwc.tdwg.org/terms/#dwc:scientificName[[.underline]#scientificName#],
-https://dwc.tdwg.org/terms/#dwc:recordedBy[[.underline]#recordedBy#],
-https://dwc.tdwg.org/terms/#dwc:recordedByID[[.underline]#recordedByID#],
-https://dwc.tdwg.org/terms/#dwc:individualCount[[.underline]#individualCount#],
-https://dwc.tdwg.org/terms/#dwc:organismQuantity[[.underline]#organismQuantity#],
-https://dwc.tdwg.org/terms/#dwc:organismQuantityType[[.underline]#organismQuantityType#],
-https://dwc.tdwg.org/terms/#dwc:sex[[.underline]#sex#],
-https://dwc.tdwg.org/terms/#dwciri:lifeStage[[.underline]#lifeStage#],
-https://dwc.tdwg.org/terms/#dwc:reproductiveCondition[[.underline]#reproductiveCondition#],
-https://dwc.tdwg.org/terms/#dwc:degreeOfEstablishment[[.underline]#degreeOfEstablishment#],
-https://dwc.tdwg.org/terms/#dwciri:occurrenceStatus[[.underline]#occurrenceStatus#],
-https://dwc.tdwg.org/terms/#dwc:associatedTaxa[[.underline]#associatedTaxa#],
-https://dwc.tdwg.org/terms/#dwc:occurrenceRemarks[[.underline]#occurrenceRemarks#],
-https://dwc.tdwg.org/terms/#dwc:eventID[[.underline]#eventID#],
-https://dwc.tdwg.org/terms/#dwciri:habitat[[.underline]#habitat#],
-https://dwc.tdwg.org/terms/#dwc:samplingProtocol[[.underline]#samplingProtocol#],
-https://dwc.tdwg.org/terms/#dwc:sampleSizeValue[[.underline]#samplingSizeValue#],
-https://dwc.tdwg.org/terms/#dwc:sampleSizeUnit[[.underline]#samplingSizeUnit#],
-https://dwc.tdwg.org/terms/#dwc:samplingEffort[[.underline]#samplingEffort#],
-https://dwc.tdwg.org/terms/#dwc:eventRemarks[[.underline]#eventRemarks#],
-https://dwc.tdwg.org/terms/#dwc:countryCode[[.underline]#countryCode#],
-https://dwc.tdwg.org/terms/#dwc:stateProvince[[.underline]#stateProvince#],
-https://dwc.tdwg.org/terms/#dwc:locality[[.underline]#locality#],
-https://dwc.tdwg.org/terms/#dwc:verbatimLocality[[.underline]#verbatimLocality#],
-https://dwc.tdwg.org/terms/#dwc:decimalLatitude[[.underline]#decimalLatitude#],
-https://dwc.tdwg.org/terms/#dwc:decimalLongitude[[.underline]#decimalLongitude#],
-https://dwc.tdwg.org/terms/#dwc:geodeticDatum[[.underline]#geodeticDatum#],
-https://dwc.tdwg.org/terms/#dwc:identifiedBy[[.underline]#identifiedBy#],
-https://dwc.tdwg.org/terms/#dwc:identifiedByID[[.underline]#identifiedByID#],
-https://dwc.tdwg.org/terms/#dwc:identificationReferences[[.underline]#identificationReferences#],
-https://dwc.tdwg.org/terms/#dwc:identificationRemarks[[.underline]#IdentificationRemarks#],
-https://dwc.tdwg.org/terms/#dwc:taxonRank[[.underline]#taxonRank#],
-https://dwc.tdwg.org/terms/#dwc:taxonRemarks[[.underline]#taxonRemarks#],
-https://dwc.tdwg.org/terms/#dwc:verbatimIdentification[[.underline]#verbatimIdentification#],
-https://dwc.tdwg.org/terms/#dwc:verbatimTaxonRank[[.underline]#verbatimTaxonRank#],
-https://dwc.tdwg.org/terms/#dcterms:bibliographicCitation[[.underline]#bibliographicCitation#],
-https://dwc.tdwg.org/terms/#dwc:dynamicProperties[[.underline]#dynamicProperties#].
+We recommend using the following terms presented in table 3: term:dwc[dwc:eventDate], term:dwc[dwc:scientificName], term:dwc[dwc:recordedBy#], hterm:dwc[dwc:recordedByID], term:dwc[dwc:individualCount], term:dwc[dwc:organismQuantity], term:dwc[dwc:organismQuantityType], term:dwc[dwc:sex], term:dwc[dwc:lifeStage#], term:dwc[dwc:reproductiveCondition], term:dwc[dwc:degreeOfEstablishment], term:dwc[dwc:occurrenceStatus], term:dwc[dwc:associatedTaxa], term:dwc[dwc:occurrenceRemarks], term:dwc[dwc:eventID], term:dwc[dwc:habitat], term:dwc[dwc:samplingProtocol], term:dwc[dwc:samplingSizeValue], term:dwc[dwc:samplingSizeUnit], term:dwc[dwc:samplingEffort], term:dwc[dwc:eventRemarks], term:dwc[dwc:countryCode], term:dwc[dwc:stateProvince], term:dwc[dwc:locality], term:dwc[dwc:verbatimLocality], term:dwc[dwc:decimalLatitude], term:dwc[dwc:decimalLongitude], term:dwc[dwc:geodeticDatum], term:dwc[dwc:identifiedBy], term:dwc[dwc:identifiedByID], term:dwc[dwc:identificationReferences], term:dwc[dwc:IdentificationRemarks], term:dwc[dwc:taxonRank], term:dwc[dwc:taxonRemarks], term:dwc[dwc:verbatimIdentification], term:dwc[dwc:verbatimTaxonRank], term:dwc[dwc:bibliographicCitation#], term:dwc[dwc:dynamicProperties].
 
 For detailed explanation and examples for the above terms, please refer to <<table-04,Table 4>> for sampling event.
 
@@ -311,37 +274,37 @@ For detailed explanation and examples for the above terms, please refer to <<tab
 |===
 |*Term name* |*Examples* |*Description* |*Status*
 
-|https://dwc.tdwg.org/terms/#dwc:basisOfRecord[[.underline]#basisOfRecord#]
+|term:dwc[dwc:basisOfRecord]
 |HumanObservation
 |The specific nature of the data record. For field collected organisms use HumanObservation, for specimens deposited in biological collections/museums use PreservedSpecimen. For data abstracted from the literature use MaterialCitation. For DNA-derived occurrences, tissue/blood samples use MaterialSample. And for organisms from laboratory colonies use LivingSpecimen.
 |Required
 
-|https://dwc.tdwg.org/terms/#dwc:occurrenceID[[.underline]#occurrenceID#]
+|term:dwc[dwc:occurrenceID]
 |CEPAVE.edu.ar:Triatominae:14798
 |An identifier for the dwc:Occurrence (as opposed to a particular digital record of the dwc:Occurrence). In the absence of a persistent global unique identifier, construct one from a combination of identifiers in the record that will most closely make the dwc:occurrenceID globally unique.
 |Required
 
-|https://dwc.tdwg.org/terms/#dwc:preparations[[.underline]#preparations#]
+|term:dwc[dwc:preparations]
 |`Placed in RNA Later` `Pinned`
 |A preparation or preservation method for a specimen.
 |Share if available
 
-|https://dwc.tdwg.org/terms/#dwc:associatedSequences[[.underline]#associatedSequences#]
+|term:dwc[dwc:associatedSequences]
 |https://www.ncbi.nlm.nih.gov/nuccore/MK918898[[.underline]#https://www.ncbi.nlm.nih.gov/nuccore/MK918898#]
 |A list (concatenated and separated) of identifiers (publication, global unique identifier, URI) of genetic sequence information associated with the dwc:MaterialEntity.
 |Share if available
 
-|https://dwc.tdwg.org/terms/#dwc:kingdom[[.underline]#kingdom#]
+|term:dwc[dwc:kingdom]
 |Animalia
 |The full scientific name of the kingdom in which the dwc:Taxon is classified.
 |Strongly recommended
 
-|https://dwc.tdwg.org/terms/#dwc:genus[[.underline]#genus#]
+|term:dwc[dwc:genus]
 |Triatoma
 |The full scientific name of the genus in which the dwc:Taxon is classified.
 |Share if available
 
-|https://dwc.tdwg.org/terms/#dwc:specificEpithet[[.underline]#specificEpithet#]
+|term:dwc[dwc:specificEpithet]
 |gerstaeckeri
 |The name of the first or species epithet of the dwc:scientificName.
 |Share if available
