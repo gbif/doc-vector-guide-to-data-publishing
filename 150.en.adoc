@@ -6,7 +6,7 @@ The next step is to prepare the data into files that will be published as Darwin
 
 [#fig-01]
 .A simplified flow for data publishing in GBIF. Steps will be referred to in the text below with a link to the appropriate sections in this guide.
-image::fig-01.png[]
+image::/img/web/fig-01.png[]
 
 ==== Choose a dataset class
 
