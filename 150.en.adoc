@@ -14,14 +14,15 @@ There are four https://www.gbif.org/dataset-classes[dataset classes^] that are s
 
 For more details on data categorization, please check data-categorization[section 2^] of this guide.
 
-
 ==== Data cleaning and mapping the data to the DwC standard
 
-Once a dataset class is selected, the data must be transformed to comply with a https://www.gbif.org/darwin-core[[.underline]#data standard#] that is accepted in GBIF, the most widely used standard in biodiversity is the https://www.tdwg.org/standards/dwc/[[.underline]#Darwin Core Standard#], there are over 180 Darwin Core https://dwc.tdwg.org/terms/[[.underline]#terms#] that are stable and provide vocabularies related to organisms and their related data. Most terms cover the wide range of variables present in vector collection, but some variables, such as environmental, genomic data, among others are best represented by https://rs.gbif.org/extensions.html[[.underline]#extensions#], which are sets of terms corresponding to a specific category of data.
+Once a dataset class is selected, the data must be transformed to comply with a https://www.gbif.org/darwin-core[data standard^] that is accepted in GBIF, the most widely used standard in biodiversity is the https://www.tdwg.org/standards/dwc/[Darwin Core standard^], there are https://dwc.tdwg.org/terms/[more than 180 Darwin Core terms^] that are stable and provide vocabularies related to organisms and their related data. Most terms cover the wide range of variables present in vector collection, but some variables, such as environmental, genomic data, among others are best represented by https://rs.gbif.org/extensions.html[extensions^], which are sets of terms corresponding to a specific category of data.
 
-It is considered best practice to make a copy of the original data file to be transformed into a structured dataset, which is a table with headers in the first row and with no colours, comments, no merged cells or extra formatting, no macros. Unknown, absent and/or missing data must be left as blank cells, *DO NOT USE* N/A or zero, ? or anything else.
+It is considered best practice to make a copy of the original data file to be transformed into a structured dataset, which is a table with headers in the first row and with no colours, comments, no merged cells or extra formatting, no macros. 
 
-Data transformation follows a set of steps necessary to format some terms, i.e. dates must follow ISO 8601 and geographical coordinates must be in decimal degrees, then we map the original column headers in the spreadsheet to Darwin Core terms. It is during this step that data cleaning and data quality checks can be performed, this step can be performed in any spreadsheet software such as Excel, LibreOffice or Modern CSV or with dedicated software such as https://openrefine.org/[[.underline]#OpenRefine#].
+NOTE: Unknown, absent and/or missing data must be left as blank cells. *DO NOT USE* `N/A`, `zero`, `?` or anything other values.
+
+Data transformation follows a set of steps necessary to format some terms, i.e. dates must follow ISO 8601 and geographical coordinates must be in decimal degrees, then we map the original column headers in the spreadsheet to Darwin Core terms. It is during this step that data cleaning and data quality checks can be performed, this step can be performed in any spreadsheet software such as Excel, LibreOffice or Modern CSV or with dedicated software such as https://openrefine.org/[OpenRefine^].
 
 [fig-02]
 .Example of DwC mapping to the original headers in a table. Suggested Darwin Core terms are mapped in the first row, original headers in the second row and examples are given in the following three rows.
@@ -42,33 +43,30 @@ image::img/web/fig-02.png[]
 |===
 
 [fig-03]
-.Mapping species names. In this example, three different publishers refer to species names using different headers (lines 2), when mapping to DwC, species names become the dwc:https://dwc.tdwg.org/terms/#dwc:scientificName[[.underline]#scientificName#] term.
+.Mapping species names. In this example, three different publishers refer to species names using different headers (lines 2). When mapping to DwC, species names become the term:dwc[dwc:scientificName] term.
 image::img/web/fig-03.png[]
 
 For detailed instructions on mapping vector data to the DwC standard please refer to sections <<2.1>>, <<2.2>> and <<2.3>> below.
 
 === 1.4.3. Publishing the dataset in the IPT
 
-A dataset is ready to be uploaded in the https://www.gbif.org/ipt[IPT^], the Integrated GBIF's data publishing tool, when it is structured and formatted to Darwin Core. Please check the https://ipt.gbif.org/manual/en/ipt/latest[IPT user manual^] for more information. In the IPT, the user will upload the file, it is possible to map the terms to DwC if this step was not done previously. Next the user will fill out the metadata (see metadata requirements in link:#metadata[[.underline]#section 1.4.4#]), and it is in this section that the user will be requested to https://ipt.gbif.org/manual/en/ipt/latest/applying-license[[.underline]#select a Creative Commons license#]. There are three types of licenses available for the resources:
+A dataset is ready to be uploaded in the https://www.gbif.org/ipt[IPT^], the Integrated GBIF's data publishing tool, when it is structured and formatted to Darwin Core. Please check the https://ipt.gbif.org/manual/en/ipt/latest[IPT user manual^] for more information. In the IPT, the user will upload the file, it is possible to map the terms to DwC if this step was not done previously. Next the user will fill out the metadata (see metadata requirements in link:#metadata[[.underline]#section 1.4.4#]), and it is in this section that the user will be requested to https://ipt.gbif.org/manual/en/ipt/latest/applying-license[select a Creative Commons licence^]. There are three types of licenses available for the resources:
 
-* https://creativecommons.org/publicdomain/zero/1.0[CC0 1.0^] - data is available for any use without any restrictions
-* https://creativecommons.org/licenses/by/4.0[CC BY 4.0^] - data is available for any use with appropriate attribution
-* https://creativecommons.org/licenses/by-nc/4.0[CC BY-NC 4.0^] - data is available for any non-commercial use with appropriate
-attribution
+* https://creativecommons.org/publicdomain/zero/1.0[CC0 1.0^]: data is available for any use without any restrictions
+* https://creativecommons.org/licenses/by/4.0[CC BY 4.0^]: data is available for any use with appropriate attribution
+* https://creativecommons.org/licenses/by-nc/4.0[CC BY-NC 4.0^]: data is available for any non-commercial use with appropriate attribution
 
 After filling out the metadata information, the user will need to make the dataset public and publish the dataset, and register the dataset in GBIF.
 
 After publication, a Darwin Core Archive (DwC-A) will be generated, this is a zipped archive consisting of one or more files of data, an XML file (`meta.xml`) describing the contents of the text files and how they relate to each other, and an XML file (`eml.xml`) containing the metadata in EML about the dataset.
 
-Once the dataset is published, GBIF provides a few https://www.gbif.org/dataset/f0ccf436-e2e8-4f61-af19-753cdb73ca00/metrics[metrics^]
-on the datasets, https://www.gbif.org/dataset/f0ccf436-e2e8-4f61-af19-753cdb73ca00/activity[user download activity^]
-and literature https://www.gbif.org/resource/search?contentType=literature&gbifDatasetKey=f0ccf436-e2e8-4f61-af19-753cdb73ca00[citations^].
+Once the dataset is published, GBIF provides a few https://www.gbif.org/dataset/f0ccf436-e2e8-4f61-af19-753cdb73ca00/metrics[metrics^] on the datasets, https://www.gbif.org/dataset/f0ccf436-e2e8-4f61-af19-753cdb73ca00/activity[user download activity^] and literature https://www.gbif.org/resource/search?contentType=literature&gbifDatasetKey=f0ccf436-e2e8-4f61-af19-753cdb73ca00[citations^].
 
 === 1.4.4. Metadata
 
 Metadata is "data that provides information about other data", it will contain descriptive information about a resource, helping users to find relevant information and discover resources, it should inform users on how to access the data, understand its fitness-for-use, and it will provide information about the creator(s), permissions, public licensing, and when and how it was created.
 
-Different metadata standards exist and in GBIF, the Ecological Metadata Language (https://eml.ecoinformatics.org/[[.underline]#EML standard#]), is the standard that records information on the resources using XML document types.
+Different metadata standards exist, and in GBIF, the https://eml.ecoinformatics.org/[Ecological Metadata Language standard] (EML), is the standard that records information on the resources using XML document types.
 
 A metadata file will be generated once the required information is entered in the metadata section of the IPT metadata editor and it will be included in the DwC-A file. This is an https://api.gbif.org/v1/dataset/83ab030b-d243-469c-8947-1ed487e06a80/document[example^] of a XML metadata file.
 
