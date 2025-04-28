@@ -84,12 +84,12 @@ following terms can be used `dwc:verbatimLatitude`, `dwc:verbatimLongitude`, and
 
 |term:dwc[dwc:higherClassification]
 |`Animalia`, `Insecta`, `Hemiptera`, `Reduviidae`, `Triatoma` 
-|A list (concatenated and separated) of taxa names terminating at the rank immediately superior to the referenced dwc:Taxon. Recommended best practice is to separate the values in a list with space vertical bar space ` | `  ), with terms in order from the highest taxonomic rank to the lowest.
+|A list (concatenated and separated) of taxa names terminating at the rank immediately superior to the referenced dwc:Taxon. Recommended best practice is to separate the values in a list with space-pipe-space), with terms in order from the highest taxonomic rank to the lowest.
 |Share if available
 
 |term:dwc[dwc:parentEventID]
 |E-AL-Tr-1
-|An identifier for the broader dwc:Event that groups this and potentially other dwc:Events. Use a globally unique identifier for a dwc:Event or an identifier for a dwc:Event that is specific to the data set.
+|An identifier for the broader term:dwc[dwc:event] that groups this and potentially other dwc:Events. Use a globally unique identifier for a term:dwc[dwc:event] or an identifier for a term:dwc[dwc:event] that is specific to the data set.
 |Strongly recommended
 
 |term:dwc[dwc:recordedBy]
