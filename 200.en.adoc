@@ -32,9 +32,9 @@ For the purpose of this guide, we present two ways of data publication in which 
 
 Below is the mapping for a https://docs.google.com/document/d/1O4rE5xdg-H4ouxMyUUj7T4-jiLqVyIW5HE3wgcq9ZNs/edit?pli=1&tab=t.0#heading=h.fc4aiyqo08od[sampling event^] followed by an https://docs.google.com/document/d/1O4rE5xdg-H4ouxMyUUj7T4-jiLqVyIW5HE3wgcq9ZNs/edit?pli=1&tab=t.0#heading=h.p9gh7jv2v6x7[occurrence^] dataset mapping, please note that most terms are very similar for both types of datasets, so consider repeating the same terms from the sampling event mapping as we present only the terms that are applicable to an occurrence dataset in the appropriate section.
 
-=== 2.1. Vector data mapping - single file
+=== Vector data mapping - single file
 
-====  2.1.1. Mapping sampling events
+==== Mapping sampling events
 
 This section provides mapping recommendations for sampling event datasets in which all available data can be published as a single file.
 
@@ -258,7 +258,7 @@ following terms can be used `dwc:verbatimLatitude`, `dwc:verbatimLongitude`, and
 |Share if available
 |===
 
-==== 2.1.2. Mapping occurrences
+==== Mapping occurrences
 
 This section provides mapping recommendations for occurrence datasets in which all available data can be published as a single file.
 
@@ -307,7 +307,7 @@ For detailed explanation and examples for the above terms, please refer to <<tab
 |Share if available
 |===
 
-===  2.2. Vector data mapping using extensions
+=== Vector data mapping using extensions
 
 This section provides mapping recommendations for the use of extensions with either the occurrence core, the sampling event core or the taxon core (checklist).
 
@@ -316,7 +316,7 @@ GBIF has a list of registered https://rs.gbif.org/extensions.html[[.underline]#e
 [[fig-06]]
 .Event Core diagram with suggested use of extensions for vector data. Abiotic measurements collected during the sampling event, with occurrences linked to sampling events using the eventID (full lines). Biotic measurements are linked to occurrences using the occurrenceID term of the ExtendedMeasurementOrFact Extension (dashed lines). Figure adapted from the OBIS Manual.
 
-=== 2.2.1 Extended Measurement or Facts Extension
+==== Extended Measurement or Facts Extension
 
 The https://rs.gbif.org/extension/obis/extended_measurement_or_fact_2023-08-28.xml[[.underline]#eMoF#] supports the publication of generic measurements or facts linking to occurrences. This extension was developed to be used in combination with the Event Core, but is also compatible with other cores.
 
@@ -402,22 +402,18 @@ The identifier should reference the measurementUnit in a vocabulary.
 |Share if available
 
 |http://rs.tdwg.org/dwc/terms/measurementValue[[.underline]#measurementValue#]
-|12 |The value of the measurement, fact, characteristic, or assertion.
-See also
-http://rs.tdwg.org/dwc/terms/index.htm#measurementValue[[.underline]#http://rs.tdwg.org/dwc/terms/index.htm#measurementValue#]
+|`12`
+|The value of the measurement, fact, characteristic, or assertion.
+See alsochttp://rs.tdwg.org/dwc/terms/index.htm#measurementValue[[.underline]#http://rs.tdwg.org/dwc/terms/index.htm#measurementValue#]
 |Share if available
 
 |http://rs.iobis.org/obis/terms/measurementValueID[[.underline]#measurementValueID#]
-|Standard Sherman Live Trap |An identifier for facts stored in the
-column measurementValue (global unique identifier, URI). This identifier
-can reference a controlled vocabulary (e.g. for sampling instrument
-names, methodologies, life stages) or reference a methodology paper with
-a DOI. When the measurementValue refers to a value and not to a fact,
-the measurementvalueID has no meaning and should remain empty. |Share if
-available
+|`Standard Sherman Live Trap`
+|An identifier for facts stored in the column measurementValue (global unique identifier, URI). This identifier can reference a controlled vocabulary (e.g. for sampling instrument names, methodologies, life stages) or reference a methodology paper with a DOI. When the measurementValue refers to a value and not to a fact, the measurementvalueID has no meaning and should remain empty. 
+|Share if available
 |===
 
-=== 2.2.2. Measurement or Facts Extension
+==== Measurement or Facts Extension
 
 The
 https://rs.gbif.org/extension/measurements_or_facts_2024-02-19.xml[[.underline]#MoF#]
@@ -490,114 +486,111 @@ whereas this term allows for any string literal value.
 dwc:MeasurementOrFact.
 |===
 
-=== 2.2.3. Occurrence Extension
+==== Occurrence Extension
 
 This extension will have the same terms as the occurrence core, please
 see table 3 for more details.
 
-=== 2.2.4. Humboldt Extension
+==== Humboldt Extension
 
 The https://rs.gbif.org/extension/eco/Humboldt_2024-04-16.xml[Humboldt Extension] provides support for term:dwc[dwc:Event]s related to ecological inventories. The recommended status for these terms is to share if available.
 
 For guidance on how to include the Humboldt Extension in a sampling event dataset, see the guide https://doi.org/10.35035/doc-7t3p-ve38[Updating an existing DwC Event dataset with the Humboldt Extension^].
 
-Table 7. Recommended terms from the Humboldt Extension (a selection)
-
+[table-07]
+.Selected recommended terms from the Humboldt Extension
 [width="100%",cols="35%,20%,45%",options="header",]
 |===
-|*Term name* |*Examples* |*Description*
+|*Term name* |*Description* |*Examples*
 
 |term:eco[eco:inventoryTypes]
 |The type(s) of search processes used to conduct the inventory.
 |restrictedSearch 
 
 |term:eco[eco:protocolNames]
-|vectorSurveillance
 |Categorical descriptive names for the methods used during the dwc:Event.. Recommended best practice is to use a controlled vocabulary and separate multiple values in a list with space-post-space. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.
+|vectorSurveillance
 
 |term:eco[eco:protocolDescriptions]
-|1 light trap installed in forest and animal shelter each. They operated
-from 6:00pm-6:00am. |Detailed description of methods used during the
-dwc:Event
+|Detailed description of methods used during the term:dwc[dwc:event]
+|`1 light trap installed in forest and animal shelter each. They operated from 6:00pm-6:00am.`
 
 |term:eco[eco:samplingPerformedBy]
-|Instituto de Salud Carlos III - ISCIII |A person, group, or
-organization responsible for recording the dwc:Event.
+|A person, group, or organization responsible for recording the dwc:Event.
+|`Instituto de Salud Carlos III - ISCIII`
 
 |term:eco[eco:isSamplingEffortReported]
-|TRUE |The sampling effort associated with the dwc:Event was reported.
-Typically values of effort would be captured under the terms
-eco:samplingEffortValue and eco:samplingEffortUnit.
+|The sampling effort associated with the term:dwc[dwc:event] was reported. Typically values of effort would be captured under the terms term:eco[eco:samplingEffortValue] and term:eco[eco:samplingEffortUnit].
+|`TRUE`
 
 |term:eco[eco:samplingEffortValue]
-|30 
 |The sampling effort associated with the dwc:Event was reported. Typically values of effort would be captured under the terms term:eco[eco:samplingEffortValue] and term:eco[eco:samplingEffortUnit].
+|`30` 
 
 |term:eco[eco:samplingEffortUnit]
-|trapNight 
 |The units associated with the eco:samplingEffortValue. Recommended best practice is to use a controlled vocabulary. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.
+|`trapNight`
 
 |term:eco[eco:samplingEffortProtocol]
-|12 hours/night
 |A description of or reference (publication or URL) to the methods used to determine the sampling effort. This description should be associated with the values reported in term:eco[eco:samplingEffortValue] and term:eco[eco:samplingEffortUnit]. This is a specialization of term:eco[eco:protocolDescription] focused on effort, distinct from the survey method. The effort relates to the intensity of sampling and therefore can assist in interpreting estimates of completeness. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.
+|`12 hours/night`
 
 |term:eco[eco:totalAreaSampledValue]
-|250 
 |The numeric value for the total area surveyed during the term:dwc[dwc:Event. This area is always less than or equal to the term:eco[eco:geospatialScopeAreaValue]. An term:eco[eco:totalAreaSampledValue] must have a corresponding term:eco[eco:totalAreaSampledUnit].
+|`250`
 
 |term:eco[eco:totalAreaSampledUnit]
-|square metre
 |The units associated with term:eco[eco:totalAreaSampledValue]. Recommended best practice is to use an IRI from a controlled vocabulary of SI units, derived units, or other non-SI units accepted for use within the SI.
+|`square metre`
 
 |term:eco[eco:isAbundanceReported]
-|TRUE
 |The number of term:dwc[dwc:organism] collected or observed was reported. Typically the abundance values would be reported in the term:dwc[dwc:organismQuantity] and term:dwc[dwc:organismQuantityType] terms for the child term:dwc[dwc:occurrence] records for this dwc:Event.
+|`TRUE`
 
 |term:eco[eco:isLeastSpecificTargetCategoryQuantityInclusive]
-|TRUE
 |The total detected quantity for a term:dwc[dwc:taxon] (including subcategories thereof) in a dwc:Event is given explicitly in a single record (term:dwc[dwc:organismQuantity] value) for that term:dwc[dwc:taxon]. Recommended values are 'true' and 'false'. This term is only relevant if term:dwc[dwc:organismQuantity] is a number. For a detailed explanation, see http://rs.tdwg.org/eco/docs/inclusive/.
+|`TRUE`
 
 |term:eco[eco:isAbundanceCapReported]
-|TRUE
 |A maximum number of term:dwc[dwc:organism]s was reported, as specified or restricted by the protocol used. Values of abundance cap should be captured under the term term:eco[eco:abundanceCap].
+|`TRUE`
 
 |term:eco[eco:abundanceCap]
-|85
 |A maximum number of term:dwc[dwc:organism]s was reported, as specified or restricted by the protocol used. Values of abundance cap should be captured under the term |term:eco[eco:abundanceCap].
+|`85`
 
 |term:eco[eco:eventDurationValue]
-|3
 |The numeric value for the duration of the dwc:Event. An |term:eco[eco:eventDurationValue] must have a corresponding term:eco[eco:eventDurationUnit].
+|`3`
 
 |term:eco[eco:eventDurationUnit]
-|`nights`
 |The units associated with the term:eco[eco:eventDurationValue]. Recommended best practice is to use an IRI from a controlled vocabulary of SI units, derived units, or other non-SI units accepted for use within the SI.
+|`nights`
 
 |term:eco[eco:siteNestingDescription]
-|2 sampling sites per habitat
-|Textual description of the hierarchical sampling design. …. Study consists of a series of sampling events at 10 different sites. Each Event site is identified using X coding system.
+|Textual description of the hierarchical sampling design.…Study consists of a series of sampling events at 10 different sites. Each Event site is identified using X coding system.
+|`2 sampling sites per habitat`
 
 |term:eco[eco:verbatimSiteNames]
-|code(s) for specific event
-|all of the location codes or site names included in the study area
+|All location codes or site names included in the study area
+|`code(s) for specific event`
 
 |term:eco[eco:verbatimSiteDescriptions]
-|`Patch of forest`, `Barn where sheep spend nights` 
 |Original textual description of the site(s). Site refers to the location at which observations are made or samples/measurements are taken. The site can be at any level of hierarchy. Recommended best practice is to separate multiple values in a list with space-pipe-space.
+|`Patch of forest`, `Barn where sheep spend nights` 
 
 |term:eco[eco:verbatimTargetScope]
-|Ex. All adult mosquitoes of…? 
 |The verbatim original description of the term:dwc[dwc:event] scope.
+|`Ex. All adult mosquitoes of…?`
 
-|https://eco.tdwg.org/list/#ecoiri_targetTaxonomicScope[[.underline]#targetTaxonomicScope#]
-|Ixodidae |The taxonomic group(s) targeted for sampling during the
-dwc:Event.
+|term:eco[eco:targetTaxonomicScope]
+|The taxonomic group(s) targeted for sampling during the term:dwc[dwc:event].
+|`Ixodidae`
 
-|https://eco.tdwg.org/list/#ecoiri_targetLifeStageScope[[.underline]#targetLifeStageScope#]
+|term:eco[eco:targetLifeStageScope]
 |`Nymph`, `adult` 
 |The age classes or life stages of the term:dwc[dwc:organism]s targeted for sampling during the term:dwc[dwc:event].
 |===
-
 
 [width="100%",cols="35%,20%,45%",options="header",]
 |===
@@ -623,7 +616,7 @@ Are material samples collected and saved? If so, recommended terms to
 include are: eco:hasMaterialSamples, eco:materialSampleTypes
 |===
 
-=== 2.2.5. Resource Relationship
+=== Resource Relationship
 
 The https://rs.gbif.org/extension/resource_relationship_2024-02-19.xml[[.underline]#Resource Relationship#] extension provides support for relationships between resources in a Darwin Core Occurrence, Event, or Taxon Core to resources in an extension or external to the data set. The identifiers for subject (resourceID) and object (relatedResourceID) may exist in the dataset or be accessible via an externally resolvable identifier. The recommended status for these terms is to share if available.
 
@@ -635,75 +628,74 @@ Relationships can be one-way as of between a vector and the pathogens detected b
 |===
 |*Field name* |*Examples* |*Description* |*Usage*
 
-|https://dwc.tdwg.org/list/#dwc_ResourceRelationship[[.underline]#ResourceRelationship#]
+|term:dwc[dwc:ResourceRelationship]
 |an instance of a dwc:Organism is the vector of another instance of a dwc:Organism
-|A relationship of one rdfs:Resource (http://www.w3.org/2000/01/rdf-schema#Resource) to another. Resources can be thought of as identifiable records or instances of classes and may include, but need not be limited to instances of dwc:Occurrence, dwc:Organism, dwc:MaterialEntity, dwc:Event, dcterms:Location, dwc:GeologicalContext, dwc:Identification, or dwc:Taxon.
+|A relationship of one rdfs:Resource (http://www.w3.org/2000/01/rdf-schema#Resource) to another. Resources can be thought of as identifiable records or instances of classes and may include, but need not be limited to instances of term:dwc[dwc:occurrence], term:dwc[dwc:organism], term:dwc[dwc:materialEntity], term:dwc[dwc:event], dcterms:Location, term:dwc[dwc:geologicalContext], term:dwc[dwc:identification], or term:dwc[dwc:taxon].
 |Share if available
 
-|https://dwc.tdwg.org/list/#dwc_resourceRelationshipID[[.underline]#resourceRelationshipID#]
+|term:dwc[dwc:resourceRelationshipID]
 |ICL:UK:831:ICL:UK:1:1075
 |An identifier for an instance of relationship between one resource (the subject) and another (dwc:relatedResource, the object).
 |Share if available
 
-|https://dwc.tdwg.org/list/#dwc_resourceID[[.underline]#resourceID#]
+|term:dwc[dwc:resourceID]
 |ICL:UK:831
 |An identifier for the resource that is the subject of the relationship.
 |Share if available
 
-|https://dwc.tdwg.org/list/#dwc_relationshipOfResourceID[[.underline]#relationshipOfResourceID#]
+|term:dwc[dwc:relationshipOfResourceID]
 |http://purl.obolibrary.org/obo/RO_0002459[http://purl.obolibrary.org/obo/RO_0002459]
 |An identifier for the relationship type (predicate) that connects the subject identified by dwc:resourceID to its object identified by dwc:relatedResourceID. Recommended best practice is to use the identifiers of the terms in a controlled vocabulary, such as the OBO Relation Ontology.
 |Share if available
 
-|https://dwc.tdwg.org/list/#dwc_relatedResourceID[[.underline]#relatedResourceID#]
+|term:dwc[dwc:relatedResourceID]
 |ICL:UK:1:1075
 |An identifier for a related resource (the object, rather than the subject of the relationship).
 |Share if available
 
-|https://dwc.tdwg.org/list/#dwc_relationshipOfResource[[.underline]#relationshipOfResource#]
+|term:dwc[dwc:relationshipOfResource]
 |`is vector for` 
-|The relationship of the subject (identified by dwc:resourceID) to the object (identified by dwc:relatedResourceID). Recommended best practice is to use a controlled vocabulary.
+|The relationship of the subject (identified by term:dwc[dwc:resourceID]) to the object (identified by term:dwc[dwc:relatedResourceID]). Recommended best practice is to use a controlled vocabulary.
 |Share if available
 
-|https://dwc.tdwg.org/list/#dwc_relationshipRemarks[[.underline]#relationshipRemarks#]
-|pathogen 1
+|term:dwc[dwc:relationshipRemarks]
+|`pathogen 1`
 |Comments or notes about the relationship between the two resources.
 |Share if available
 |===
 
+[table-09]
 .Recommended terms from the ResourceRelationship Extension for two way relationship involving ticks and pathogens (a selection)footnote:[Example data were taken from the following published dataset: https://doi.org/10.15468/f3k8r9[https://doi.org/10.15468/f3k8r9]
-
 [width="100%",cols="31%,29%,40%",options="header",]
 |===
 |*Terms name* |*Examples* |*Description*
 
-|https://dwc.tdwg.org/list/#dwc_resourceRelationshipID[[.underline]#resourceRelationshipID#]
+|term:dwc[dwc:resourceRelationshipID]
 |2A
 |An identifier for an instance of relationship between one resource (the subject) and another (dwc:relatedResource, the object).
 
-|https://dwc.tdwg.org/list/#dwc_resourceID[[.underline]#resourceID#] 
+|term:dwc[dwc:resourceID]
 |1A
 |An identifier for the resource that is the subject of the relationship.
 
-|https://dwc.tdwg.org/list/#dwc_relationshipOfResourceID[[.underline]#relationshipOfResourceID#]
+|term:dwc[dwc:relationshipOfResourceID]
 |http://purl.obolibrary.org/obo/RO_0002459[[.underline]#http://purl.obolibrary.org/obo/RO_0002459#]
 |An identifier for the relationship type (predicate) that connects the subject identified by dwc:resourceID to its object identified by dwc:relatedResourceID. Recommended best practice is to use the identifiers of the terms in a controlled vocabulary, such as the OBO Relation Ontology.
 
-|https://dwc.tdwg.org/list/#dwc_relatedResourceID[[.underline]#relatedResourceID#]
-|1A:2A
+|term:dwc[dwc:relatedResourceID]
+|`1A:2A`
 |An identifier for a related resource (the object, rather than the subject of the relationship).
 
-|https://dwc.tdwg.org/list/#dwc_relationshipOfResource[[.underline]#relationshipOfResource#]
+|term:dwc[dwc:relationshipOfResource]
 |`is vector for`, `reservoir host of`, `pathogen of`
-|The relationship of the subject (identified by dwc:resourceID) to the object (identified by dwc:relatedResourceID). Recommended best practice is to use a controlled
-vocabulary.
+|The relationship of the subject (identified by dwc:resourceID) to the object (identified by dwc:relatedResourceID). Recommended best practice is to use a controlled vocabulary.
 
-|https://dwc.tdwg.org/list/#dwc_relationshipRemarks[[.underline]#relationshipRemarks#]
-|pathogen 1
+|term:dwc[dwc:relationshipRemarks`]
+|`pathogen 1`
 |Comments or notes about the relationship between the two resources.
 |===
 
-Below we present some example of how a Resourceralationship table from the https://rs.gbif.org/core/dwc_occurrence_2024-02-23.xml[[.underline]#Occurrence Core#] would look like.
+Below we present some example of how a resourceRelationship table from the https://rs.gbif.org/core/dwc_occurrence_2024-02-23.xml[Occurrence Core] would look like.
 
 image:vertopal_49c5a102d7d74da1a4682b24f0320f8f/media/image6.png[image,width=624,height=70]
 
@@ -718,77 +710,74 @@ image::/img/web/fig-07b.png[][image,width=624,height=70]
 .Example of DwC mapping to the original headers in an ResourceRelationship extension table with a two-way relationship between vertebrate hosts, a tick and the pathogen detected in the vector.
 image::/img/web/fig-08.png[]
 
-=== 2.2.6. Species Profile
+=== Species Profile
 
-The https://rs.gbif.org/extension/gbif/1.0/speciesprofile_2019-01-29.xml[[.underline]#Species Profile#] extension is a basic species profile with characteristics in addition to textural description which are covered by the description extension and can be used in addition to the checklist core.
+The https://rs.gbif.org/extension/gbif/1.0/speciesprofile_2019-01-29.xml[Species Profile^] extension is a basic species profile with characteristics in addition to textural description which are covered by the description extension and can be used in addition to the checklist core.
 
-.Recommended terms from the Species profile Extension (a selection)footnote:[Example data were taken from the following published datasets:
-https://doi.org/10.15468/b52b9z[[.underline]#https://doi.org/10.15468/b52b9z#],
-https://doi.org/10.15468/sxcpfp[[.underline]#https://doi.org/10.15468/sxcpfp#],
-https://doi.org/10.15468/c4cauy[[.underline]#https://doi.org/10.15468/c4cauy#]]
+[table-10]
+.Recommended terms from the Species profile Extension (a selection)footnote:[Example data were taken from the following published datasets: https://doi.org/10.15468/b52b9z[https://doi.org/10.15468/b52b9z^], https://doi.org/10.15468/sxcpfp[https://doi.org/10.15468/sxcpfp^], https://doi.org/10.15468/c4cauy[https://doi.org/10.15468/c4cauy^]
 [width="100%",cols="24%,23%,30%,23%",options="header",]
 |===
 |*Term name* |*Examples* |*Description* |*Status*
 
-|http://rs.gbif.org/terms/1.0/isFreshwater[[.underline]#isFreshwater#]
-|FALSE
-|a Boolean flag indicating whether the taxon occurs in freshwater habitats, i.e. can be found in/above rivers or lakes
+|http://rs.gbif.org/terms/1.0/isFreshwater[isFreshwater^]
+|`FALSE`
+|A Boolean flag indicating whether the taxon occurs in freshwater habitats, i.e. can be found in/above rivers or lakes
 |Share if available
 
-|http://rs.gbif.org/terms/1.0/isTerrestrial[[.underline]#isTerrestrial#]
-|TRUE
-|a Boolean flag indicating the taxon is a terrestrial organism, i.e. occurs on land as opposed to the sea
+|http://rs.gbif.org/terms/1.0/isTerrestrial[isTerrestrial^]
+|`TRUE`
+|A Boolean flag indicating the taxon is a terrestrial organism, i.e. occurs on land as opposed to the sea
 |Share if available
 
-|http://rs.gbif.org/terms/1.0/isInvasive[[.underline]#isInvasive#]
-|FALSE
+|http://rs.gbif.org/terms/1.0/isInvasive[isInvasive^]
+|`FALSE`
 |Flag indicating a species known to be invasive/alien in some are of the world. Detailed native and introduced distribution areas can be published with the distribution extension.
 |Recommended
 
-|http://rs.gbif.org/terms/1.0/isExtinct[[.underline]#isExtinct#]
-|TRUE
+|http://rs.gbif.org/terms/1.0/isExtinct[isExtinct^]
+|`TRUE`
 |Flag indicating an extinct organism. Details about the time period the organism has lived in can be supplied below
 |Share if available
 
-|http://rs.gbif.org/terms/1.0/livingPeriod[[.underline]#livingPeriod#]
-|Miocene
+|http://rs.gbif.org/terms/1.0/livingPeriod[livingPeriod^]
+|`Miocene`
 |The (geological) time a currently extinct organism is known to have lived. For geological times of fossils ideally based on a
-vocabulary like http://en.wikipedia.org/wiki/Geologic_column[[.underline]#http://en.wikipedia.org/wiki/Geologic_column#]
+vocabulary like http://en.wikipedia.org/wiki/Geologic_column[http://en.wikipedia.org/wiki/Geologic_column]
 |Share if available
 
-|http://rs.gbif.org/terms/1.0/ageInDays[[.underline]#ageInDays#]
-|30
+|http://rs.gbif.org/terms/1.0/ageInDays[ageInDays^]
+|`30`
 |Maximum observed age of an organism given as number of days
 |Share if available
 
-|http://rs.gbif.org/terms/1.0/sizeInMillimeters[[.underline]#sizeInMillimeters#]
-|26
+|http://rs.gbif.org/terms/1.0/sizeInMillimeters[sizeInMillimeters^]
+|`26`
 |Maximum observed size of an organism in millimeter. Can be either height, length or width, whichever is greater.
 |Share if available
 
-|https://dwc.tdwg.org/terms/#dwc:sex[[.underline]#sex#]
-|female
+|[dwc:sex]
+|`female`
 |The sex of the organism. Recommended best practice is to use a controlled vocabulary: male, female.
 |Strongly recommended
 
-|https://dwc.tdwg.org/terms/#dwciri:habitat[[.underline]#habitat#]
+|term:dwc[dwc:habitat]
 |`rural environment`, `outdoor`, `chicken coop`
-|A category or description of the habitat in which the dwc:Event occurred. Can include outdoor/indoor collection, urban/rural environments. Recommended practice is to use https://www.ebi.ac.uk/ols4/ontologies/envo?viewMode=list[[.underline]#ENVO environmental ontology#].
+|A category or description of the habitat in which the term:dwc[dwc:event] occurred. Can include outdoor/indoor collection, urban/rural environments. Recommended practice is to use https://www.ebi.ac.uk/ols4/ontologies/envo?viewMode=list[ENVO environmental ontology].
 |Strongly recommended
 
-|http://purl.org/dc/terms/source[[.underline]#source#]
-|"Catálogo Taxonômico da Fauna do Brasil. Published on the Internet
-"http://fauna.jbrj.gov.br/fauna/faunadobrasil/55443[[.underline]#http://fauna.jbrj.gov.br/fauna/faunadobrasil/55443#]" 
+|http://purl.org/dc/terms/source[source^]
+|`Catálogo Taxonômico da Fauna do Brasil. Published on the Internet http://fauna.jbrj.gov.br/fauna/faunadobrasil/55443[http://fauna.jbrj.gov.br/fauna/faunadobrasil/55443^]` 
 |Source reference for this distribution record. Can be proper publication citation, a web page URL, etc.
 |Share if available
 
-|http://rs.tdwg.org/dwc/terms/datasetID[[.underline]#datasetID#]
-|https://doi.org/10.48443/nygx-dm71[[.underline]#https://doi.org/10.48443/nygx-dm71#]
-|An identifier for a subset of data. See also http://rs.tdwg.org/dwc/terms/index.htm#datasetID[[.underline]#http://rs.tdwg.org/dwc/terms/index.htm#datasetID#]
+|terms:dwc[dwc:datasetID]
+|https://doi.org/10.48443/nygx-dm71[https://doi.org/10.48443/nygx-dm71]
+|An identifier for a subset of data. See also http://rs.tdwg.org/dwc/terms/index.htm#datasetID[datasetID]
 |Strongly recommended
 |===
 
-=== 2.2.7. Species Distribution
+=== Species Distribution
 
 The Species Distribution extension is a geographic distribution of a taxon. It can be used with the checklist core.
 
@@ -861,34 +850,16 @@ countries separate values with a comma ","
 |Share if available
 |===
 
-=== 2.3. Specific requirements for publishing vector data
+=== Specific requirements for publishing vector data
 
-==== 2.3.1. How to better describe species complexes/assemblages or sibling species with the DwC standard
+==== How to better describe species complexes/assemblages or sibling species with the DwC standard
 
 Vector data presents some specificities when it comes to taxonomy, as in
-many groups the occurrence of species complexes/assemblages or sibling
-species is well-documented (WHO 2007, Garros et al. 2005, Motoki et al.
-2009, Harbach 2012, Gutierrez et al. 2021, Aguilar-Vega et al. 2021,
-Cotes-Perdomo et al. 2023).
+many groups the occurrence of species complexes/assemblages or sibling species is well-documented (WHO 2007, Garros et al. 2005, Motoki et al. 2009, Harbach 2012, Gutierrez et al. 2021, Aguilar-Vega et al. 2021, Cotes-Perdomo et al. 2023).
 
-The DwC standard can only handle subspecies with
-thehttps://dwc.tdwg.org/terms/#dwc:infraspecificEpithet[[.underline]#infraspecificEpithet#]
-term but there is no appropriate term to accommodate well species
-complexes/assemblages or sibling species.
+The DwC standard can only handle subspecies with the term:dwc[dwc:infraspecificEpithet] term but there is no appropriate term to accommodate well species complexes/assemblages or sibling species.
 
-One way to sort out this specific issue with vector data is to leave
-thehttps://dwc.tdwg.org/terms/#dwc:scientificName[[.underline]#scientificName#]
-at the lowest level of identification possible, in this case, at genus
-level, and then display the species complexes/assemblages or sibling
-species status in
-thehttps://dwc.tdwg.org/terms/#dwc:verbatimIdentification[[.underline]#verbatimIdentification#]
-term, or even include any qualifier (such as ‘s.l’, ‘sp.’, ‘cf.’ or
-‘aff.' in the
-https://dwc.tdwg.org/terms/#dwc:verbatimTaxonRank[[.underline]#verbatimTaxonRank#]
-term to improve the alignment with the taxonomic backbone.
-Identification qualifiers should not be included in the
-https://rs.tdwg.org/dwc/terms/scientificName[[.underline]#scientificName#]
-term.
+One way to sort out this specific issue with vector data is to leave the term:dwc[dwc:scientificName] at the lowest level of identification possible, in this case, at genus level, and then display the species complexes/assemblages or sibling species status in term:dwc[dwc:verbatimIdentification] term, or even include any qualifier (such as `s.l.`, `sp.`, `cf.` or `aff.` in the term:dwc[dwc:verbatimTaxonRank] term to improve the alignment with the taxonomic backbone. Identification qualifiers should not be included in the term:dwc[dwc:scientificName] term.
 
 It is important to remember that when the dataset is uploaded in GBIF,
 the taxon names are matched to
@@ -900,13 +871,9 @@ way, similar species names that are found in different kingdoms, can be
 classified correctly and it prevents the IPT from assigning _incertae
 sedis_ to the names.
 
-==== 2.3.2. How to best describe the native status of vectors
+==== How to best describe the native status of vectors
 
-Understanding how vectors spread and where they come from is an
-important aspect of disease surveillance. The global distribution of
-VBDs is already affected by climate change, land use changes,
-deforestation, global trade, among other factors, causing varying
-degrees of impacts across regions.
+Understanding how vectors spread and where they come from is an important aspect of disease surveillance. The global distribution of VBDs is already affected by climate change, land use changes, deforestation, global trade, among other factors, causing varying degrees of impacts across regions.
 
 There are several examples of how vector species are having their
 distribution reshaped by human activity, such as the spread of _Aedes
@@ -937,47 +904,33 @@ list of controlled vocabulary
 forhttps://dwc.tdwg.org/terms/#dwc:degreeOfEstablishment[[.underline]#degree
 of establishment#].
 
-==== 2.3.3. How to handle data that does not fit any DwC term available
+==== How to handle data that does not fit any DwC term available
 
-The DwC term
-https://dwc.tdwg.org/terms/#dwc:dynamicProperties[[.underline]#dynamicProperties#]
-provides a way to list additional measurements, facts, characteristics,
-or assertions about a record; it calc is a way to provide a mechanism
-for structured content. And recommended best practice is to use a
-key:value encoding schema for a data interchange format such as JSON.
+The DwC term term:dwc[dwc:dynamicProperties] provides a way to list additional measurements, facts, characteristics, or assertions about a record; it calc is a way to provide a mechanism for structured content. And recommended best practice is to use a key:value encoding schema for a data interchange format such as JSON.
 
-Table 12. Examples of how to use
-https://dwc.tdwg.org/terms/#dwc:dynamicProperties[[.underline]#dynamicProperties#]
-with vector data.
-
+[table-12]
+.Examples of how to use term:dwc[dwc:dynamicProperties] with vector data.
 [width="100%",cols="50%,50%",options="header",]
 |===
-|dynamicProperties |Explanation
-|\{"LocationCode":"DEC05"} |for a code for location, such as the NUTS
-Code
+|*dynamicProperties* |*Explanation*
 
-|\{"LocationCode":"DEC05", "Host Bodypart":"midgut"} |for displaying
-location code + host body parts
+|`LocationCode:DEC05`}
+|for a code for location, such as the NUTS Code
 
-|\{"TemperatureInCelsius”:”29.8”, “relativeHumidity”:”64.2”} |for
-environmental data
+|`LocationCode:DEC05`, `Host Bodypart:midgut`
+|for displaying location code + host body parts
+
+|`TemperatureInCelsius:29.8`, `relativeHumidity:64.2`
+|for environmental data
 |===
 
-==== 2.3.4. Controlled vocabulary
+==== Controlled vocabulary
 
-Controlled vocabularies are standardized words and phrases and they
-provide a consistent way to organize knowledge for subsequent retrieval.
-In addition to the links in
-sectionlink:#controlled-vocabulary-ontologies[[.underline]#1.5.3
-Controlled vocabularies & ontologies#], we provide an
-link:#appendix-i[[.underline]#appendix#] with DwC terms, such as
-https://www.gbif.org/data-quality-requirements-sampling-events#dcSamplingProtocol[[.underline]#samplingProtocol#],
-https://dwc.tdwg.org/list/#dwc_lifeStage[[.underline]#lifeStage#],
-https://dwc.tdwg.org/list/#dwc_sex[[.underline]#sex#],
-https://dwc.tdwg.org/list/#dwciri_degreeOfEstablishment[[.underline]#degreeOfEstablishment#],
-https://dwc.tdwg.org/list/#dwciri_habitat[[.underline]#habitat#].
+Controlled vocabularies are standardized words and phrases and they provide a consistent way to organize knowledge for subsequent retrieval. In addition to the links in sectionlink:#controlled-vocabulary-ontologies[[.underline]#1.5.3
+Controlled vocabularies & ontologies#], we provide an link:#appendix-i[[.underline]#appendix#] with DwC terms, such as
+https://www.gbif.org/data-quality-requirements-sampling-events#dcSamplingProtocol[samplingProtocol^], https://dwc.tdwg.org/list/#dwc_lifeStage[lifeStage], https://dwc.tdwg.org/list/#dwc_sex[sex], https://dwc.tdwg.org/list/#dwciri_degreeOfEstablishment[degreeOfEstablishment], https://dwc.tdwg.org/list/#dwciri_habitat[habitat].
 
-==== 2.3.5. How to create identifiers for datasets
+==== How to create identifiers for datasets
 
 An identifier consists of a unique identification code that is assigned
 to an object for unambiguous retrieval. There are three main dwc terms
@@ -1003,319 +956,177 @@ Guide to Persistent Identifiers#] and this interesting
 https://discourse.gbif.org/t/do-you-really-need-uuids-in-your-datasets-a-quick-rant/4396[[.underline]#post#]
 about UUIDs (Universally Unique Identifiers) and opacity.
 
-==== 2.3.6. Recommended additional terms of relevance
+==== Recommended additional terms of relevance
 
 Here we propose additional terms that are useful in vector datasets,
 either by providing more detailed metadata, publication of verbatim
 data, more details on the classification, etc.
 
-Table 13. Recommended additional terms of relevance to vector data (a
-selection)footnote:[Example data were taken from the following published
-datasets:
-https://doi.org/10.15472/dxbowv[[.underline]#https://doi.org/10.15472/dxbowv#],
-https://doi.org/10.15468/excax3[[.underline]#https://doi.org/10.15468/excax3#],
-https://doi.org/10.15468/sxcpfp[[.underline]#https://doi.org/10.15468/sxcpfp#]]
-
+[table-13]
+.Recommended additional terms of relevance to vector data (a selection)footnote:[Example data were taken from the following published datasets: https://doi.org/10.15472/dxbowv[https://doi.org/10.15472/dxbowv^], https://doi.org/10.15468/excax3[https://doi.org/10.15468/excax3^], https://doi.org/10.15468/sxcpfp[https://doi.org/10.15468/sxcpfp^]
 [width="100%",cols="26%,18%,37%,19%",options="header",]
 |===
 |*Term name* |*Examples* |*Description* |*Status*
-|https://dwc.tdwg.org/terms/#dcterms:rightsHolder[[.underline]#rightsHolder#]
-|University of Kinshasa |A person or organization owning or managing
-rights over the resource. |Share if available
 
-|https://dwc.tdwg.org/terms/#dwc:institutionCode[[.underline]#institutionCode#]
-|UNIKIN |The name (or acronym) in use by the institution having custody
-of the object(s) or information referred to in the record. |Share if
-available
+|term:dwc[dwc:rightsHolder]
+|`University of Kinshasa` 
+|A person or organization owning or managing rights over the resource.
+|Share if available
 
-|https://dwc.tdwg.org/terms/#dwc:informationWithheld[[.underline]#informationWithheld#]
-|This dataset is a simplified version of the original one. We have
-removed non-biological information, information that could compromise
-the privacy of citizen scientists and some redundant information.
-|Additional information that exists, but that has not been shared in the
-given record. |Share if available
+|term:dwc[dwc:institutionCode]
+|`UNIKIN` 
+|The name (or acronym) in use by the institution having custody of the object(s) or information referred to in the record.
+|Share if available
 
-|https://dwc.tdwg.org/terms/#dwc:organismRemarks[[.underline]#organismRemarks#]
-|Nulliparous |Comments or notes about the dwc:Organism instance. |Share
-if available
+|term:dwc[dwc:informationWithheld]
+|`This dataset is a simplified version of the original one. We have removed non-biological information, information that could compromise the privacy of citizen scientists and some redundant information.`
+|Additional information that exists, but that has not been shared in the given record.
+|Share if available
 
-|https://dwc.tdwg.org/terms/#dwc:pathway[[.underline]#pathway#]
-|https://dwc.tdwg.org/pw/#dwcpw_p032[[.underline]#container/bulk#] |
-https://dwc.tdwg.org/pw/#dwcpw_p038[[.underline]#ship/boat ballast
-water#] a|
-The process by which a dwc:Organism came to be in a given place at a
-given time.
+|term:dwc[dwc:organismRemarks]
+|`Nulliparous`
+|Comments or notes about the dwc:Organism instance.
+|Share if available
 
-Recommended best practice is to use controlled value strings from the
-controlled vocabulary designated for use with this term, listed at
-http://rs.tdwg.org/dwc/doc/pw/. For details, refer to
-https://doi.org/10.3897/biss.3.38084. This term has an equivalent in the
-dwciri: namespace that allows only an IRI as a value, whereas this term
-allows for any string literal value.
-
+|term:dwc[dwc:pathway]
+|https://dwc.tdwg.org/pw/#dwcpw_p032[`container/bulk`], https://dwc.tdwg.org/pw/#dwcpw_p038[[`ship/boat ballast
+water`]
+|The process by which a dwc:Organism came to be in a given place at a given time.+
+Recommended best practice is to use controlled value strings from the controlled vocabulary designated for use with this term, listed at http://rs.tdwg.org/dwc/doc/pw/. For details, refer to https://doi.org/10.3897/biss.3.38084. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.
 |Share if available
 
 |https://dwc.tdwg.org/terms/#dwc:associatedOccurrences[[.underline]#associatedOccurrences#]
-|"pathogen test of":"2a85f793-09aa-4e49-b5fe-523b2440440f-00006" a|
-The process by which a dwc:Organism came to be in a given place at a
-given time.
-
-Recommended best practice is to use controlled value strings from the
-controlled vocabulary designated for use with this term, listed at
-http://rs.tdwg.org/dwc/doc/pw/. For details, refer to
-https://doi.org/10.3897/biss.3.38084. This term has an equivalent in the
-dwciri: namespace that allows only an IRI as a value, whereas this term
-allows for any string literal value.
-
+|`pathogen test of:2a85f793-09aa-4e49-b5fe-523b2440440f-00006`
+|The process by which a dwc:Organism came to be in a given place at a given time.+
+Recommended best practice is to use controlled value strings from the controlled vocabulary designated for use with this term, listed at http://rs.tdwg.org/dwc/doc/pw/. For details, refer to https://doi.org/10.3897/biss.3.38084. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.
 |Share if available
 
 |https://dwc.tdwg.org/terms/#dwc:associatedSequences[[.underline]#associatedSequences#]
-|http://www.ncbi.nlm.nih.gov/nuccore/U34853.1[[.underline]#http://www.ncbi.nlm.nih.gov/nuccore/U34853.1#]
-|A list (concatenated and separated) of identifiers (publication, global
-unique identifier, URI) of genetic sequence information associated with
-the dwc:MaterialEntity. |Share if available
+|http://www.ncbi.nlm.nih.gov/nuccore/U34853.1[http://www.ncbi.nlm.nih.gov/nuccore/U34853.1^]
+|A list (concatenated and separated) of identifiers (publication, global unique identifier, URI) of genetic sequence information associated with the dwc:MaterialEntity.
+|Share if available
 
-|https://dwc.tdwg.org/terms/#dwc:year[[.underline]#year#] |2020 |The
-four-digit year in which the dwc:Event occurred, according to the Common
-Era Calendar. |Share if available
+|https://dwc.tdwg.org/terms/#dwc:year[[.underline]#year#]
+|`2020`
+|The four-digit year in which the dwc:Event occurred, according to the Common Era Calendar.
+|Share if available
 
-|https://dwc.tdwg.org/terms/#dwc:month[[.underline]#month#] |12 |The
-integer month in which the dwc:Event occurred. |Share if available
+|https://dwc.tdwg.org/terms/#dwc:month[[.underline]#month#] 
+|`12` 
+|The integer month in which the dwc:Event occurred.
+|Share if available
 
-|https://dwc.tdwg.org/terms/#dwc:day[[.underline]#day#] |21 |The integer
-day of the month on which the dwc:Event occurred. |Share if available
+|https://dwc.tdwg.org/terms/#dwc:day[[.underline]#day#]
+|`21`
+|The integer day of the month on which the dwc:Event occurred.
+|Share if available
 
 |https://dwc.tdwg.org/terms/#dwc:verbatimEventDate[[.underline]#verbatimEventDate#]
-|X-1936 |The verbatim original representation of the date and time
-information for a dwc:Event. |Share if available
+|`X-1936`
+|The verbatim original representation of the date and time information for a dwc:Event.
+|Share if available
 
-|https://dwc.tdwg.org/terms/#dwc:county[[.underline]#county#] |Miranda
-a|
-The full, unabbreviated name of the next smaller administrative region
-than stateProvince (county, shire, department, etc.) in which the
-dcterms:Location occurs.
-
-Recommended best practice is to use a controlled vocabulary such as the
-Getty Thesaurus of Geographic Names. Recommended best practice is to
-leave this term blank if the dcterms:Location spans multiple entities at
-this administrative level or if the dcterms:Location might be in one or
-another of multiple possible entities at this level. Multiplicity and
-uncertainty of the geographic entity can be captured either in the term
-dwc:higherGeography or in the term dwc:locality, or both.
-
+|https://dwc.tdwg.org/terms/#dwc:county[[.underline]#county#] 
+|Miranda a
+|The full, unabbreviated name of the next smaller administrative region than stateProvince (county, shire, department, etc.) in which the dcterms:Location occurs.+
+Recommended best practice is to use a controlled vocabulary such as the Getty Thesaurus of Geographic Names. Recommended best practice is to leave this term blank if the dcterms:Location spans multiple entities at this administrative level or if the dcterms:Location might be in one or another of multiple possible entities at this level. Multiplicity and uncertainty of the geographic entity can be captured either in the term dwc:higherGeography or in the term dwc:locality, or both.
 |Share if available
 
 |https://dwc.tdwg.org/terms/#dwc:municipality[[.underline]#municipality#]
-|Divinópolis a|
-The full, unabbreviated name of the next smaller administrative region
-than county (city, municipality, etc.) in which the dcterms:Location
-occurs. Do not use this term for a nearby named place that does not
-contain the actual dcterms:Location.
-
-Recommended best practice is to use a controlled vocabulary such as the
-Getty Thesaurus of Geographic Names. Recommended best practice is to
-leave this term blank if the dcterms:Location spans multiple entities at
-this administrative level or if the dcterms:Location might be in one or
-another of multiple possible entities at this level. Multiplicity and
-uncertainty of the geographic entity can be captured either in the term
-dwc:higherGeography or in the term dwc:locality, or both.
-
+|`Divinópolis a`
+|The full, unabbreviated name of the next smaller administrative region than county (city, municipality, etc.) in which the dcterms:Location occurs. Do not use this term for a nearby named place that does not contain the actual dcterms:Location.+
+Recommended best practice is to use a controlled vocabulary such as the Getty Thesaurus of Geographic Names. Recommended best practice is to leave this term blank if the dcterms:Location spans multiple entities at this administrative level or if the dcterms:Location might be in one or another of multiple possible entities at this level. Multiplicity and uncertainty of the geographic entity can be captured either in the term dwc:higherGeography or in the term dwc:locality, or both.
 |Share if available
 
 |https://dwc.tdwg.org/terms/#dwc:locationRemarks[[.underline]#locationRemarks#]
-|pigeon loft at 50m |Comments or notes about the dcterms:Location.
+|pigeon loft at 50m
+|Comments or notes about the dcterms:Location.
 |Share if available
 
 |https://dwc.tdwg.org/terms/#dwc:verbatimLatitude[[.underline]#verbatimLatitude#]
-|25° 33' 0" S |The verbatim original latitude of the dcterms:Location.
-The coordinate ellipsoid, geodeticDatum, or full Spatial Reference
-System (SRS) for these coordinates should be stored in dwc:verbatimSRS
-and the coordinate system should be stored in
-dwc:verbatimCoordinateSystem. |Share if available
+|25° 33' 0" S
+|The verbatim original latitude of the dcterms:Location. The coordinate ellipsoid, geodeticDatum, or full Spatial Reference System (SRS) for these coordinates should be stored in dwc:verbatimSRS and the coordinate system should be stored in dwc:verbatimCoordinateSystem.
+|Share if available
 
 |https://dwc.tdwg.org/terms/#dwc:verbatimLongitude[[.underline]#verbatimLongitude#]
-|54° 34' 60" W |The verbatim original longitude of the dcterms:Location.
-The coordinate ellipsoid, geodeticDatum, or full Spatial Reference
-System (SRS) for these coordinates should be stored in dwc:verbatimSRS
-and the coordinate system should be stored in
-dwc:verbatimCoordinateSystem. |Share if available
-
-|https://dwc.tdwg.org/terms/#dwc:footprintWKT[[.underline]#footprintWKT#]
-|POLYGON ((10 20, 11 20, 11 21, 10 21, 10 20)) a|
-A Well-Known Text (WKT) representation of the shape (footprint,
-geometry) that defines the dcterms:Location. A dcterms:Location may have
-both a point-radius representation (see dwc:decimalLatitude) and a
-footprint representation, and they may differ from each other.
-
-This term has an equivalent in the dwciri: namespace that allows only an
-IRI as a value, whereas this term allows for any string literal value.
-
+|54° 34' 60" W
+|The verbatim original longitude of the dcterms:Location. The coordinate ellipsoid, geodeticDatum, or full Spatial Reference System (SRS) for these coordinates should be stored in dwc:verbatimSRS and the coordinate system should be stored in dwc:verbatimCoordinateSystem. 
 |Share if available
 
-|https://dwc.tdwg.org/terms/#dwc:phylum[[.underline]#phylum#]
-|Arthropoda |The full scientific name of the phylum or division in which
-the dwc:Taxon is classified. |Strongly recommended
+|term:dwc[dwc:footprintWKT]
+|`POLYGON ((10 20, 11 20, 11 21, 10 21, 10 20)) a`
+|A Well-Known Text (WKT) representation of the shape (footprint, geometry) that defines the dcterms:Location. A dcterms:Location may have both a point-radius representation (see dwc:decimalLatitude) and a footprint representation, and they may differ from each other.+
+This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.
+|Share if available
 
-|http://class/[[.underline]#class#] |Insecta |The full scientific name
-of the class in which the dwc:Taxon is classified. |Share if available
-
-|https://dwc.tdwg.org/terms/#dwc:order[[.underline]#order#] |Diptera
-|The full scientific name of the order in which the dwc:Taxon is
-classified. |Share if available
-
-|https://dwc.tdwg.org/terms/#dwc:family[[.underline]#family#] |Culicidae
-|The full scientific name of the family in which the dwc:Taxon is
-classified. |Share if available
-
-|https://dwc.tdwg.org/terms/#dwc:identificationQualifier[[.underline]#identificationQualifier#]
-|_Sciopemyia_ _aff_. _microps_ a|
-A brief phrase or a standard term ("cf.", "aff.") to express the
-determiner's doubts about the dwc:Identification.
-
-This term has an equivalent in the dwciri: namespace that allows only an
-IRI as a value, whereas this term allows for any string literal value.
-
+|term:dwc[dwc:phylum]
+|`Arthropoda`
+|The full scientific name of the phylum or division in which the term:dwc[dwc:taxon] is classified.
 |Strongly recommended
 
-|https://dwc.tdwg.org/terms/#dwc:identificationVerificationStatus[[.underline]#identificationVerificationStatus#]
-|1 a|
-A categorical indicator of the extent to which the taxonomic
-identification has been verified to be correct.
-
-Recommended best practice is to use a controlled vocabulary such as that
-used in HISPID and ABCD. This term has an equivalent in the dwciri:
-namespace that allows only an IRI as a value, whereas this term allows
-for any string literal value.
-
+|term:dwc[dwc:class]
+|`Insecta`
+|The full scientific name of the class in which the dwc:Taxon is classified.
 |Share if available
 
-|https://dwc.tdwg.org/terms/#dwc:nameAccordingTo[[.underline]#nameAccordingTo#]
-|Harbach, R.E. 2013. Mosquito Taxonomic Inventory,
-https://mosquito-taxonomic-inventory.myspecies.info/ accessed on 25
-april 2023 |The reference to the source in which the specific taxon
-concept circumscription is defined or implied - traditionally signified
-by the Latin "sensu" or "sec." (from secundum, meaning "according to").
-For taxa that result from identifications, a reference to the keys,
-monographs, experts and other sources should be given. This term
-provides context to the dwc:scientificName. Together with the
-dwc:scientificName, separated by sensu or sec., it forms the taxon
-concept label, which may be seen as having the same relationship to
-dwc:taxonConceptID as, for example, dwc:acceptedNameUsage has to
-dwc:acceptedNameUsageID. When not provided, in Taxon Core data sets the
-dwc:nameAccordingTo can be taken to be the data set. In this case the
-data set mostly provides sufficient context to infer the delimitation of
-the taxon and its relationship with other taxa. In Occurrence Core data
-sets, when not provided, dwc:nameAccordingTo can be an underlying
-taxonomy of the data set, e.g. Plants of the World Online
-(http://powo.science.kew.org/) for vascular plant records in iNaturalist
-(in which case it should be provided), or, which is the case for most
-dwc:PreservedSpecimen data sets, the dwc:Identification, in which case
-there is no further context. |Strongly recommended
-
-|https://dwc.tdwg.org/terms/#dwciri:behavior[[.underline]#behavior#]
-|Endophagic | exophylic | zoophylic a|
-A description of the behavior shown by the subject at the time the
-dwc:Occurrence was recorded.
-
-Recommended best practice is to use a controlled vocabulary. Terms in
-the dwciri namespace are intended to be used in RDF with non-literal
-objects.
-
+|term:dwc[dwc:order] 
+|`Diptera`
+|The full scientific name of the order in which the term:dwc[dwc:taxon] is classified.
 |Share if available
 
-|https://dwc.tdwg.org/terms/#dwciri:dataGeneralizations[[.underline]#dataGeneralizations#]
-|Coordinates reflect the location of the study site where the sample was
-collected |Actions taken to make the shared data less specific or
-complete than in its original form. Suggests that alternative data of
-higher quality may be available on request. Terms in the dwciri
-namespace are intended to be used in RDF with non-literal objects.
+|term:dwc[dwc:family]
+|`Culicidae`
+|The full scientific name of the family in which the term:dwc[dwc:taxon] is classified.
+|Share if available
+
+|term:dwc[dwc:identificationQualifier]
+|`_Sciopemyia_ _aff_.`, `_microps_ a`
+|A brief phrase or a standard term ("cf.", "aff.") to express the determiner's doubts about the dwc:Identification.+
+This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.
+|Strongly recommended
+
+|term:dwc[dwcidentificationVerificationStatus]
+|`1 a`
+| A categorical indicator of the extent to which the taxonomic identification has been verified to be correct.+
+Recommended best practice is to use a controlled vocabulary such as that used in HISPID and ABCD. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.
+|Share if available
+
+|term:dwc[dwc:nameAccordingTo]
+|`Harbach, R.E. 2013. Mosquito Taxonomic Inventory, https://mosquito-taxonomic-inventory.myspecies.info/ accessed on 25 april 2023`
+|The reference to the source in which the specific taxon concept circumscription is defined or implied - traditionally signified by the Latin "sensu" or "sec." (from secundum, meaning "according to"). For taxa that result from identifications, a reference to the keys, monographs, experts and other sources should be given. This term provides context to the dwc:scientificName. Together with the dwc:scientificName, separated by sensu or sec., it forms the taxon concept label, which may be seen as having the same relationship to dwc:taxonConceptID as, for example, dwc:acceptedNameUsage has to dwc:acceptedNameUsageID. When not provided, in Taxon Core data sets the dwc:nameAccordingTo can be taken to be the data set. In this case the data set mostly provides sufficient context to infer the delimitation of the taxon and its relationship with other taxa. In Occurrence Core data sets, when not provided, dwc:nameAccordingTo can be an underlying taxonomy of the data set, e.g. Plants of the World Online (http://powo.science.kew.org/) for vascular plant records in iNaturalist (in which case it should be provided), or, which is the case for most dwc:PreservedSpecimen data sets, the dwc:Identification, in which case there is no further context.
+|Strongly recommended
+
+|https://dwc.tdwg.org/terms/#dwciri:behavior[behavior^]
+|`Endophagic`, `exophylic`, `zoophylic a`
+|A description of the behavior shown by the subject at the time the term:dwc[dwc:occurrence] was recorded.+ Recommended best practice is to use a controlled vocabulary. Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.
+|Share if available
+
+|https://dwc.tdwg.org/terms/#dwciri:dataGeneralizations[dataGeneralizations^]
+|Coordinates reflect the location of the study site where the sample was collected
+|Actions taken to make the shared data less specific or complete than in its original form. Suggests that alternative data of higher quality may be available on request. Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.
 |Share if available
 
 |https://dwc.tdwg.org/terms/#dwciri:vitality[[.underline]#vitality#]
-|dead |An indication of whether a dwc:Organism was alive or dead at the
-time of collection or observation. Recommended best practice is to use a
-controlled vocabulary. Intended to be used with records having a
-dwc:basisOfRecord of PreservedSpecimen, MaterialEntity, MaterialSample,
-or HumanObservation. Terms in the dwciri namespace are intended to be
-used in RDF with non-literal objects. |Share if available
+|`dead`
+|An indication of whether a dwc:Organism was alive or dead at the time of collection or observation. Recommended best practice is to use a controlled vocabulary. Intended to be used with records having a term:dwc[dwc:basisOfRecord] of `preservedSpecimen`, `materialEntity`, `materialSample`, or `humanObservation`. Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.
+|Share if available
 |===
 
-==== 2.3.7. How to handle sensitive data 
+==== How to handle sensitive data
 
-There might be cases in which a dataset might contain sensitive
-information (e.g. human subjects, location of people's homes, location
-data on endangered species), or perhaps one's institution has specific
-guidelines or policies regarding personal data or they might not want
-certain details publicly accessible. Types of sensitive data include:
+There might be cases in which a dataset might contain sensitive information (e.g. human subjects, location of people's homes, location data on endangered species), or perhaps one's institution has specific guidelines or policies regarding personal data or they might not want certain details publicly accessible. Types of sensitive data include:
 
-* {blank}
-+
-____
-Personal data such as ethnic origin, genetic or biometric data,
-health/personal data relating to a natural person’s routine and habits,
-socio-economic background data etc.
-____
-* {blank}
-+
-____
-Location of people's homes where entomological traps are placed
-____
-* {blank}
-+
-____
-Location data on endangered or protected species
++ Personal data such as ethnic origin, genetic or biometric data, health/personal data relating to a natural person’s routine and habits, socio-economic background data etc.
++ Location of people's homes where entomological traps are placed
++ Location data on endangered or protected species
 ____
 
-To better address these sensitive data but still be able to contribute
-with data in GBIF it is possible to use some strategies to blur location
-data:
+To better address these sensitive data but still be able to contribute with data in GBIF it is possible to use some strategies to blur location data:
 
-* {blank}
-+
-____
-Generalizing location information by obtaining wider, regional
-coordinates using
-http://www.getty.edu/research/tools/vocabularies/tgn/[[.underline]#Getty
-Thesaurus of Geographic Names#] or
-http://maps.google.com/[[.underline]#Google Maps#]
-____
-* {blank}
-+
-____
-Chapman AD (2020) Current Best Practices for Generalizing Sensitive
-Species Occurrence Data. Copenhagen: GBIF Secretariat.
-https://doi.org/10.15468/doc-5jp4-5g10[[.underline]#https://doi.org/10.15468/doc-5jp4-5g10#].
-____
-* {blank}
-+
-____
-Astorga F, Rodrigues A & Waller J (2024) Sensitive species data
-generalization: Exploring risks, benefits and best practices.
-Copenhagen: GBIF Secretariat.
-https://doi.org/10.35035/doc-yr9g-nx02[[.underline]#https://doi.org/10.35035/doc-yr9g-nx02#]
-____
-* {blank}
-+
-____
-https://arthur-e.github.io/Wicket/sandbox-gmaps3.html[[.underline]#Wicket#]
-is a Javascript library that reads and writes
-http://en.wikipedia.org/wiki/Well-known_text#Geometric_objects[[.underline]#Well-Known
-Text (WKT)#] strings and generates a polygon area (WKT) representation
-of the geometry to go into the footprintWKT term.
-____
-* {blank}
-+
-____
-https://www.simplemappr.net/[[.underline]#SimpleMappr#], a free tool to
-create point maps but also provides polygons’ coordinates (Shorthouse,
-2010).
-____
++ Generalizing location information by obtaining wider, regional coordinates using http://www.getty.edu/research/tools/vocabularies/tgn/*Getty Thesaurus of Geographic Names*^] or http://maps.google.com/Google Maps^]
++ Chapman AD (2020) Current Best Practices for Generalizing Sensitive Species Occurrence Data. Copenhagen: GBIF Secretariat. https://doi.org/10.15468/doc-5jp4-5g10[https://doi.org/10.15468/doc-5jp4-5g10^].
++ Astorga F, Rodrigues A & Waller J (2024) Sensitive species data generalization: Exploring risks, benefits and best practices. Copenhagen: GBIF Secretariat. https://doi.org/10.35035/doc-yr9g-nx02[https://doi.org/10.35035/doc-yr9g-nx02^]
++ https://arthur-e.github.io/Wicket/sandbox-gmaps3.html[Wicket^] is a Javascript library that reads and writes http://en.wikipedia.org/wiki/Well-known_text#Geometric_objects[well-known text^](WKT) strings and generates a polygon area (WKT) representation of the geometry to go into the footprintWKT term.
++ https://www.simplemappr.net/[SimpleMappr^], a free tool to create point maps but also provides polygons’ coordinates (Shorthouse 2010).
 
-With regards to health-related data, WHO has specific
-principles[multiblock footnote omitted] and
-https://cdn.who.int/media/docs/default-source/world-health-data-platform/who_personal_data_protection_policy.pdf?sfvrsn=f7089a28_3[[.underline]#policies#]
-on how to handle health-related data, including
-https://www.who.int/news/item/16-09-2022-new-who-policy-requires-sharing-of-all-research-data[[.underline]#WHO’s
-policy on sharing and reuse of research data#] which includes
-instructions on how to handle sensitive data with anonymization and
-de-identification information.
+With regards to health-related data, WHO has specific [principles^] `three footnoted links` and https://cdn.who.int/media/docs/default-source/world-health-data-platform/who_personal_data_protection_policy.pdf?sfvrsn=f7089a28_3[policies^] on how to handle health-related data, including https://www.who.int/news/item/16-09-2022-new-who-policy-requires-sharing-of-all-research-data[WHO’s policy on sharing and reuse of research data^] which includes instructions on how to handle sensitive data with anonymization and de-identification information.
