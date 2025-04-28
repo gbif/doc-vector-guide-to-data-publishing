@@ -4,8 +4,9 @@ Anyone interested in publishing a dataset in GBIF can do so by registering an or
 
 The next step is to prepare the data into files that will be published as Darwin Core Archives (see https://www.gbif.org/standards[data standards^]), prior to publication is important to perform a data cleaning step and prepare the metadata, once the data is uploaded in an IPT, the data holder must select one of the three licences used by GBIF and then, the dataset can be published and registered as a resource in GBIF. Figure 1 summarizes the basic steps to data publication in GBIF.
 
-[[fig-01]]
+[fig-01]
 .A simplified flow for data publishing in GBIF. Steps will be referred to in the text below with a link to the appropriate sections in this guide.
+image::img/web/fig-01.png
 
 ==== Choose a dataset class
 
@@ -22,8 +23,9 @@ It is considered best practice to make a copy of the original data file to be tr
 
 Data transformation follows a set of steps necessary to format some terms, i.e. dates must follow ISO 8601 and geographical coordinates must be in decimal degrees, then we map the original column headers in the spreadsheet to Darwin Core terms. It is during this step that data cleaning and data quality checks can be performed, this step can be performed in any spreadsheet software such as Excel, LibreOffice or Modern CSV or with dedicated software such as https://openrefine.org/[[.underline]#OpenRefine#].
 
-[[fig-02]]
+[fig-02]
 .Example of DwC mapping to the original headers in a table. Suggested Darwin Core terms are mapped in the first row, original headers in the second row and examples are given in the following three rows.
+image::img/web/fig-02.png
 
 [[table-01]]
 .Date formatting under the ISO 8601 standard. Left column, original data in different formats; middle column, dates formatted using the ISO 8601 standard.
@@ -39,8 +41,9 @@ Data transformation follows a set of steps necessary to format some terms, i.e. 
 |11/2009 to 12/2009 |2009-11/2009-12 |YYYY-MM/YYYY-MM
 |===
 
-[[fig-03]]
+[fig-03]
 .Mapping species names. In this example, three different publishers refer to species names using different headers (lines 2), when mapping to DwC, species names become the dwc:https://dwc.tdwg.org/terms/#dwc:scientificName[[.underline]#scientificName#] term.
+image::img/web/fig-03.png
 
 For detailed instructions on mapping vector data to the DwC standard please refer to sections <<2.1>>, <<2.2>> and <<2.3>> below.
 
