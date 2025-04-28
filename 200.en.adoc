@@ -83,8 +83,8 @@ following terms can be used `dwc:verbatimLatitude`, `dwc:verbatimLongitude`, and
 |Required
 
 |term:dwc[dwc:higherClassification]
-|Animalia `|` Insecta `|` Hemiptera `|` Reduviidae `|` Triatoma 
-|A list (concatenated and separated) of taxa names terminating at the rank immediately superior to the referenced dwc:Taxon. Recommended best practice is to separate the values in a list with space vertical bar space ( `|` ), with terms in order from the highest taxonomic rank to the lowest.
+|`Animalia`, `Insecta`, `Hemiptera`, `Reduviidae`, `Triatoma` 
+|A list (concatenated and separated) of taxa names terminating at the rank immediately superior to the referenced dwc:Taxon. Recommended best practice is to separate the values in a list with space vertical bar space ` | `  ), with terms in order from the highest taxonomic rank to the lowest.
 |Share if available
 
 |term:dwc[dwc:parentEventID]
@@ -93,28 +93,28 @@ following terms can be used `dwc:verbatimLatitude`, `dwc:verbatimLongitude`, and
 |Strongly recommended
 
 |term:dwc[dwc:recordedBy]
-|Erika Santamaría
-|Harold Fernández |Person/ people that recorded the original occurrence
+|`Erika Santamaría`, `Harold Fernández` 
+|Person/ people that recorded the original occurrence
 |Share if available
 
 |term:dwc[dwc:recordedByID]
-|https://orcid.org/0000-0002-7232-718X[[.underline]#https://orcid.org/0000-0002-7232-718X#]
+|https://orcid.org/0000-0002-7232-718X[https://orcid.org/0000-0002-7232-718X#]
 |ORCID iD of person/ people that recorded the original occurrence
 |Share if available
 
 |term:dwc[dwc:individualCount]
 |1
-|The number of individuals present at the time of the dwc:Occurrence.
+|The number of individuals present at the time of the term:dwc[dwc:occurrence].
 |Strongly recommended
 
 |term:dwc[dwc:organismQuantity]
 |10
-|A number or enumeration value for the quantity of dwc:Organisms.
+|A number or enumeration value for the quantity of term:dwc[dwc:organism].
 |Share if available
 
 |term:dwc[dwc:organismQuantityType]
 |individuals
-|The type of quantification system used for the quantity of dwc:Organisms.
+|The type of quantification system used for the quantity of term:dwc[dwc:organism].
 |Share if available
 
 |term:dwc[dwc:sex]
@@ -134,27 +134,27 @@ following terms can be used `dwc:verbatimLatitude`, `dwc:verbatimLongitude`, and
 
 |term:dwc[dwc:degreeOfEstablishment]
 |invasive
-|The degree to which a organism survives, reproduces, and expands its range at the given place and time. Recommended best practice is to use controlled value strings from the controlled vocabulary designated for use with this term, listed at http://rs.tdwg.org/dwc/doc/doe/[[.underline]#http://rs.tdwg.org/dwc/doc/doe/.#] For details, refer to https://doi.org/10.3897/biss.3.38084[[.underline]#https://doi.org/10.3897/biss.3.38084#]
+|The degree to which a organism survives, reproduces, and expands its range at the given place and time. Recommended best practice is to use controlled value strings from the controlled vocabulary designated for use with this term, listed at http://rs.tdwg.org/dwc/doc/doe/[http://rs.tdwg.org/dwc/doc/doe/] For details, refer to https://doi.org/10.3897/biss.3.38084[https://doi.org/10.3897/biss.3.38084^]
 |Share if available
 
 |term:dwc[dwc:associatedTaxa]
-|"host":"Homo sapiens"
+|`host:Homo sapiens`
 |A list of identifiers or names of the record and the associations of this occurrence to each of them. The ResourceRelationship extension can alternatively be used.This term should not be used to establish relationships between records, only between the specific occurrences with other taxon.
 |Share if available
 
 |term:dwc[dwc:occurrenceRemarks]
 |`Abdomen missing` `Female taking in blood meal` `Vouchered: Registered Collection` `found dead` 
-|Comments or notes about the dwc:Occurrence.
+|Comments or notes about the term:dwc[dwc:occurrence].
 |Share if available
 
 |term:dwc[dwc:habitat] 
 |`rural environment` `outdoor` `plastic container`
-|A category or description of the habitat in which the dwc:Event occurred. Can include outdoor/indoor collection, urban/rural environments. Recommended practice is to use https://www.ebi.ac.uk/ols4/ontologies/envo?viewMode=list[[.underline]#ENVO environmental ontology#].
+|A category or description of the habitat in which the dwc:Event occurred. Can include outdoor/indoor collection, urban/rural environments. Recommended practice is to use https://www.ebi.ac.uk/ols4/ontologies/envo?viewMode=list[ENVO environmental ontology].
 |Strongly recommended
 
 |term:dwc[dwc:eventRemarks]
 |`Rain` , `TrapStatus:Valid`
-|Comments or notes about the dwc:Event.
+|Comments or notes about the term:dwc[dwc:event].
 |Share if available
 
 |term:dwc[dwc:countryCode]
@@ -219,7 +219,7 @@ following terms can be used `dwc:verbatimLatitude`, `dwc:verbatimLongitude`, and
 
 |term:dwc[dwc:decimalLatitude]
 |9.236691273
-|The geographic latitude (in decimal degrees, using the spatial reference system given in dwc:geodeticDatum) of the geographic center of a dcterms:Location. Positive values are north of the Equator, negative values are south of it. Legal values lie between -90 and 90, inclusive.
+|The geographic latitude (in decimal degrees, using the spatial reference system given in term:dwc[dwc:geodeticDatum]) of the geographic center of a dcterms:Location. Positive values are north of the Equator, negative values are south of it. Legal values lie between -90 and 90, inclusive.
 |Strongly recommended
 
 |term:dwc[dwc:decimalLongitude]
@@ -229,12 +229,12 @@ following terms can be used `dwc:verbatimLatitude`, `dwc:verbatimLongitude`, and
 
 |term:dwc[dwc:geodeticDatum]
 |WGS84
-|The ellipsoid, geodetic datum, or spatial reference system (SRS) upon which the geographic coordinates given in dwc:decimalLatitude and EPSG code of the SRS, if known. Otherwise use a controlled vocabulary for the name or code of the geodetic datum, if known. If none of these is known, use the value unknown. dwc:decimalLongitude are based. Recommended best practice is to use the
+|The ellipsoid, geodetic datum, or spatial reference system (SRS) upon which the geographic coordinates given in term:dwc[dwc:decimalLatitude] and EPSG code of the SRS, if known. Otherwise use a controlled vocabulary for the name or code of the geodetic datum, if known. If none of these is known, use the value unknown. dwc:decimalLongitude are based. Recommended best practice is to use the
 |Strongly recommended
 
 |term:dwc[dwc:coordinateUncertaintyInMeters]
 |100
-|The horizontal distance (in meters) from the given dwc:decimalLatitude and dwc:decimalLongitude describing the smallest circle containing the whole of the dcterms:Location. Leave the value empty if the uncertainty is unknown, cannot be estimated, or is not applicable (because there are no coordinates). Zero is not a valid value for this term. 
+|The horizontal distance (in meters) from the given term:dwc[dwc:decimalLatitude] and term:dwc[dwc:decimalLongitude] describing the smallest circle containing the whole of the dcterms:Location. Leave the value empty if the uncertainty is unknown, cannot be estimated, or is not applicable (because there are no coordinates). Zero is not a valid value for this term. 
 |Strongly recommended
 
 |term:dwc[dwc:occurrenceStatus]
@@ -249,7 +249,7 @@ following terms can be used `dwc:verbatimLatitude`, `dwc:verbatimLongitude`, and
 
 |term:dwc[dwc:verbatimTaxonRank]
 |s.l. 
-|The taxonomic rank of the most specific name in the dwc:scientificName as it appears in the original record. 
+|The taxonomic rank of the most specific name in the term:dwc[dwc:scientificName] as it appears in the original record. 
 |Share if available
 
 |term:dwc[dwc:dynamicProperties]
@@ -260,12 +260,9 @@ following terms can be used `dwc:verbatimLatitude`, `dwc:verbatimLongitude`, and
 
 ==== 2.1.2. Mapping occurrences
 
-This section provides mapping recommendations for occurrence datasets in
-which all available data can be published as a single file.
+This section provides mapping recommendations for occurrence datasets in which all available data can be published as a single file.
 
-`DwC shortlinks`
-
-We recommend using the following terms presented in table 3: term:dwc[dwc:eventDate], term:dwc[dwc:scientificName], term:dwc[dwc:recordedBy#], hterm:dwc[dwc:recordedByID], term:dwc[dwc:individualCount], term:dwc[dwc:organismQuantity], term:dwc[dwc:organismQuantityType], term:dwc[dwc:sex], term:dwc[dwc:lifeStage#], term:dwc[dwc:reproductiveCondition], term:dwc[dwc:degreeOfEstablishment], term:dwc[dwc:occurrenceStatus], term:dwc[dwc:associatedTaxa], term:dwc[dwc:occurrenceRemarks], term:dwc[dwc:eventID], term:dwc[dwc:habitat], term:dwc[dwc:samplingProtocol], term:dwc[dwc:samplingSizeValue], term:dwc[dwc:samplingSizeUnit], term:dwc[dwc:samplingEffort], term:dwc[dwc:eventRemarks], term:dwc[dwc:countryCode], term:dwc[dwc:stateProvince], term:dwc[dwc:locality], term:dwc[dwc:verbatimLocality], term:dwc[dwc:decimalLatitude], term:dwc[dwc:decimalLongitude], term:dwc[dwc:geodeticDatum], term:dwc[dwc:identifiedBy], term:dwc[dwc:identifiedByID], term:dwc[dwc:identificationReferences], term:dwc[dwc:IdentificationRemarks], term:dwc[dwc:taxonRank], term:dwc[dwc:taxonRemarks], term:dwc[dwc:verbatimIdentification], term:dwc[dwc:verbatimTaxonRank], term:dwc[dwc:bibliographicCitation#], term:dwc[dwc:dynamicProperties].
+We recommend using the following terms presented in table 3: term:dwc[dwc:eventDate], term:dwc[dwc:scientificName], term:dwc[dwc:recordedBy#], hterm:dwc[dwc:recordedByID], term:dwc[dwc:individualCount], term:dwc[dwc:organismQuantity], term:dwc[dwc:organismQuantityType], term:dwc[dwc:sex], term:dwc[dwc:lifeStage#], term:dwc[dwc:reproductiveCondition], term:dwc[dwc:degreeOfEstablishment], term:dwc[dwc:occurrenceStatus], term:dwc[dwc:associatedTaxa], term:dwc[dwc:occurrenceRemarks], term:dwc[dwc:eventID], term:dwc[dwc:habitat], term:dwc[dwc:samplingProtocol], term:dwc[dwc:samplingSizeValue], term:dwc[dwc:samplingSizeUnit], term:dwc[dwc:samplingEffort], term:dwc[dwc:eventRemarks], term:dwc[dwc:countryCode], term:dwc[dwc:stateProvince], term:dwc[dwc:locality], term:dwc[dwc:verbatimLocality], term:dwc[dwc:decimalLatitude], term:dwc[dwc:decimalLongitude], term:dwc[dwc:geodeticDatum], term:dwc[dwc:identifiedBy], term:dwc[dwc:identifiedByID], term:dwc[dwc:identificationReferences], term:dwc[dwc:IdentificationRemarks], term:dwc[dwc:taxonRank], term:dwc[dwc:taxonRemarks], term:dwc[dwc:verbatimIdentification], term:dwc[dwc:verbatimTaxonRank], term:dwc[dwc:bibliographicCitation], term:dwc[dwc:dynamicProperties].
 
 For detailed explanation and examples for the above terms, please refer to <<table-04,Table 4>> for sampling event.
 
