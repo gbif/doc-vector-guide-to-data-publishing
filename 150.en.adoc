@@ -25,7 +25,7 @@ Data transformation follows a set of steps necessary to format some terms, i.e. 
 
 [fig-02]
 .Example of DwC mapping to the original headers in a table. Suggested Darwin Core terms are mapped in the first row, original headers in the second row and examples are given in the following three rows.
-image::img/web/fig-02.png
+image::img/web/fig-02.png[]
 
 [[table-01]]
 .Date formatting under the ISO 8601 standard. Left column, original data in different formats; middle column, dates formatted using the ISO 8601 standard.
@@ -43,7 +43,7 @@ image::img/web/fig-02.png
 
 [fig-03]
 .Mapping species names. In this example, three different publishers refer to species names using different headers (lines 2), when mapping to DwC, species names become the dwc:https://dwc.tdwg.org/terms/#dwc:scientificName[[.underline]#scientificName#] term.
-image::img/web/fig-03.png
+image::img/web/fig-03.png[]
 
 For detailed instructions on mapping vector data to the DwC standard please refer to sections <<2.1>>, <<2.2>> and <<2.3>> below.
 
