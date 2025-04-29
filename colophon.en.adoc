@@ -24,3 +24,7 @@ https://doi.org/10.35035/doc-718a-j795
 === Document control
 
 Community review edition, v0.1, May 2025
+
+=== Image credit
+
+Blood-fed sandfly (_Lutzomyia longipalpis_). Photo 2009 Ray Wilson, Liverpool School of Tropical Medicine via https://commons.wikimedia.org/wiki/File:Lutzomyia_longipalpis-sandfly.jpg[Wikimedia^], licensed under https://creativecommons.org/licenses/by/2.5/deed.en[CC BY 2.5^].
