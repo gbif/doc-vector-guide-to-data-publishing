@@ -4,7 +4,7 @@ Anyone interested in publishing a dataset in GBIF can do so by registering an or
 
 The next step is to prepare the data into files that will be published as Darwin Core Archives (see https://www.gbif.org/standards[data standards^]), prior to publication is important to perform a data cleaning step and prepare the metadata, once the data is uploaded in an IPT, the data holder must select one of the three licences used by GBIF and then, the dataset can be published and registered as a resource in GBIF. <<fig-01,Figure 1>> summarizes the basic steps to data publication in GBIF.
 
-[[#fig-01]]
+[#fig-01]
 .A simplified flow for data publishing in GBIF. Steps will be referred to in the text below with a link to the appropriate sections in this guide.
 image::/img/web/fig-01.png[]
 
