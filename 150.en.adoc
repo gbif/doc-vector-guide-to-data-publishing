@@ -2,7 +2,7 @@
 
 Anyone interested in publishing a dataset in GBIF can do so by registering an organization - GBIF only publishes datasets from individuals affiliated to an organization. Please check the page on how to https://www.gbif.org/become-a-publisher[become a publisher^] and the https://www.gbif.org/publishing-data[quick guide to publishing data through GBIF^].
 
-The next step is to prepare the data into files that will be published as Darwin Core Archives (see https://www.gbif.org/standards[data standards^]), prior to publication is important to perform a data cleaning step and prepare the metadata, once the data is uploaded in an IPT, the data holder must select one of the three licences used by GBIF and then, the dataset can be published and registered as a resource in GBIF. Figure 1 summarizes the basic steps to data publication in GBIF.
+The next step is to prepare the data into files that will be published as Darwin Core Archives (see https://www.gbif.org/standards[data standards^]), prior to publication is important to perform a data cleaning step and prepare the metadata, once the data is uploaded in an IPT, the data holder must select one of the three licences used by GBIF and then, the dataset can be published and registered as a resource in GBIF. <<fig-01,Figure 1>> summarizes the basic steps to data publication in GBIF.
 
 [#fig-01]
 .A simplified flow for data publishing in GBIF. Steps will be referred to in the text below with a link to the appropriate sections in this guide.
@@ -10,7 +10,14 @@ image::/img/web/fig-01.png[]
 
 ==== Choose a dataset class
 
-There are four https://www.gbif.org/dataset-classes[dataset classes^] that are supported for publication in GBIF: metadata-only datasets, checklist, occurrence, and sampling-event datasets. For more information, please check https://data-blog.gbif.org/post/choose-dataset-type[how to choose a dataset class on GBIF^]
+There are four https://www.gbif.org/dataset-classes[dataset classes^] that are supported for publication in GBIF:
+
+.Metadata-only
+.Checklist
+.Occurrence
+.Sampling-event datasets.
+
+For more information, please check https://data-blog.gbif.org/post/choose-dataset-type[how to choose a dataset class on GBIF^].
 
 For more details on data categorization, please check data-categorization[section 2^] of this guide.
 
@@ -42,6 +49,7 @@ image::img/web/fig-02.png[]
 |11/2009 to 12/2009 |2009-11/2009-12 |YYYY-MM/YYYY-MM
 |===
 
+
 [fig-03]
 .Mapping species names. In this example, three different publishers refer to species names using different headers (lines 2). When mapping to DwC, species names become the term:dwc[dwc:scientificName] term.
 image::img/web/fig-03.png[]
@@ -50,32 +58,141 @@ For detailed instructions on mapping vector data to the DwC standard please refe
 
 === 1.4.3. Publishing the dataset in the IPT
 
-A dataset is ready to be uploaded in the https://www.gbif.org/ipt[IPT^], the Integrated GBIF's data publishing tool, when it is structured and formatted to Darwin Core. Please check the https://ipt.gbif.org/manual/en/ipt/latest[IPT user manual^] for more information. In the IPT, the user will upload the file, it is possible to map the terms to DwC if this step was not done previously. Next the user will fill out the metadata (see metadata requirements in link:#metadata[[.underline]#section 1.4.4#]), and it is in this section that the user will be requested to https://ipt.gbif.org/manual/en/ipt/latest/applying-license[select a Creative Commons licence^]. There are three types of licenses available for the resources:
+A dataset is ready to be uploaded in the https://www.gbif.org/ipt[IPT^], the Integrated GBIF's data publishing tool, when it is structured and formatted to Darwin Core. Please check the https://ipt.gbif.org/manual/en/ipt/latest[IPT user manual^] for more information. In the IPT, the user will upload the file, it is possible to map the terms to DwC if this step was not done previously. Next the user will fill out the metadata (see metadata requirements in link:#metadata[[.underline]#section 1.4.4#]), and it is in this section that the user will be requested to https://ipt.gbif.org/manual/en/ipt/latest/applying-license[select a Creative Commons licence^]. There are three types of licences available for the resources:
 
 * https://creativecommons.org/publicdomain/zero/1.0[CC0 1.0^]: data is available for any use without any restrictions
 * https://creativecommons.org/licenses/by/4.0[CC BY 4.0^]: data is available for any use with appropriate attribution
 * https://creativecommons.org/licenses/by-nc/4.0[CC BY-NC 4.0^]: data is available for any non-commercial use with appropriate attribution
 
-After filling out the metadata information, the user will need to make the dataset public and publish the dataset, and register the dataset in GBIF.
+After filling out the metadata information, the user will need to make the dataset public, publish it, and register it in GBIF.
 
 After publication, a Darwin Core Archive (DwC-A) will be generated, this is a zipped archive consisting of one or more files of data, an XML file (`meta.xml`) describing the contents of the text files and how they relate to each other, and an XML file (`eml.xml`) containing the metadata in EML about the dataset.
 
-Once the dataset is published, GBIF provides a few https://www.gbif.org/dataset/f0ccf436-e2e8-4f61-af19-753cdb73ca00/metrics[metrics^] on the datasets, https://www.gbif.org/dataset/f0ccf436-e2e8-4f61-af19-753cdb73ca00/activity[user download activity^] and literature https://www.gbif.org/resource/search?contentType=literature&gbifDatasetKey=f0ccf436-e2e8-4f61-af19-753cdb73ca00[citations^].
+Once the dataset is published, GBIF provides selected https://www.gbif.org/dataset/f0ccf436-e2e8-4f61-af19-753cdb73ca00/metrics[metrics^] about the datasets, https://www.gbif.org/dataset/f0ccf436-e2e8-4f61-af19-753cdb73ca00/activity[user download activity^] and https://www.gbif.org/resource/search?contentType=literature&gbifDatasetKey=f0ccf436-e2e8-4f61-af19-753cdb73ca00[cited reuses in published research and policy^].
 
 === 1.4.4. Metadata
 
-Metadata is "data that provides information about other data", it will contain descriptive information about a resource, helping users to find relevant information and discover resources, it should inform users on how to access the data, understand its fitness-for-use, and it will provide information about the creator(s), permissions, public licensing, and when and how it was created.
+Metadata is "data that provides information about other data" that contains descriptive information about a dataset and helps users discover relevant information and resources. Metadata should inform users on how to access the data, understand its fitness-for-use, and it will provide information about the creator(s), permissions, public licensing, and when and how it was created.
 
-Different metadata standards exist, and in GBIF, the https://eml.ecoinformatics.org/[Ecological Metadata Language standard] (EML), is the standard that records information on the resources using XML document types.
+Different metadata standards exist, and GBIF relies on the https://eml.ecoinformatics.org/[Ecological Metadata Language standard^] (EML) to record information about datasets using XML document types.
 
-A metadata file will be generated once the required information is entered in the metadata section of the IPT metadata editor and it will be included in the DwC-A file. This is an https://api.gbif.org/v1/dataset/83ab030b-d243-469c-8947-1ed487e06a80/document[example^] of a XML metadata file.
+Entering the required information in the metadata section of the IPT metadata editor generates a metadata file that is included in the DwC-A file. This is an https://api.gbif.org/v1/dataset/83ab030b-d243-469c-8947-1ed487e06a80/document[example of a XML metadata file^].
 
-The IPT presents 12 different metadata forms, but some, such as associated parties, collection data, external links and additional metadata are not required.
-
-The required terms for the IPT metadata editor are presented below with examples.
+The IPT presents 12 different metadata forms, but some—such as associated parties, collection data, external links, additional metadata—are not required. See the terms required in the IPT metadata editor below along with examples.
 
 [[table-02]]
-.Metadata terms based in the GBIF https://rs.gbif.org/schema/eml-gbif-profile/1.3[EML schema^] with vector-related examples, and status based on the https://ipt.gbif.org/manual/en/ipt/latest/gbif-metadata-profile#validation-of-metadata[metadata fields required by GBIF^] 
+.Metadata terms based in the GBIF https://rs.gbif.org/schema/eml-gbif-profile/1.3[EML schema^] with vector-related examples and status based on the https://ipt.gbif.org/manual/en/ipt/latest/gbif-metadata-profile#validation-of-metadata[metadata fields required by GBIF^] 
 
-`ADD FORMATTED TABLE`
+[width="99%",cols="18%,19%,25%,30%,8%",options="header",]
+|===
+|*Section in the IPT* |*EML term* |*Definition* |*Example* |*Status*
 
+|Basic Metadata |title |Title of the dataset |Mosquitoes (Diptera:
+Culicidae) Distribution in Thailand |Required
+
+| |metadataLanguage |- |English |
+
+| |type |Please select dataset type from drop-down menu |Sampling Event
+|
+
+| |organizationName |Organization name responsible for the vector
+collection. |Walailak University |Required
+
+| | |The organization must be previously registered with GBIF. | |
+
+| | |Corresponds to publishingOrganization in the IPT. | |
+
+| |dataLanguage |- |English |
+
+| |maintenanceUpdateFrequency |Choose from the menu or leave unknown.
+|Unknown or Continually or Irregular etc. |
+
+| | |Corresponds to updateFrequency in the IPT. | |
+
+| |licensed[2] |Choose from three types, but recommended license is
+CC-By 4.0 |Creative Commons Attribution (CC-BY 4.0) |Required
+
+| | |Corresponds to dataLicense in the IPT. | |
+
+| |abstract |A brief overview of the resource that is being documented.
+|This dataset combines the occurrence records of mosquitoes from various
+provinces across Thailand. |Required
+
+| | |Corresponds to description in the IPT. | |
+
+|Resource Contacts | |The list of contacts represents the people and
+organizations that should be contacted to get more information about the
+resource, that curate the resource or to whom putative problems with the
+resource or its data should be addressed. |Last name Sukkanon |Required
+
+| |contact | |Position: Assistant Professor |
+
+| | |Corresponds to “"`resourceContact(s)`"” in the IPT. |Organization:
+Walailak University |
+
+| | |Required fields in the IPT: last name, position, organization | |
+
+|Resource creators |creator |The list of creators represents the people
+and organizations who created the resource, in priority order. The list
+will be used to auto-generate the citation (if auto-generation is turned
+on). |Last name Chareonviriyaphap |Required
+
+| | | |Position: Professor |
+
+| | |Corresponds to resourceCreator(s) in the IPT. |Organization:
+Kasetsart University |
+
+| | |Required fields in the IPT: Last name, Position, Organization,
+E-mail | |
+
+|Metadata providers |- |The list of metadata providers represents the
+people and organizations responsible for producing the resource
+metadata. |Last name Sukkanon |Recommended
+
+| | | |Position: Assistant Professor |
+
+| | |It is the metadataProvider(s) in the IPT. |Organization: Walailak
+University |
+
+| | |Required fields in the IPT: Last name, Position, Organization,
+E-mail | |
+
+|Geographic Coverage |coverage |A brief description of geographical
+coverage. |Mosquitoes from Thailand. |Required
+
+| | |Corresponds to geographicCoverage in the IPT. | |
+
+|Keywords (3-5) |- |In the IPT: Keyword list[3]. |infectious diseases,
+One Health, vectors, diseases names (e.g. West Nile Virus, dengue,
+cutaneous leishmaniasis) |Recommended
+
+| | |To improve discoverability we suggest making use of an extensive
+list. | |
+
+|Project Data |project |Metadata about the project that generated the
+dataset. |Mosquitoes (Diptera: Culicidae) Distribution in Thailand
+|Required
+
+| | |Corresponds to projectData in the IPT. | |
+
+| | |Please provide at least the title of the project. Additional fields
+for identifier, description, funding, study area description or design
+description are available. | |
+
+|Sampling Methods
+|samplingDescription
+|Description of the sampling procedures used in the research project. The content of this element would be similar to a description of sampling procedures found in the method section of a journal article. It includes study extent, sampling description and step description.
+|Mosquito collection has been carried out across Thailand from 2007 to 2023…+
+Immature stages of mosquito were collected…using dipping technique…light-emitting diodes (LEDs) (blue, green, yellow, and red) and 2 fluorescent (ultraviolet [UV] and white) lights were used in the light traps for collecting mosquitoes in urban Bangkok… + +
+Traps were operated simultaneously (18:00 to 06:00 h)…over 36 collection nights, 6 replications were conducted for each location with a total of 216 trap-nights.++
+Corresponds to samplingMethods in the IPT. |…the collected mosquitoes were initially identified using well-established morphological keys.[4]
+|Required
+|===
+
+[1] Example data were taken from the following published dataset: https://doi.org/10.15468/tbd7fz
+
+[2] More information can be found here: https://www.gbif.org/terms
+
+[3] Metadata descriptors for health: DeCS/MeSH, Global Index Medicus, Unified Medical Language System (UMLS)
+
+[4] Extracts from the sampling method section from the dataset: https://doi.org/10.15468/tbd7fz 
