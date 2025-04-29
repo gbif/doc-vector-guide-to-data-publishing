@@ -6,7 +6,7 @@ Vector-borne diseases (VBDs) are responsible for approximately 17% of the global
 
 In 2023, a GBIF-commissioned review published by https://doi.org/10.1016/j.onehlt.2023.100484[Astorga et al (2023)^] compared studies related to human health that used GBIF-mediated data on biodiversity-deemed "positives"—to "negatives" that did not. The authors found distinct differences as the positive list came from biological and ecological sciences and used data on host and vector species. The negative list, on the other hand, focused on medicine, public health and veterinary science, suggesting that data shared through GBIF is contributing to more broad scale ecological analyses and less to health-related studies (https://doi.org/10.1016/j.onehlt.2023.100484[Astorga et al. 2023]).
 
-With this guide, we hope to encourage the publication of vector data under the FAIR principles, to contribute not only to a better understanding of disease biology, ecology, and transmission , but also to inform epidemic preparedness and response, as well VBD control and elimination strategies.
+With this guide, we hope to encourage the publication of vector data under the FAIR Principles of _findability_, _accessibility_, _interoperability_ and _reproducibility_ (https://www.nature.com/articles/sdata201618[Wilkinson et al. 2016^]), not only to contribute to a better understanding of disease biology, ecology, and transmission, but also to inform epidemic preparedness and response as well as VBD control and elimination strategies.
 
 Publishing vector, host and pathogen data as occurrences under the FAIR principles has many benefits:
 
