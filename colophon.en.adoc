@@ -7,7 +7,7 @@ endif::backend-html5[]
 
 === Suggested citation
 
-Shimabukuro PHF, Campbell L, Fouque F, Etang J, Cecarelli S, Groom Q, Ingenloff K, Svenningsen C, Grosjean M, Martínez JG & Schigel D (2025) Publishing data on disease vectors, hosts and pathogens through biodiversity data platforms. Copenhagen: GBIF Secretariat. https://doi.org/10.35035/doc-718a-j795
+Shimabukuro PHF, Campbell L, Fouque F, Etang J, Cecarelli S, Groom Q, Ingenloff K, Svenningsen C, Grosjean M, Martínez JG & Schigel D (2025) Publishing data on disease vectors, hosts and pathogens through biodiversity data platforms. Copenhagen: GBIF Secretariat. https://doi.org/10.35035/doc-mjj8-ng28
 
 === Authors
 
@@ -19,7 +19,7 @@ The document _Publishing data on disease vectors, hosts and pathogens through bi
 
 === Persistent URI
 
-https://doi.org/10.35035/doc-718a-j795
+https://doi.org/10.35035/doc-mjj8-ng28
 
 === Document control
 
