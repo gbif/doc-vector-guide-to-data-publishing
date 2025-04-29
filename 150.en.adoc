@@ -84,7 +84,7 @@ The IPT presents 12 different metadata forms, but some—such as associated part
 [width="99%",cols="18%,19%,25%,30%,8%",options="header",]
 |===
 |*Section in the IPT* |*EML term* |*Definition* |*Example* |*Status*
-.4+|Basic Metadata |title |Title of the dataset |`Mosquitoes (Diptera: Culicidae) Distribution in Thailand` |Required
+.8+|Basic Metadata |title |Title of the dataset |`Mosquitoes (Diptera: Culicidae) Distribution in Thailand` |Required
 
 |metadataLanguage 
 |- 
