@@ -42,6 +42,7 @@ Allied Health Sciences. Sampling event dataset. https://doi.org/10.15468/tbd7fz
 - [[who2019]] World Health Organization (2019) Guidelines for malaria vector control. Geneva: World Health Organization. https://iris.who.int/handle/10665/310862
 - [[who2022]] World Health Organization (2022) Sharing and reuse of health-related data for research purposes: WHO policy and implementation guidance. Geneva: World Health Organization. https://iris.who.int/handle/10665/352859
 - [[who2024]] World Health Organization (2024) World malaria report 2024: Addressing inequity in the global malaria response. Geneva: World Health Organization. https://www.who.int/publications/i/item/9789240104440
+- [[wilkinson]] Wilkinson M, Dumontier M, Aalbersberg I et al. (2016) The FAIR Guiding Principles for scientific data management and stewardship. Scientific Data 3: 160018. https://doi.org/10.1038/sdata.2016.18
 - [[zanga]] ​​Zanga J, Metelo E, Mvuama N, Nsabatien V, Mvudi V, Banzulu D et al. (2023) Species composition and distribution of anopheles gambiae complex circulating in Kinshasa. Version 1.2. University of Kinshasa. Sampling event dataset. https://doi.org/10.15468/excax3
 
 <<<
