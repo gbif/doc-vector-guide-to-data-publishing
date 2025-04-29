@@ -8,7 +8,7 @@ In 2023, a GBIF-commissioned review published by https://doi.org/10.1016/j.onehl
 
 With this guide, we hope to encourage the publication of vector data under the FAIR principles, to contribute not only to a better understanding of disease biology, ecology, and transmission , but also to inform epidemic preparedness and response, as well VBD control and elimination strategies.
 
-Publishing vector, host and pathogen data as occurrences under the FAIR principles, has many benefits:
+Publishing vector, host and pathogen data as occurrences under the FAIR principles has many benefits:
 
 * Recognition for work carried out at the forefront, such as laboratory and field activities, with attribution and credit
 * Increased awareness of the importance of producing good quality data by learning about the steps involved in producing and reusing data
