@@ -4,7 +4,7 @@ Anyone interested in publishing a dataset in GBIF can do so by registering an or
 
 The next step is to prepare the data into files that will be published as Darwin Core Archives (see https://www.gbif.org/standards[data standards^]), prior to publication is important to perform a data cleaning step and prepare the metadata, once the data is uploaded in an IPT, the data holder must select one of the three licences used by GBIF and then, the dataset can be published and registered as a resource in GBIF. <<fig-01,Figure 1>> summarizes the basic steps to data publication in GBIF.
 
-[#fig-01]
+[[#fig-01]]
 .A simplified flow for data publishing in GBIF. Steps will be referred to in the text below with a link to the appropriate sections in this guide.
 image::/img/web/fig-01.png[]
 
@@ -31,7 +31,7 @@ NOTE: Unknown, absent and/or missing data must be left as blank cells. *DO NOT U
 
 Data transformation follows a set of steps necessary to format some terms, i.e. dates must follow ISO 8601 and geographical coordinates must be in decimal degrees, then we map the original column headers in the spreadsheet to Darwin Core terms. It is during this step that data cleaning and data quality checks can be performed, this step can be performed in any spreadsheet software such as Excel, LibreOffice or Modern CSV or with dedicated software such as https://openrefine.org/[OpenRefine^].
 
-[fig-02]
+[[fig-02]]
 .Example of DwC mapping to the original headers in a table. Suggested Darwin Core terms are mapped in the first row, original headers in the second row and examples are given in the following three rows.
 image::img/web/fig-02.png[]
 
@@ -49,14 +49,13 @@ image::img/web/fig-02.png[]
 |11/2009 to 12/2009 |2009-11/2009-12 |YYYY-MM/YYYY-MM
 |===
 
-
-[fig-03]
+[[fig-03]]
 .Mapping species names. In this example, three different publishers refer to species names using different headers (lines 2). When mapping to DwC, species names become the term:dwc[dwc:scientificName] term.
 image::img/web/fig-03.png[]
 
 For detailed instructions on mapping vector data to the DwC standard please refer to sections <<2.1>>, <<2.2>> and <<2.3>> below.
 
-=== 1.4.3. Publishing the dataset in the IPT
+==== Publishing the dataset in the IPT
 
 A dataset is ready to be uploaded in the https://www.gbif.org/ipt[IPT^], the Integrated GBIF's data publishing tool, when it is structured and formatted to Darwin Core. Please check the https://ipt.gbif.org/manual/en/ipt/latest[IPT user manual^] for more information. In the IPT, the user will upload the file, it is possible to map the terms to DwC if this step was not done previously. Next the user will fill out the metadata (see metadata requirements in link:#metadata[[.underline]#section 1.4.4#]), and it is in this section that the user will be requested to https://ipt.gbif.org/manual/en/ipt/latest/applying-license[select a Creative Commons licence^]. There are three types of licences available for the resources:
 
@@ -70,7 +69,7 @@ After publication, a Darwin Core Archive (DwC-A) will be generated, this is a zi
 
 Once the dataset is published, GBIF provides selected https://www.gbif.org/dataset/f0ccf436-e2e8-4f61-af19-753cdb73ca00/metrics[metrics^] about the datasets, https://www.gbif.org/dataset/f0ccf436-e2e8-4f61-af19-753cdb73ca00/activity[user download activity^] and https://www.gbif.org/resource/search?contentType=literature&gbifDatasetKey=f0ccf436-e2e8-4f61-af19-753cdb73ca00[cited reuses in published research and policy^].
 
-=== 1.4.4. Metadata
+==== Metadata
 
 Metadata is "data that provides information about other data" that contains descriptive information about a dataset and helps users discover relevant information and resources. Metadata should inform users on how to access the data, understand its fitness-for-use, and it will provide information about the creator(s), permissions, public licensing, and when and how it was created.
 
