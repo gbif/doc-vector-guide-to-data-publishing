@@ -267,62 +267,62 @@ We recommend using the following terms presented in table 3: term:dwc[dwc:eventD
 For detailed explanation and examples for the above terms, please refer to <<table-04,Table 4>> for sampling event.
 
 .Recommended term for http://rs.gbif.org/core/dwc_occurrence_2020-04-15.xml[Occurrence Core^] for vector datafootnote:[Example data were taken from the following published datasets: a) https://doi.org/10.15472/dxbowv[https://doi.org/10.15472/dxbowv^]; b) https://doi.org/10.15468/excax3[https://doi.org/10.15468/excax3^]; c) https://doi.org/10.15468/zr6frj[https://doi.org/10.15468/zr6frj^];  d) https://doi.org/10.15468/fbywtn[https://doi.org/10.15468/fbywtn^]
-[width="100%",cols="25%,21%,39%,15%",options="header",]
+[width="100%",cols="25%,39%,21%,15%",options="header",]
 |===
-|*Term name* |*Examples* |*Description* |*Status*
+|*Term name* |*Description* |*Examples* |*Status*
 
 |term:dwc[dwc:basisOfRecord]
-|HumanObservation
 |The specific nature of the data record. For field collected organisms use HumanObservation, for specimens deposited in biological collections/museums use PreservedSpecimen. For data abstracted from the literature use MaterialCitation. For DNA-derived occurrences, tissue/blood samples use MaterialSample. And for organisms from laboratory colonies use LivingSpecimen.
+|HumanObservation
 |Required
 
 |term:dwc[dwc:occurrenceID]
-|CEPAVE.edu.ar:Triatominae:14798
 |An identifier for the dwc:Occurrence (as opposed to a particular digital record of the dwc:Occurrence). In the absence of a persistent global unique identifier, construct one from a combination of identifiers in the record that will most closely make the dwc:occurrenceID globally unique.
+|CEPAVE.edu.ar:Triatominae:14798
 |Required
 
 |term:dwc[dwc:preparations]
-|`Placed in RNA Later` `Pinned`
 |A preparation or preservation method for a specimen.
+|`Placed in RNA Later` `Pinned`
 |Share if available
 
 |term:dwc[dwc:associatedSequences]
-|https://www.ncbi.nlm.nih.gov/nuccore/MK918898[[.underline]#https://www.ncbi.nlm.nih.gov/nuccore/MK918898#]
 |A list (concatenated and separated) of identifiers (publication, global unique identifier, URI) of genetic sequence information associated with the dwc:MaterialEntity.
+|`https://www.ncbi.nlm.nih.gov/nuccore/MK918898`
 |Share if available
 
 |term:dwc[dwc:kingdom]
-|Animalia
 |The full scientific name of the kingdom in which the dwc:Taxon is classified.
+|`Animalia`
 |Strongly recommended
 
 |term:dwc[dwc:genus]
-|Triatoma
 |The full scientific name of the genus in which the dwc:Taxon is classified.
+|`Triatoma`
 |Share if available
 
 |term:dwc[dwc:specificEpithet]
-|gerstaeckeri
 |The name of the first or species epithet of the dwc:scientificName.
+|`gerstaeckeri`
 |Share if available
 |===
 
 === Vector data mapping using extensions
 
-This section provides mapping recommendations for the use of extensions with either the occurrence core, the sampling event core or the taxon core (checklist).
+This section provides mapping recommendations for the use of extensions with either the occurrence core, the sampling-event core or the taxon core (checklist).
 
-GBIF has a list of registered https://rs.gbif.org/extensions.html[[.underline]#extensions#] and https://rs.gbif.org/vocabulary/[[.underline]#vocabulary#] that can be useful in the standardization of terms, but we also suggest checking the link:#controlled-vocabulary-ontologies[[.underline]#controlled vocabulary & ontologies#] section for more specific information.
+GBIF has a list of registered https://rs.gbif.org/extensions.html[extensions^] and https://rs.gbif.org/vocabulary/[vocabulary^] that can be useful in the standardization of terms, but we also suggest checking the link:#controlled-vocabulary-ontologies[[.underline]#controlled vocabulary & ontologies#] section for more specific information.
 
 [[fig-06]]
 .Event Core diagram with suggested use of extensions for vector data. Abiotic measurements collected during the sampling event, with occurrences linked to sampling events using the eventID (full lines). Biotic measurements are linked to occurrences using the occurrenceID term of the ExtendedMeasurementOrFact Extension (dashed lines). Figure adapted from the OBIS Manual.
 
 ==== Extended Measurement or Facts Extension
 
-The https://rs.gbif.org/extension/obis/extended_measurement_or_fact_2023-08-28.xml[[.underline]#eMoF#] supports the publication of generic measurements or facts linking to occurrences. This extension was developed to be used in combination with the Event Core, but is also compatible with other cores.
+The https://rs.gbif.org/extension/obis/extended_measurement_or_fact_2023-08-28.xml[eMoF^] supports the publication of generic measurements or facts linking to occurrences. This extension was developed to be used in combination with the Event Core, but is also compatible with other cores.
 
 [[table-05]]
-.Recommended terms from the Extended Measurement or Facts Extension (a selection)footnote:[Example data were taken from the
-following published dataset: https://ecoevorxiv.org/repository/view/7150/[[.underline]#https://ecoevorxiv.org/repository/view/7150/#]]
+.Recommended terms from the Extended Measurement or Facts Extension (a selection) footnote:[Example data were taken from the
+following published dataset: https://ecoevorxiv.org/repository/view/7150/[https://ecoevorxiv.org/repository/view/7150/]]
 
 [width="100%",cols="32%,16%,37%,15%",options="header",]
 |===
