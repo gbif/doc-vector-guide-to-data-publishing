@@ -283,26 +283,26 @@ For detailed explanation and examples for the above terms, please refer to <<tab
 
 |term:dwc[dwc:preparations]
 |A preparation or preservation method for a specimen.
-|`Placed in RNA Later` `Pinned`
+|`Placed in RNA Later`, `Pinned`
 |Share if available
 
 |term:dwc[dwc:associatedSequences]
-|A list (concatenated and separated) of identifiers (publication, global unique identifier, URI) of genetic sequence information associated with the dwc:MaterialEntity.
+|A list (concatenated and separated) of identifiers (publication, global unique identifier, URI) of genetic sequence information associated with the term:dwc[dwc:materialEntity].
 |`https://www.ncbi.nlm.nih.gov/nuccore/MK918898`
 |Share if available
 
 |term:dwc[dwc:kingdom]
-|The full scientific name of the kingdom in which the dwc:Taxon is classified.
+|The full scientific name of the kingdom in which the term:dwc[dwc:Taxon] is classified.
 |`Animalia`
 |Strongly recommended
 
 |term:dwc[dwc:genus]
-|The full scientific name of the genus in which the dwc:Taxon is classified.
+|The full scientific name of the genus in which the term:dwc[dwc:Taxon] is classified.
 |`Triatoma`
 |Share if available
 
 |term:dwc[dwc:specificEpithet]
-|The name of the first or species epithet of the dwc:scientificName.
+|The name of the first or species epithet of the term:dwc[dwc:scientificName].
 |`gerstaeckeri`
 |Share if available
 |===
@@ -322,94 +322,79 @@ The https://rs.gbif.org/extension/obis/extended_measurement_or_fact_2023-08-28.x
 
 [[table-05]]
 .Recommended terms from the Extended Measurement or Facts Extension (a selection) footnote:[Example data were taken from the
-following published dataset: https://ecoevorxiv.org/repository/view/7150/[https://ecoevorxiv.org/repository/view/7150/]]
-
+following published dataset: https://ecoevorxiv.org/repository/view/7150/[https://ecoevorxiv.org/repository/view/7150/]
 [width="100%",cols="32%,16%,37%,15%",options="header",]
 |===
-|*Term name* |*Examples* |*Description* |*Status*
-|https://dwc.tdwg.org/terms/#dwc:eventID[[.underline]#eventID#] |OS
-BZ1995 |An identifier for the set of information associated with an
-event (something that occurs at a place and time). May be a global
-unique identifier or an identifier specific to the data set. |Required
+|*Term name* |*Description* |*Examples* |*Status*
 
-|https://dwc.tdwg.org/terms/#dwc:occurrenceID[[.underline]#occurrenceID#]
-|BZ19114 |A unique identifier for the occurrence, it is recommended to
-construct one from a combination of identifiers in the record that will
-most closely make the dwc:occurrenceID globally unique. This term allows
-that the same occurrence can be recognized in different versions of a
-dataset. |Required
+|term:dwc[dwc:eventID]
+|An identifier for the set of information associated with an event (something that occurs at a place and time). May be a global unique identifier or an identifier specific to the data set.
+|`OS BZ1995`
+|Required
 
-|http://rs.tdwg.org/dwc/terms/measurementAccuracy[[.underline]#measurementAccuracy#]
-|0.01 |The description of the potential error associated with the
-measurementValue. See also
-http://rs.tdwg.org/dwc/terms/index.htm#measurementAccuracy[[.underline]#http://rs.tdwg.org/dwc/terms/index.htm#measurementAccuracy#]
+|term:dwc[occurrenceID]
+|A unique identifier for the occurrence, it is recommended to construct one from a combination of identifiers in the record that will most closely make the term:dwc[dwc:occurrenceID] globally unique. This term allows that the same occurrence can be recognized in different versions of a dataset.
+|`BZ19114`
+|Required
+
+|term:dwc[dwc:measurementAccuracy]
+|The description of the potential error associated with the measurementValue. See also terms:dwc[dwc:measurementAccuracy]
+|`0.01`
 |Share if available
 
-|http://rs.tdwg.org/dwc/terms/measurementDeterminedBy[[.underline]#measurementDeterminedBy#]
-|Javier de la Torre |A list (concatenated and separated) of names of
-people, groups, or organizations who determined the value of the
-MeasurementOrFact. See also
-http://rs.tdwg.org/dwc/terms/index.htm#measurementDeterminedBy[[.underline]#http://rs.tdwg.org/dwc/terms/index.htm#measurementDeterminedBy#]
+|term:dwc[dwc:measurementDeterminedBy]
+|A list (concatenated and separated) of names of people, groups, or organizations who determined the value of the MeasurementOrFact. See also term:dwc[dwc:measurementDeterminedBy]
+|`Javier de la Torre`
 |Share if available
 
-|http://rs.tdwg.org/dwc/terms/measurementDeterminedDate[[.underline]#measurementDeterminedDate#]
-|2020-07-15 |The date on which the MeasurementOrFact was made.
-Recommended best practice is to use an encoding scheme, such as ISO
-8601:2004(E). See also
-http://rs.tdwg.org/dwc/terms/index.htm#measurementDeterminedDate[[.underline]#http://rs.tdwg.org/dwc/terms/index.htm#measurementDeterminedDate#]
+|term:dwc[dwc:measurementDeterminedDate]
+|The date on which the MeasurementOrFact was made. Recommended best practice is to use an encoding scheme, such as ISO 8601:2004(E). See also term:dwc[dwc:measurementDeterminedDate]
+|`2020-07-15`
 |Share if available
 
-|http://rs.tdwg.org/dwc/terms/measurementID[[.underline]#measurementID#]
-|TP205-A |An identifier for the MeasurementOrFact (information
-pertaining to measurements, facts, characteristics, or assertions). May
-be a global unique identifier or an identifier specific to the data set.
-See also
-http://rs.tdwg.org/dwc/terms/index.htm#measurementID[[.underline]#http://rs.tdwg.org/dwc/terms/index.htm#measurementID#]
+|term:dwc[dwc:measurementID]
+|An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the dataset. See also term:dwc[dwc:measurementID]
+|`TP205-A`
 |Share if available
 
-|http://rs.tdwg.org/dwc/terms/measurementMethod[[.underline]#measurementMethod#]
-|qPCR |A description of or reference to (publication, URI) the method or
-protocol used to determine the measurement, fact, characteristic, or
-assertion. |Share if available
-
-|http://rs.tdwg.org/dwc/terms/measurementRemarks[[.underline]#measurementRemarks#]
-|tip of tail missing |Comments or notes accompanying the
-MeasurementOrFact |Share if available
-
-|http://rs.tdwg.org/dwc/terms/measurementType[[.underline]#measurementType#]
-|wing length |The nature of the measurement, fact, characteristic, or
-assertion. Recommended best practice is to use a controlled vocabulary.
-See also
-http://rs.tdwg.org/dwc/terms/index.htm#measurementType[[.underline]#http://rs.tdwg.org/dwc/terms/index.htm#measurementType#]
+|term:dwc[dwc:measurementMethod]
+|`qPCR`
+|A description of or reference to (publication, URI) the method or protocol used to determine the measurement, fact, characteristic, or assertion.
 |Share if available
 
-|http://rs.iobis.org/obis/terms/measurementTypeID[[.underline]#measurementTypeID#]
-|http://vocab.nerc.ac.uk/collection/P01/current/ODRYBM01/[[.underline]#http://vocab.nerc.ac.uk/collection/P01/current/ODRYBM01/#]
-|An identifier for the measurementType (global unique identifier, URI).
-The identifier should reference the measurementType in a vocabulary.
+|term:dwc[dwc:measurementRemarks]
+|Comments or notes accompanying the MeasurementOrFact 
+|`tip of tail missing`
 |Share if available
 
-|http://rs.tdwg.org/dwc/terms/measurementUnit[[.underline]#measurementUnit#]
-|Ct |The units associated with the measurementValue. Recommended best
-practice is to use the International System of Units (SI). See also
-http://rs.tdwg.org/dwc/terms/index.htm#measurementUnit[[.underline]#http://rs.tdwg.org/dwc/terms/index.htm#measurementUnit#]
+|term:dwc[dwc:measurementType]
+|The nature of the measurement, fact, characteristic, or assertion. Recommended best practice is to use a controlled vocabulary. See also term:dwc[dwc:measurementType]
+|`wing length` 
 |Share if available
 
-|http://rs.iobis.org/obis/terms/measurementUnitID[[.underline]#measurementUnitID#]
-|http://vocab.nerc.ac.uk/collection/P06/current/ULCM/[[.underline]#http://vocab.nerc.ac.uk/collection/P06/current/ULCM/#]
-|An identifier for the measurementUnit (global unique identifier, URI).
-The identifier should reference the measurementUnit in a vocabulary.
+|http://rs.iobis.org/obis/terms/measurementTypeID[#measurementTypeID^]
+|An identifier for the measurementType (global unique identifier, URI). The identifier should reference the measurementType in a vocabulary.
+|`http://vocab.nerc.ac.uk/collection/P01/current/ODRYBM01`
 |Share if available
 
-|http://rs.tdwg.org/dwc/terms/measurementValue[[.underline]#measurementValue#]
+|term:dwc[dwc:measurementUnit]
+|The units associated with the measurementValue. Recommended best practice is to use the International System of Units (SI). See also term:dwc[dwc:measurementUnit]
+|`Ct`
+|Share if available
+
+|http://rs.iobis.org/obis/terms/measurementUnitID[measurementUnitID^]
+|An identifier for the measurementUnit (global unique identifier, URI). The identifier should reference the measurementUnit in a vocabulary.
+|`http://vocab.nerc.ac.uk/collection/P06/current/ULCM`
+|Share if available
+
+|term:dwc[dwc:measurementValue]
+|The value of the measurement, fact, characteristic, or assertion. See also term:dwc[dwc:measurementValue]
 |`12`
-|The value of the measurement, fact, characteristic, or assertion.
-See alsochttp://rs.tdwg.org/dwc/terms/index.htm#measurementValue[[.underline]#http://rs.tdwg.org/dwc/terms/index.htm#measurementValue#]
 |Share if available
 
-|http://rs.iobis.org/obis/terms/measurementValueID[[.underline]#measurementValueID#]
-|`Standard Sherman Live Trap`
+|http://rs.iobis.org/obis/terms/measurementValueID[measurementValueID^]
 |An identifier for facts stored in the column measurementValue (global unique identifier, URI). This identifier can reference a controlled vocabulary (e.g. for sampling instrument names, methodologies, life stages) or reference a methodology paper with a DOI. When the measurementValue refers to a value and not to a fact, the measurementvalueID has no meaning and should remain empty. 
+|`Standard Sherman Live Trap`
 |Share if available
 |===
 
