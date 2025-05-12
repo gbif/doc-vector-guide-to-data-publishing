@@ -97,8 +97,8 @@ The IPT presents 12 different metadata forms, but some—such as associated part
 |
 
 |organizationName
-|Organization name responsible for the vector collection.+
-The organization must be previously registered with GBIF.+
+|Organization name responsible for the vector collection. +
+The organization must be previously registered with GBIF. +
 Corresponds to term:dwc[dwc:publishingOrganization] in the IPT.
 |`Walailak University` 
 |Required
@@ -109,82 +109,82 @@ Corresponds to term:dwc[dwc:publishingOrganization] in the IPT.
 |
 
 |maintenanceUpdateFrequency 
-|Choose from the menu or leave unknown.+
+|Choose from the menu or leave unknown. +
 Corresponds to term:dwc[dwc:updateFrequency] in the IPT.
 |`Unknown`, `Continually`, `Irregular` etc.
 |
 
 |licensed[2] 
-|Choose from three types, but recommended license is CC BY 4.0.+
+|Choose from three types, but recommended license is CC BY 4.0. +
 Corresponds to term:dwc[dwc:dataLicense] in the IPT.
 |`Creative Commons Attribution (CC BY 4.0)`
 |Required
 
 |abstract 
-|A brief overview of the resource that is being documented.+
+|A brief overview of the resource that is being documented. +
 Corresponds to term:dwc[dwc:description] in the IPT.
 |`This dataset combines the occurrence records of mosquitoes from various provinces across Thailand.`
 |Required
 
 |Resource Contacts 
 |contact
-|The list of contacts represents the people and organizations that should be contacted to get more information about the resource, that curate the resource or to whom putative problems with the resource or its data should be addressed.+
-Corresponds to "resourceContact(s)” in the IPT.+
+|The list of contacts represents the people and organizations that should be contacted to get more information about the resource, that curate the resource or to whom putative problems with the resource or its data should be addressed. +
+Corresponds to "resourceContact(s)” in the IPT. +
 Required fields in the IPT: last name, position, organization
-|`Last name Sukkanon`+
-`Position: Assistant Professor`+
+|`Last name Sukkanon` +
+`Position: Assistant Professor` +
 `Organization: Walailak University`
 |Required
 
 |Resource creators
 |creator 
-|The list of creators represents the people and organizations who created the resource, in priority order. The list will be used to auto-generate the citation (if auto-generation is turned on).+
-Corresponds to resourceCreator(s) in the IPT.+
+|The list of creators represents the people and organizations who created the resource, in priority order. The list will be used to auto-generate the citation (if auto-generation is turned on). +
+Corresponds to resourceCreator(s) in the IPT. +
 Required fields in the IPT: Last name, Position, Organization, Email
-|`Last name Chareonviriyaphap`
-`Position: Professor`+
+|`Last name Chareonviriyaphap` +
+`Position: Professor` +
 `Organization: Kasetsart University`
 |Required
 
 |Metadata providers 
 |- 
-|The list of metadata providers represents the people and organizations responsible for producing the resource metadata.++
-It is the metadataProvider(s) in the IPT.++
+|The list of metadata providers represents the people and organizations responsible for producing the resource metadata.+
+It is the metadataProvider(s) in the IPT.+
 Required fields in the IPT: Last name, Position, Organization, Email
-|`Last name Sukkanon`+
-`Position: Assistant Professor`
+|`Last name Sukkanon` +
+`Position: Assistant Professor` +
 `Organization: Walailak University`
 |Recommended
 
 |Geographic Coverage
 |coverage
-|A brief description of geographical coverage.+
+|A brief description of geographical coverage. +
 Corresponds to geographicCoverage in the IPT.
 |`Mosquitoes from Thailand.` 
 |Required
 
 |Keywords (3-5)
 |- 
-|In the IPT: Keyword list[3].+
+|In the IPT: Keyword list[3]. +
 To improve discoverability we suggest making use of an extensive list.
 |`infectious diseases`, `One Health`, `vectors`, disease names (e.g. `West Nile Virus`, `dengue`, `cutaneous leishmaniasis`) 
 |Recommended
 
 |Project Data
 |project 
-|Metadata about the project that generated the dataset.++
-Corresponds to projectData in the IPT.++
+|Metadata about the project that generated the dataset. +
+Corresponds to projectData in the IPT. +
 Please provide at least the title of the project. Additional fields for identifier, description, funding, study area description or design description are available.
 |`Mosquitoes (Diptera: Culicidae) Distribution in Thailand`
 |Required
 
 |Sampling Methods
 |samplingDescription
-|Description of the sampling procedures used in the research project. The content of this element would be similar to a description of sampling procedures found in the method section of a journal article. It includes study extent, sampling description and step description.++
+|Description of the sampling procedures used in the research project. The content of this element would be similar to a description of sampling procedures found in the method section of a journal article. It includes study extent, sampling description and step description. +
 Corresponds to samplingMethods in the IPT.
-|`Mosquito collection has been carried out across Thailand from 2007 to 2023…`+
-`Immature stages of mosquito were collected…using dipping technique…light-emitting diodes (LEDs) (blue, green, yellow, and red) and 2 fluorescent (ultraviolet [UV] and white) lights were used in the light traps for collecting mosquitoes in urban Bangkok…`+
-`Traps were operated simultaneously (18:00 to 06:00 h)…over 36 collection nights, 6 replications were conducted for each location with a total of 216 trap-nights.`+
+|`Mosquito collection has been carried out across Thailand from 2007 to 2023…` +
+`Immature stages of mosquito were collected…using dipping technique…light-emitting diodes (LEDs) (blue, green, yellow, and red) and 2 fluorescent (ultraviolet [UV] and white) lights were used in the light traps for collecting mosquitoes in urban Bangkok…` +
+`Traps were operated simultaneously (18:00 to 06:00 h)…over 36 collection nights, 6 replications were conducted for each location with a total of 216 trap-nights.` +
 `…the collected mosquitoes were initially identified using well-established morphological keys.`[4]
 |Required
 |===
