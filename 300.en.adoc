@@ -1,8 +1,6 @@
 == Quick links to resources
 
-Here we provide a list of useful or relevant links to websites and
-resources to facilitate data publishing in GBIF. For convenience, links
-are organized by category.
+Here we provide a list of useful or relevant links to websites and resources to facilitate data publishing in GBIF. For convenience, links are organized by category.
 
 === General information and guides
 
