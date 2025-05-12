@@ -3,7 +3,7 @@
 
 GBIF supports the publication of four classes of datasets: resource metadata, checklist, occurrence and sampling-event. <<fig-04,Figure 4>> provides a decision tree to help find the most suitable dataset class based on a minimum of attributes associated with the data.
 
-[#fig-04]
+[[fig-04]]
 .A decision tree for vector data categorization. Datasets can be published as checklists, lists of names that may have occurrences attached to them, better expressed in extensions such as the species profile and species distribution. Occurrence and sampling event datasets may have additional environmental, biological or epidemiological data that can be published in extensions such as the measurement or fact or the extended measurement or fact or data on pathogens and hosts best captured by the resource relationship extension.And the Humboldt Extension can be used to convey more detailed information on ecological inventories, much similar to vector surveillance studies.
 image::/img/web/fig-04.png[]
 
