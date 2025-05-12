@@ -601,7 +601,7 @@ Are material samples collected and saved? If so, recommended terms to
 include are: eco:hasMaterialSamples, eco:materialSampleTypes
 |===
 
-=== Resource Relationship
+==== Resource Relationship
 
 The https://rs.gbif.org/extension/resource_relationship_2024-02-19.xml[[.underline]#Resource Relationship#] extension provides support for relationships between resources in a Darwin Core Occurrence, Event, or Taxon Core to resources in an extension or external to the data set. The identifiers for subject (resourceID) and object (relatedResourceID) may exist in the dataset or be accessible via an externally resolvable identifier. The recommended status for these terms is to share if available.
 
@@ -695,7 +695,7 @@ image::/img/web/fig-07b.png[][image,width=624,height=70]
 .Example of DwC mapping to the original headers in an ResourceRelationship extension table with a two-way relationship between vertebrate hosts, a tick and the pathogen detected in the vector.
 image::/img/web/fig-08.png[]
 
-=== Species Profile
+==== Species Profile
 
 The https://rs.gbif.org/extension/gbif/1.0/speciesprofile_2019-01-29.xml[Species Profile^] extension is a basic species profile with characteristics in addition to textural description which are covered by the description extension and can be used in addition to the checklist core.
 
@@ -762,7 +762,7 @@ vocabulary like http://en.wikipedia.org/wiki/Geologic_column[http://en.wikipedia
 |Strongly recommended
 |===
 
-=== Species Distribution
+==== Species Distribution
 
 The Species Distribution extension is a geographic distribution of a taxon. It can be used with the checklist core.
 
