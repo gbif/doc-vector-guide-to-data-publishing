@@ -41,219 +41,220 @@ This section provides mapping recommendations for sampling event datasets in whi
 
 If geographic coordinates are not provided in decimal lat-long, the following terms can be used `dwc:verbatimLatitude`, `dwc:verbatimLongitude`, and `dwc:verbatimCoordinateSystem`.
 
+[[table-03]]
 .Recommended terms for https://rs.gbif.org/core/dwc_event_2024-02-19.xml[Event Core^] for vector datafootnote:[Example data were taken from the following published datasets: 1) https://doi.org/10.15472/dxbowv[https://doi.org/10.15472/dxbowv^]; 2) https://doi.org/10.15468/excax3[https://doi.org/10.15468/excax3^]; 3) https://doi.org/10.15468/zr6frj[https://doi.org/10.15468/zr6frj^]; 4) https://doi.org/10.15468/fbywtn[https://doi.org/10.15468/fbywtn]
 [width="100%",cols="32%,25%,28%,15%",options="header",]
 |===
-|*Term name* |*Examples* |*Description* |*Status*
+|*Term name* |*Definition* |*Examples* |*Status*
 
 |term:dwc[dwc:eventID]`
-|E-AL-Tr-1-200518 
 |An identifier for the set of information associated with an event (something that occurs at a place and time). May be a global unique identifier or an identifier specific to the data set.
+|`E-AL-Tr-1-200518 `
 |Required
 
 |term:dwc[dwc:eventDate]
-|2016-10-02
 |It is the date-time when the dwc:Event was recorded. Recommended best practice is to use a date that conforms to ISO 8601-1:2019.
+|`2016-10-02`
 |Required
 
 |term:dwc[dwc:samplingProtocol]
-|Human landing catches
 |Sampling method
+|`Human landing catches`
 |Required
 
 |term:dwc[dwc:samplingSizeValue]
-|32
 |Sample size, N, #, No.
+|`32'
 |Required
 
 |term:dwc[dwc:samplingSizeUnit]
-|hour
-|The unit of measurement of the size (time duration, length, area, or volume) of a sample in a sampling dwc:Event.
+|The unit of measurement of the size (time duration, length, area, or volume) of a sample in a sampling term:dec[dwc:Event].
+|`hour`
 |Required
 
 |term:dwc[dwc:samplingEffort]
-|1 Night of Human Landing Catch indoors and outdoors (2 x 16 observer-hours)
-|The amount of effort expended during a dwc:Event.
+|The amount of effort expended during a term:dec[dwc:Event].
+|`1 Night of Human Landing Catch indoors and outdoors (2 x 16 observer-hours)`
 |Strongly recommended
 
 |term:dwc[dwc:scientificName]
-|Anopheles (Cellia) funestus Giles, 1900
 |The full scientific name, with authorship and date information if known. This term should not contain identification qualifications, which should instead be supplied in the dwc:identificationQualifier term. It also should not contain the scope of a taxon when it has been used to define more than one set of lower-level taxons, such as species complexes, sibling species, i.e. sensu lato, s.l., etc.
+|`Anopheles (Cellia) funestus Giles, 1900`
 |Required
 
 |term:dwc[dwc:higherClassification]
-|`Animalia`, `Insecta`, `Hemiptera`, `Reduviidae`, `Triatoma` 
 |A list (concatenated and separated) of taxa names terminating at the rank immediately superior to the referenced dwc:Taxon. Recommended best practice is to separate the values in a list with space-pipe-space), with terms in order from the highest taxonomic rank to the lowest.
+|`Animalia`, `Insecta`, `Hemiptera`, `Reduviidae`, `Triatoma` 
 |Share if available
 
 |term:dwc[dwc:parentEventID]
-|E-AL-Tr-1
 |An identifier for the broader term:dwc[dwc:event] that groups this and potentially other dwc:Events. Use a globally unique identifier for a term:dwc[dwc:event] or an identifier for a term:dwc[dwc:event] that is specific to the data set.
+|`E-AL-Tr-1`
 |Strongly recommended
 
 |term:dwc[dwc:recordedBy]
+|Person or people who recorded the original occurrence.
 |`Erika Santamaría`, `Harold Fernández` 
-|Person/ people that recorded the original occurrence
 |Share if available
 
 |term:dwc[dwc:recordedByID]
-|https://orcid.org/0000-0002-7232-718X[https://orcid.org/0000-0002-7232-718X#]
 |ORCID iD of person/ people that recorded the original occurrence
+|`https://orcid.org/0000-0002-7232-718X`
 |Share if available
 
 |term:dwc[dwc:individualCount]
-|1
 |The number of individuals present at the time of the term:dwc[dwc:occurrence].
+|`1`
 |Strongly recommended
 
 |term:dwc[dwc:organismQuantity]
-|10
 |A number or enumeration value for the quantity of term:dwc[dwc:organism].
+|`10`
 |Share if available
 
 |term:dwc[dwc:organismQuantityType]
-|individuals
 |The type of quantification system used for the quantity of term:dwc[dwc:organism].
+|`individuals`
 |Share if available
 
 |term:dwc[dwc:sex]
-|female
 |The sex of the organism. Recommended best practice is to use a controlled vocabulary: male, female.
+|`female`
 |Share if available
 
 |term:dwc[dwc:lifeStage]
-|adult
 |The age class or life stage of the dwc:Organism(s) at the time the dwc:Occurrence was recorded. Recommended best practice is to use a controlled vocabulary: egg, larva, nymph, pupa, adult.
+|`adult`
 |Share if available
 
 |term:dwc[dwc:reproductiveCondition]
-|unfed
 |The reproductive condition of the biological individual(s) represented in the occurrence. Comments or notes about the organism. Data on parity (nulliparous, parous females); stages of the gonotrophic cycle (unfed, fully fed, semi-gravid, gravid); fecundity (number of eggs laid per batch.
+|`unfed`
 |Share if available
 
 |term:dwc[dwc:degreeOfEstablishment]
-|invasive
 |The degree to which a organism survives, reproduces, and expands its range at the given place and time. Recommended best practice is to use controlled value strings from the controlled vocabulary designated for use with this term, listed at http://rs.tdwg.org/dwc/doc/doe/[http://rs.tdwg.org/dwc/doc/doe/] For details, refer to https://doi.org/10.3897/biss.3.38084[https://doi.org/10.3897/biss.3.38084^]
+|`invasive`
 |Share if available
 
 |term:dwc[dwc:associatedTaxa]
-|`host:Homo sapiens`
 |A list of identifiers or names of the record and the associations of this occurrence to each of them. The ResourceRelationship extension can alternatively be used.This term should not be used to establish relationships between records, only between the specific occurrences with other taxon.
+|`host:Homo sapiens`
 |Share if available
 
 |term:dwc[dwc:occurrenceRemarks]
-|`Abdomen missing` `Female taking in blood meal` `Vouchered: Registered Collection` `found dead` 
 |Comments or notes about the term:dwc[dwc:occurrence].
+|`Abdomen missing`, `Female taking in blood meal`, `Vouchered: Registered Collection`, `found dead` 
 |Share if available
 
 |term:dwc[dwc:habitat] 
-|`rural environment` `outdoor` `plastic container`
 |A category or description of the habitat in which the dwc:Event occurred. Can include outdoor/indoor collection, urban/rural environments. Recommended practice is to use https://www.ebi.ac.uk/ols4/ontologies/envo?viewMode=list[ENVO environmental ontology].
+|`rural environment`, `outdoor`, `plastic container`
 |Strongly recommended
 
 |term:dwc[dwc:eventRemarks]
-|`Rain` , `TrapStatus:Valid`
 |Comments or notes about the term:dwc[dwc:event].
+|`Rain` , `TrapStatus:Valid`
 |Share if available
 
 |term:dwc[dwc:countryCode]
-|TH
 |The standard code for the country in which the dcterms:Location occurs. Recommended best practice is to use an ISO 3166-1-alpha-2 country code.
+|`TH`
 |Strongly recommended
 
 |term:dwc[dwc:stateProvince]
-|Kinshasa
 |The name of the next smaller administrative region than country (state, province, canton, department, region, etc.) in which the dcterms:Location occurs.
+|`Kinshasa`
 |Share if available
 
 |term:dwc[dwc:locality]
-|Vallée de la Funa
 |The specific description of the place.
+|`Vallée de la Funa`
 |Strongly recommended
 
 |term:dwc[dwc:locationID]
-|BG323
 |An identifier for the set of dcterms:Location information. May be a global unique identifier or an identifier specific to the data set.
+|`BG323`
 |Strongly recommended
 
 |term:dwc[dwc:verbatimLocality]
-|Farm located in 265 km of Transnational Road
 |The original textual description of the place.
+|`Farm located in 265 km of Transnational Road`
 |Share if available
 
 |term:dwc[dwc:identifiedBy]
-|Victoire Nsabatien Nsongtsa
-|Person/ people that identified the organism
+|Person or people who identified the organism
+|`Victoire Nsabatien Nsongtsa`
 |Share if available
 
 |term:dwc[dwc:identifiedByID]
-|https://orcid.org/0000-0002-0750-6106[[.underline]#https://orcid.org/0000-0002-0750-6106#]
-|ORCID iD of person/ people that identified the organism
+|`https://orcid.org/0000-0002-0750-6106`
+|ORCID iD of person or people who identified the organism
 |Share if available
 
 |term:dwc[dwc:IdentificationRemarks]
-|It was identified by the presence of a pair of white longitudinal submedial lyres on the scutum, the clypeus with white scales (females), the separate scales on the mesanepimeron and the tarsomeres of the third leg or hind leg with white basal scales.
 |Comments or notes about the dwc:Identification.
+|`It was identified by the presence of a pair of white longitudinal submedial lyres on the scutum, the clypeus with white scales (females), the separate scales on the mesanepimeron and the tarsomeres of the third leg or hind leg with white basal scales.`
 |Share if available
 
 |term:dwc[dwc:identificationReferences]
-|Gillies M, Meillon D. 1968. The Anophelinae of Africa south of the Sahara. Publication of the South African Institute for Medical Research, Johannesburg, 54, 1–343. Gillies MT. 1987. A supplement to the Anophelinae of Africa south of the Sahara (Afrotropical Region). Publications of the South African Institute for Medical Research, 55, 1–143 
 |A list (concatenated and separated) of references (publication, global unique identifier, URI) used in the dwc:Identification.
+|`Gillies M, Meillon D. 1968. The Anophelinae of Africa south of the Sahara. Publication of the South African Institute for Medical Research, Johannesburg, 54, 1–343. Gillies MT. 1987. A supplement to the Anophelinae of Africa south of the Sahara (Afrotropical Region). Publications of the South African Institute for Medical Research, 55, 1–143`
 |Share if available
 
 |term:dwc[dwc:taxonRank]
-|species
 |The taxonomic rank of the most specific name in the dwc:scientificName. Recommended best practice is to use a controlled vocabulary. The taxon ranks of algae, fungi and plants are defined in the International Code of Nomenclature for algae, fungi, and plants (Schenzhen Code Articles H3.2, H4.4 and H.3.1).
+|`species`
 |Share if available
 
 |term:dwc[dwc:taxonRemarks]
-|Previously mentioned as _Triatoma lecticularia_
 |Comments or notes about the taxon or name.
+|`Previously mentioned as _Triatoma lecticularia_`
 |Share if available
 
 |term:dwc[dwc:bibliographicCitation]
-|Diatta, G., Duplantier, JM, Granjon, L., Ba, K., Chauvancy, G., Ndiaye, M., Trape, JF. Borrelia infection in small mammals in West Africa and its relationship with tick occurrence inside burrows. Acta Trop 152 131--140. (2015). DOI/ISSN/ISBN: 10.1016/j.actatropica.2015.08.016
 |A bibliographic reference for the resource.
+|`Diatta, G., Duplantier, JM, Granjon, L., Ba, K., Chauvancy, G., Ndiaye, M., Trape, JF. Borrelia infection in small mammals in West Africa and its relationship with tick occurrence inside burrows. Acta Trop 152 131--140. (2015). DOI/ISSN/ISBN: 10.1016/j.actatropica.2015.08.016`
 |Share if available
 
 |term:dwc[dwc:decimalLatitude]
-|9.236691273
 |The geographic latitude (in decimal degrees, using the spatial reference system given in term:dwc[dwc:geodeticDatum]) of the geographic center of a dcterms:Location. Positive values are north of the Equator, negative values are south of it. Legal values lie between -90 and 90, inclusive.
+|`9.236691273`
 |Strongly recommended
 
 |term:dwc[dwc:decimalLongitude]
-|-5.668395403
 |The geographic longitude (in decimal degrees, using the spatial reference system given in dwc:geodeticDatum) of the geographic center of a dcterms:Location. Positive values are east of the Greenwich Meridian, negative values are west of it. Legal values lie between -180 and 180, inclusive.
+|`-5.668395403`
 |Strongly recommended
 
 |term:dwc[dwc:geodeticDatum]
-|WGS84
-|The ellipsoid, geodetic datum, or spatial reference system (SRS) upon which the geographic coordinates given in term:dwc[dwc:decimalLatitude] and EPSG code of the SRS, if known. Otherwise use a controlled vocabulary for the name or code of the geodetic datum, if known. If none of these is known, use the value unknown. dwc:decimalLongitude are based. Recommended best practice is to use the
+|The ellipsoid, geodetic datum, or spatial reference system (SRS) upon which the geographic coordinates given in term:dwc[dwc:decimalLatitude] and term:dwc[dwc:decimalLongitude] are based. Recommended best practice is to use the EPSG code of the SRS, if known. Otherwise use a controlled vocabulary for the name or code of the geodetic datum, if known. If none of these is known, use the value unknown.
+|`WGS84`
 |Strongly recommended
 
 |term:dwc[dwc:coordinateUncertaintyInMeters]
-|100
 |The horizontal distance (in meters) from the given term:dwc[dwc:decimalLatitude] and term:dwc[dwc:decimalLongitude] describing the smallest circle containing the whole of the dcterms:Location. Leave the value empty if the uncertainty is unknown, cannot be estimated, or is not applicable (because there are no coordinates). Zero is not a valid value for this term. 
+|`100`
 |Strongly recommended
 
 |term:dwc[dwc:occurrenceStatus]
-|present
 |Presence, absence information
+|`present`
 |Strongly recommended
 
 |term:dwc[dwc:verbatimIdentification]
-|_Anopheles gambiae_ complex
 |A string representing the taxonomic identification as it appeared in the original record.
+|`_Anopheles gambiae_ complex`
 |Strongly recommended
 
 |term:dwc[dwc:verbatimTaxonRank]
-|s.l. 
 |The taxonomic rank of the most specific name in the term:dwc[dwc:scientificName] as it appears in the original record. 
+|`s.l.`
 |Share if available
 
 |term:dwc[dwc:dynamicProperties]
-|"TemperatureInCelsius":"26.5", "relativeHumidity":"64.2"
 |A list of additional measurements, facts, characteristics, or assertions about the record. Meant to provide a mechanism for structured content. Recommended best practice is to use a key:value encoding schema for a data interchange format such as JSON.
+|"TemperatureInCelsius":"26.5", "relativeHumidity":"64.2"
 |Share if available
 |===
 
@@ -265,19 +266,20 @@ We recommend using the following terms presented in table 3: term:dwc[dwc:eventD
 
 For detailed explanation and examples for the above terms, please refer to <<table-04,Table 4>> for sampling event.
 
-.Recommended term for http://rs.gbif.org/core/dwc_occurrence_2020-04-15.xml[Occurrence Core^] for vector datafootnote:[Example data were taken from the following published datasets: a) https://doi.org/10.15472/dxbowv[https://doi.org/10.15472/dxbowv^]; b) https://doi.org/10.15468/excax3[https://doi.org/10.15468/excax3^]; c) https://doi.org/10.15468/zr6frj[https://doi.org/10.15468/zr6frj^];  d) https://doi.org/10.15468/fbywtn[https://doi.org/10.15468/fbywtn^]
+[[table-04]]
+.Recommended term for http://rs.gbif.org/core/dwc_occurrence_2020-04-15.xml[Occurrence Core^] for vector data. footnote:[Example data were taken from the following published datasets: a) https://doi.org/10.15472/dxbowv[https://doi.org/10.15472/dxbowv^]; b) https://doi.org/10.15468/excax3[https://doi.org/10.15468/excax3^]; c) https://doi.org/10.15468/zr6frj[https://doi.org/10.15468/zr6frj^];  d) https://doi.org/10.15468/fbywtn[https://doi.org/10.15468/fbywtn^]
 [width="100%",cols="25%,39%,21%,15%",options="header",]
 |===
-|*Term name* |*Description* |*Examples* |*Status*
+|*Term name* |*Definition* |*Examples* |*Status*
 
 |term:dwc[dwc:basisOfRecord]
 |The specific nature of the data record. For field collected organisms use HumanObservation, for specimens deposited in biological collections/museums use PreservedSpecimen. For data abstracted from the literature use MaterialCitation. For DNA-derived occurrences, tissue/blood samples use MaterialSample. And for organisms from laboratory colonies use LivingSpecimen.
-|HumanObservation
+|`HumanObservation`
 |Required
 
 |term:dwc[dwc:occurrenceID]
 |An identifier for the dwc:Occurrence (as opposed to a particular digital record of the dwc:Occurrence). In the absence of a persistent global unique identifier, construct one from a combination of identifiers in the record that will most closely make the dwc:occurrenceID globally unique.
-|CEPAVE.edu.ar:Triatominae:14798
+|`CEPAVE.edu.ar:Triatominae:14798`
 |Required
 
 |term:dwc[dwc:preparations]
@@ -314,7 +316,7 @@ GBIF has a list of registered https://rs.gbif.org/extensions.html[extensions^] a
 
 [[fig-06]]
 .Event Core diagram with suggested use of extensions for vector data. Abiotic measurements collected during the sampling event, with occurrences linked to sampling events using the eventID (full lines). Biotic measurements are linked to occurrences using the occurrenceID term of the ExtendedMeasurementOrFact Extension (dashed lines). Figure adapted from the OBIS Manual.
-image::/img/web/fig-06.png[]
+image::img/web/fig-06.png[]
 
 ==== Extended Measurement or Facts Extension
 
