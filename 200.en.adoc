@@ -327,7 +327,7 @@ The https://rs.gbif.org/extension/obis/extended_measurement_or_fact_2023-08-28.x
 following published dataset: https://ecoevorxiv.org/repository/view/7150/[https://ecoevorxiv.org/repository/view/7150/]
 [width="100%",cols="32%,16%,37%,15%",options="header",]
 |===
-|*Term name* |*Description* |*Examples* |*Status*
+|*Term name* |*Definition* |*Examples* |*Status*
 
 |term:dwc[dwc:eventID]
 |An identifier for the set of information associated with an event (something that occurs at a place and time). May be a global unique identifier or an identifier specific to the data set.
@@ -574,9 +574,7 @@ For guidance on how to include the Humboldt Extension in a sampling event datase
 |Share if available
 |===
 
-[width="100%",cols="35%,20%,45%",options="header",]
-|===
-|*Term name* |*Examples* |*Description*
+`CREATE AS BULLETED ADDENDUM`
 
 |SCOPE TERMS - Taxonomic 
 |a
@@ -608,7 +606,7 @@ Relationships can be one-way as of between a vector and the pathogens detected b
 .Recommended terms from the ResourceRelationship Extension for one way relationship involving ticks and pathogens (a selection)footnote:[Example data were taken from the following published dataset: unpublished data by the One Health VBD Hub. Tick Occurrences in the UK - Review of Literature. Occurrence dataset]
 [width="100%",cols="27%,39%,20%,14%",options="header",]
 |===
-|*Field name* |*Examples* |*Description* |*Usage*
+|*Field name* |*Examples* |*Definition* |*Status*
 
 |term:dwc[dwc:ResourceRelationship]
 |an instance of a dwc:Organism is the vector of another instance of a dwc:Organism
@@ -647,10 +645,10 @@ Relationships can be one-way as of between a vector and the pathogens detected b
 |===
 
 [table-09]
-.Recommended terms from the ResourceRelationship Extension for two way relationship involving ticks and pathogens (a selection)footnote:[Example data were taken from the following published dataset: https://doi.org/10.15468/f3k8r9[https://doi.org/10.15468/f3k8r9]
+.Recommended terms from the ResourceRelationship Extension for two way relationship involving ticks and pathogens (a selection) footnote:[Example data were taken from the following published dataset: https://doi.org/10.15468/f3k8r9
 [width="100%",cols="31%,29%,40%",options="header",]
 |===
-|*Terms name* |*Examples* |*Description*
+|*Terms name* |*Examples* |*Definition*
 
 |term:dwc[dwc:resourceRelationshipID]
 |2A
@@ -937,7 +935,7 @@ Here we propose additional terms that are useful in vector datasets, either by p
 .Recommended additional terms of relevance to vector data (a selection)footnote:[Example data were taken from the following published datasets: https://doi.org/10.15472/dxbowv[https://doi.org/10.15472/dxbowv^], https://doi.org/10.15468/excax3[https://doi.org/10.15468/excax3^], https://doi.org/10.15468/sxcpfp[https://doi.org/10.15468/sxcpfp^]
 [width="100%",cols="26%,18%,37%,19%",options="header",]
 |===
-|*Term name* |*Examples* |*Description* |*Status*
+|*Term name* |*Examples* |*Definition* |*Status*
 
 |term:dwc[dwc:rightsHolder]
 |`University of Kinshasa` 
