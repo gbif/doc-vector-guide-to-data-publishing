@@ -462,95 +462,116 @@ For guidance on how to include the Humboldt Extension in a sampling event datase
 .Selected recommended terms from the Humboldt Extension
 [width="100%",cols="35%,20%,45%",options="header",]
 |===
-|*Term name* |*Description* |*Examples*
+|*Term name* |*Definition* |*Examples* |*Status
 
 |term:eco[eco:inventoryTypes]
 |The type(s) of search processes used to conduct the inventory.
 |`restrictedSearch`
+|Share if available
 
 |term:eco[eco:protocolNames]
 |Categorical descriptive names for the methods used during the dwc:Event.. Recommended best practice is to use a controlled vocabulary and separate multiple values in a list with space-post-space. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.
 |`vectorSurveillance`
+|Share if available
 
 |term:eco[eco:protocolDescriptions]
 |Detailed description of methods used during the term:dwc[dwc:event]
 |`1 light trap installed in forest and animal shelter each. They operated from 6:00pm-6:00am.`
+|Share if available
 
 |term:eco[eco:samplingPerformedBy]
 |A person, group, or organization responsible for recording the dwc:Event.
 |`Instituto de Salud Carlos III - ISCIII`
+|Share if available
 
 |term:eco[eco:isSamplingEffortReported]
 |The sampling effort associated with the term:dwc[dwc:event] was reported. Typically values of effort would be captured under the terms term:eco[eco:samplingEffortValue] and term:eco[eco:samplingEffortUnit].
 |`TRUE`
+|Share if available
 
 |term:eco[eco:samplingEffortValue]
 |The sampling effort associated with the dwc:Event was reported. Typically values of effort would be captured under the terms term:eco[eco:samplingEffortValue] and term:eco[eco:samplingEffortUnit].
 |`30` 
+|Share if available
 
 |term:eco[eco:samplingEffortUnit]
 |The units associated with the eco:samplingEffortValue. Recommended best practice is to use a controlled vocabulary. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.
 |`trapNight`
+|Share if available
 
 |term:eco[eco:samplingEffortProtocol]
 |A description of or reference (publication or URL) to the methods used to determine the sampling effort. This description should be associated with the values reported in term:eco[eco:samplingEffortValue] and term:eco[eco:samplingEffortUnit]. This is a specialization of term:eco[eco:protocolDescription] focused on effort, distinct from the survey method. The effort relates to the intensity of sampling and therefore can assist in interpreting estimates of completeness. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.
 |`12 hours/night`
+|Share if available
 
 |term:eco[eco:totalAreaSampledValue]
 |The numeric value for the total area surveyed during the term:dwc[dwc:Event. This area is always less than or equal to the term:eco[eco:geospatialScopeAreaValue]. An term:eco[eco:totalAreaSampledValue] must have a corresponding term:eco[eco:totalAreaSampledUnit].
 |`250`
+|Share if available
 
 |term:eco[eco:totalAreaSampledUnit]
 |The units associated with term:eco[eco:totalAreaSampledValue]. Recommended best practice is to use an IRI from a controlled vocabulary of SI units, derived units, or other non-SI units accepted for use within the SI.
 |`square metre`
+|Share if available
 
 |term:eco[eco:isAbundanceReported]
 |The number of term:dwc[dwc:organism] collected or observed was reported. Typically the abundance values would be reported in the term:dwc[dwc:organismQuantity] and term:dwc[dwc:organismQuantityType] terms for the child term:dwc[dwc:occurrence] records for this dwc:Event.
 |`TRUE`
+|Share if available
 
 |term:eco[eco:isLeastSpecificTargetCategoryQuantityInclusive]
 |The total detected quantity for a term:dwc[dwc:taxon] (including subcategories thereof) in a dwc:Event is given explicitly in a single record (term:dwc[dwc:organismQuantity] value) for that term:dwc[dwc:taxon]. Recommended values are 'true' and 'false'. This term is only relevant if term:dwc[dwc:organismQuantity] is a number. For a detailed explanation, see http://rs.tdwg.org/eco/docs/inclusive/.
 |`TRUE`
+|Share if available
 
 |term:eco[eco:isAbundanceCapReported]
 |A maximum number of term:dwc[dwc:organism]s was reported, as specified or restricted by the protocol used. Values of abundance cap should be captured under the term term:eco[eco:abundanceCap].
 |`TRUE`
 
 |term:eco[eco:abundanceCap]
-|A maximum number of term:dwc[dwc:organism]s was reported, as specified or restricted by the protocol used. Values of abundance cap should be captured under the term |term:eco[eco:abundanceCap].
+|A maximum number of term:dwc[dwc:organism]s was reported, as specified or restricted by the protocol used. Values of abundance cap should be captured under the term term:eco[eco:abundanceCap].
 |`85`
+|Share if available
 
 |term:eco[eco:eventDurationValue]
 |The numeric value for the duration of the dwc:Event. An |term:eco[eco:eventDurationValue] must have a corresponding term:eco[eco:eventDurationUnit].
 |`3`
+|Share if available
 
 |term:eco[eco:eventDurationUnit]
 |The units associated with the term:eco[eco:eventDurationValue]. Recommended best practice is to use an IRI from a controlled vocabulary of SI units, derived units, or other non-SI units accepted for use within the SI.
 |`nights`
+|Share if available
 
 |term:eco[eco:siteNestingDescription]
 |Textual description of the hierarchical sampling design.…Study consists of a series of sampling events at 10 different sites. Each Event site is identified using X coding system.
 |`2 sampling sites per habitat`
+|Share if available
 
 |term:eco[eco:verbatimSiteNames]
 |All location codes or site names included in the study area
 |`code(s) for specific event`
+|Share if available
 
 |term:eco[eco:verbatimSiteDescriptions]
 |Original textual description of the site(s). Site refers to the location at which observations are made or samples/measurements are taken. The site can be at any level of hierarchy. Recommended best practice is to separate multiple values in a list with space-pipe-space.
 |`Patch of forest`, `Barn where sheep spend nights` 
+|Share if available
 
 |term:eco[eco:verbatimTargetScope]
 |The verbatim original description of the term:dwc[dwc:event] scope.
 |`Ex. All adult mosquitoes of…?`
+|Share if available
 
 |term:eco[eco:targetTaxonomicScope]
 |The taxonomic group(s) targeted for sampling during the term:dwc[dwc:event].
 |`Ixodidae`
+|Share if available
 
 |term:eco[eco:targetLifeStageScope]
 |The age classes or life stages of the term:dwc[dwc:organism]s targeted for sampling during the term:dwc[dwc:event].
-|`Nymph`, `adult` 
+|`Nymph`, `adult`
+|Share if available
 |===
 
 [width="100%",cols="35%,20%,45%",options="header",]
