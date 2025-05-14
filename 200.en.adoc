@@ -774,57 +774,57 @@ In addition to the terms in <<table-11,Table 11>>, we recommend using the terms:
 |`1BOH1`
 |Strongly recommended
 
-|http://rs.tdwg.org/dwc/terms/locality[locality^] :dwc[dwc:
+|term:dwc[dwc:locality[locality]
 |The verbatim name of the area this distribution record is about.
 |`Bohéro`
 |Strongly recommended
 
-|http://rs.tdwg.org/dwc/terms/countryCode[countryCode^]
+|term:dwc[dwc:countryCode]
 |ISO 3166 alpha 2 or alpha 3 country codes the area belongs to or as an alternative for a locationID if the area is a country. For multiple countries separate values with a comma ",".
 |`BF`
 |Strongly recommended
 
-|http://rs.tdwg.org/dwc/terms/lifeStage[lifeStage^]
+|term:dwc[dwc:lifeStage]
 |The distribution information pertains solely to a specific life stage of the taxon
 |`adult`
 |Share if available
 
-|http://rs.tdwg.org/dwc/terms/occurrenceStatus[occurrenceStatus^]
+|term:dwc[dwc:occurrenceStatus]
 |Statement about the presence or absence of the taxon in the given area.
 |`present`
 |Share if available
 
-|http://rs.tdwg.org/dwc/terms/establishmentMeans[establishmentMeans^]
+|term:dwc[dwc:establishmentMeans]
 |Statement about whether the taxon has been introduced to the given area and time through the direct or indirect activity of modern humans. Recommended best practice is to use controlled value strings from the controlled vocabulary designated for use with this term, listed at http://rs.tdwg.org/dwc/doc/em/. For details, refer to https://doi.org/10.3897/biss.3.38084
 |`native`
 |Share if available
 
-|http://rs.tdwg.org/dwc/terms/degreeOfEstablishment[degreeOfEstablishment^]
+|term:dwc[dwc:degreeOfEstablishment]
 |The degree to which the taxon survives, reproduces, and expands its range at the given area and time. Recommended best practice is to use controlled value strings from the controlled vocabulary designated for use with this term, listed at http://rs.tdwg.org/dwc/doc/doe/. For details, refer to https://doi.org/10.3897/biss.3.38084
 |`native`
 |Share if available
 
-|http://rs.tdwg.org/dwc/terms/pathway[pathway^]
+|term:dwc[dwc:pathway]
 |The process by which the taxon came to be in the given area at the given time. Recommended best practice is to use controlled value strings from the controlled vocabulary designated for use with this term, listed at http://rs.tdwg.org/dwc/doc/pw/. For details, refer to https://doi.org/10.3897/biss.3.38084[[.underline]#https://doi.org/10.3897/biss.3.38084#]
 |`Ship/boat ballast water`
 |Share if available
 
-|http://rs.tdwg.org/dwc/terms/eventDate[eventDate^]
+|term:dwc[dwc:eventDate]
 |Relevant temporal context for this entire distribution record including all properties preferably given as a year range or single year on which the distribution record is valid. For the same area and taxon there could therefore be several records with different temporal context, e.g. in 5 year intervals for invasive species.
 |`2017-01-27`
 |Strongly recommended
 
-|http://rs.tdwg.org/dwc/terms/startDayOfYear[startDayOfYear^]
+|term:dwc[dwc:startDayOfYear]
 |Seasonal temporal subcontext within the eventDate context. Useful for migratory species. The earliest ordinal day of the year on which the distribution record is valid. Numbering starts with 1 for 1 January and ends with 365 or 366 for 31 December.
 |`27`
 |Share if available
 
-|http://rs.tdwg.org/dwc/terms/endDayOfYear[endDayOfYear^]
+|term:dwc[dwc:endDayOfYear]
 |Seasonal temporal subcontext within the eventDate context. The latest ordinal day of the year on which the distribution record is valid.
 |`29`
 |Share if available
 
-|http://rs.tdwg.org/dwc/terms/occurrenceRemarks[occurrenceRemarks^]
+|term:dwc[dwc:occurrenceRemarks]
 |Comments or notes about the distribution.
 |`Collected near a lake`
 |Share if available
@@ -838,52 +838,27 @@ Vector data presents some specificities when it comes to taxonomy, as in many gr
 
 The DwC standard can only handle subspecies with the term:dwc[dwc:infraspecificEpithet] term but there is no appropriate term to accommodate well species complexes/assemblages or sibling species.
 
-One way to sort out this specific issue with vector data is to leave the term:dwc[dwc:scientificName] at the lowest level of identification possible, in this case, at genus level, and then display the species complexes/assemblages or sibling species status in term:dwc[dwc:verbatimIdentification] term, or even include any qualifier (such as `s.l.`, `sp.`, `cf.` or `aff.` in the term:dwc[dwc:verbatimTaxonRank] term to improve the alignment with the taxonomic backbone. Identification qualifiers should not be included in the term:dwc[dwc:scientificName] term.
+One way to sort out this specific issue with vector data is to leave the term:dwc[dwc:scientificName] at the lowest level of identification possible, in this case, at genus level, and then display the species complexes/assemblages or sibling species status in the term:dwc[dwc:verbatimIdentification] term, or even include any qualifier (such as `s.l.`, `sp.`, `cf.` or `aff.` in the term:dwc[dwc:verbatimTaxonRank] term to improve the alignment with the taxonomic backbone. `Identification qualifiers` {Ed.: too loose? Isn't there a specific DwC term to borrow phrasing from here?} should not be included in the term:dwc[dwc:scientificName] term.
 
-It is important to remember that when the dataset is uploaded in GBIF, the taxon names are matched to https://doi.org/10.15468/39omei[GBIF Taxonomic Backbone^], which is an updated list of names. However, to improve the IPT's ability to handle the names in a unambiguous way, it's important to add higher taxonomy to the data, even if just at kingdom level. This way, similar species names that are found in different kingdoms, can be classified correctly and it prevents the IPT from assigning _incertae sedis_ to the names.
+It is important to remember that when the dataset is uploaded in GBIF, the taxon names are matched to https://doi.org/10.15468/39omei[GBIF Taxonomic Backbone^], which is an updated list of names. However, to improve the IPT's ability to handle the names in a unambiguous way, it's important to add higher taxonomy to the data, even if just at kingdom level. This way, similar species names that are found in different kingdoms, can be classified correctly and it prevents the IPT from assigning _Incertae sedis_ to the names.
 
 ==== How to best describe the native status of vectors
 
 Understanding how vectors spread and where they come from is an important aspect of disease surveillance. The global distribution of VBDs is already affected by climate change, land use changes, deforestation, global trade, among other factors, causing varying degrees of impacts across regions.
 
-There are several examples of how vector species are having their
-distribution reshaped by human activity, such as the spread of _Aedes
-aegypti_ in California, USA infesting over 300 cities since its
-introduction in 2013 (Kelly et al. 2021), the introduction and spread of
-_Anopheles stephensi_ in Africa (Sinka et al. 2020) and the reappearance
-of _Anopheles sacharovi_ in Italy after over 50 years, due to increase
-of natural areas an favourable climatic and environmental conditions
-(Raele et al. 2024). These introductions, re-introductions, and spread
-of vector species require constant updates in their status as invasive,
-established or native to better inform decision-making and design of
-control strategies.
+There are several examples of how human activity is reshaping the distribution of vector species, as with _Aedes aegypti_, which has spread to more than 300 cities since its introduction to California in the U.S. in 2013 (Kelly et al. 2021); the introduction and spread of _Anopheles stephensi_ in Africa (Sinka et al. 2020); and the reappearance of _Anopheles sacharovi_ in Italy after more than 50 years, due to an increase of natural areas with favourable climatic and environmental conditions (Raele et al. 2024). These introductions, reintroductions, and spread of vector species require constant updates in their status as invasive, established or native to better inform both decision-making and the design of control strategies.
 
-Data sources originate from a wide range of data holders, e.g.
-governmental surveillance and control programmes, and routine
-activities, research, and private businesses which provide data without
-any standardization. Since standardized, good quality data are necessary
-to inform control strategies, species distribution models, risk
-assessments and early warning systems, it is best practice to use the
-appropriate terms and controlled vocabulary. These are provided by the
-DwC standard (e.g.
-introductionhttps://dwc.tdwg.org/terms/#dwc:pathway[[.underline]#pathway#],
-the
-https://dwc.tdwg.org/terms/#dwc:degreeOfEstablishment[[.underline]#degree
-of establishment#]) and a suggested controlled vocabulary has been
-proposed by Groom et al. (2019), see appendix I, table A for the full
-list of controlled vocabulary
-forhttps://dwc.tdwg.org/terms/#dwc:degreeOfEstablishment[[.underline]#degree
-of establishment#].
+Data sources originate from a wide range of data holders, e.g. governmental surveillance and control programmes, and routine activities, research, and private businesses which provide data without any standardization. Since standardized, good quality data are necessary to inform control strategies, species distribution models, risk assessments and early warning systems, it is best practice to use the appropriate terms and controlled vocabulary. These are provided by the DwC standard (e.g. introduction term:dwc[dwc:pathway] and the term:dwc[dwc:degreeOfEstablishment) and a suggested controlled vocabulary has been proposed by Groom et al. (2019), see <<appendix-a,Table A>> for the full list of controlled vocabulary for the term:dwc[dwc:degreeOf Establishment] term.
 
 ==== How to handle data that does not fit any DwC term available
 
 The DwC term term:dwc[dwc:dynamicProperties] provides a way to list additional measurements, facts, characteristics, or assertions about a record; it calc is a way to provide a mechanism for structured content. And recommended best practice is to use a key:value encoding schema for a data interchange format such as JSON.
 
 [[table-12]]
-.Examples of how to use term:dwc[dwc:dynamicProperties] with vector data.
+.Examples key:value statements for use as term:dwc[dwc:dynamicProperties] with vector data.
 [width="100%",cols="50%,50%",options="header",]
 |===
-|*dynamicProperties* |*Explanation*
+|*Examples* |*Explanation*
 
 |`LocationCode:DEC05`
 |For a code for location, such as the NUTS Code
@@ -897,42 +872,29 @@ The DwC term term:dwc[dwc:dynamicProperties] provides a way to list additional m
 
 ==== Controlled vocabulary
 
-Controlled vocabularies are standardized words and phrases and they provide a consistent way to organize knowledge for subsequent retrieval. In addition to the links in sectionlink:#controlled-vocabulary-ontologies[[.underline]#1.5.3
-Controlled vocabularies & ontologies#], we provide an link:#appendix-i[[.underline]#appendix#] with DwC terms, such as
-https://www.gbif.org/data-quality-requirements-sampling-events#dcSamplingProtocol[samplingProtocol^], https://dwc.tdwg.org/list/#dwc_lifeStage[lifeStage], https://dwc.tdwg.org/list/#dwc_sex[sex], https://dwc.tdwg.org/list/#dwciri_degreeOfEstablishment[degreeOfEstablishment], https://dwc.tdwg.org/list/#dwciri_habitat[habitat].
+Controlled vocabularies are standardized words and phrases and they provide a consistent way to organize knowledge for subsequent retrieval. In addition to the links in sectionlink:#controlled-vocabulary-ontologies[[.underline]#1.5.3. Controlled vocabularies & ontologies#], we provide an <<appendix>> with DwC terms, such as https://www.gbif.org/data-quality-requirements-sampling-events#dcSamplingProtocol[samplingProtocol^], term:dwc[dwc:lifeStage], term:dwc[dwc:sex], https://dwc.tdwg.org/list/#dwciri_degreeOfEstablishment[degreeOfEstablishment], https://dwc.tdwg.org/list/#dwciri_habitat[habitat].
 
-==== How to create identifiers for datasets
+==== Unique identifiers within datasets
 
-An identifier consists of a unique identification code that is assigned
-to an object for unambiguous retrieval. There are three main dwc terms
-that are unique identifiers:
-https://dwc.tdwg.org/terms/#dwc:occurrenceID[[.underline]#occurrenceID#],
-https://dwc.tdwg.org/terms/#dwc:eventID[[.underline]#eventID#] and
-https://dwc.tdwg.org/terms/#dwc:parentEventID[[.underline]#parentEventID#]
-and they must be a global unique identifier or an identifier specific to
-the data set.
+An identifier consists of a unique identification code assigned to an object for unambiguous retrieval. Three key DwC terms that must be either global unique identifiers or a uniquie to within a specific are: 
 
-It is important to consider the level of granularity of the data, that
-is how much detail about the data the identifier will cover. If we have,
-for example, a surveillance program running across different states or
-even different countries, we will need unique identifiers for
-occurrences and events, so they can unambiguously be retrieved.
+* term:dwc[dwc:occurrenceID]
+* term:dwc[dwc:eventID]
+* term:dwc[dwc:parentEventID]
 
-Another thing to consider is opacity, or how much the identifier allows
-us to learn anything from the format of the identifier itself.
+It is important to consider the level of granularity of the data, that is how much detail about the data the identifier will cover. If we have, for example, a surveillance program running across different states or even different countries, we will need unique identifiers for occurrences and events, so they can unambiguously be retrieved.
 
-For a general introduction to identifiers, please check the
-https://assets.ctfassets.net/uo17ejk9rkwj/8aIUAbLo0oycyMiM2IKUS/363edf7ab4558460cfe1ef140567450f/persistent_identifiers_guide_en_v1.pdf[[.underline]#Beginner’s
-Guide to Persistent Identifiers#] and this interesting
-https://discourse.gbif.org/t/do-you-really-need-uuids-in-your-datasets-a-quick-rant/4396[[.underline]#post#]
-about UUIDs (Universally Unique Identifiers) and opacity.
+Another thing to consider is opacity, or how much the identifier allows us to learn anything from the format of the identifier itself.
+
+For a general introduction to identifiers, see 
+https://doi.org/10.35035/mjgq-d052[White et al. 2011] and this https://discourse.gbif.org/t/do-you-really-need-uuids-in-your-datasets-a-quick-rant/4396[GBIF Community Forum post] about UUIDs (Universally Unique Identifiers) and opacity.
 
 ==== Recommended additional terms of relevance
 
 Here we propose additional terms that are useful in vector datasets, either by providing more detailed metadata, publication of verbatim data, more details on the classification, etc.
 
 [[table-13]]
-.Recommended additional terms of relevance to vector data (a selection)footnote:[Example data were taken from the following published datasets: https://doi.org/10.15472/dxbowv[https://doi.org/10.15472/dxbowv^], https://doi.org/10.15468/excax3[https://doi.org/10.15468/excax3^], https://doi.org/10.15468/sxcpfp[https://doi.org/10.15468/sxcpfp^]
+.Recommended additional terms of relevance to vector data (a selection) footnote:[Example data were taken from the following published datasets: https://doi.org/10.15472/dxbowv[https://doi.org/10.15472/dxbowv^], https://doi.org/10.15468/excax3[https://doi.org/10.15468/excax3^], https://doi.org/10.15468/sxcpfp[https://doi.org/10.15468/sxcpfp^]
 [width="100%",cols="26%,18%,37%,19%",options="header",]
 |===
 |*Term name* |*Examples* |*Definition* |*Status*
