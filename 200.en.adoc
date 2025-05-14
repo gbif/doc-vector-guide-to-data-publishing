@@ -681,7 +681,7 @@ image:vertopal_49c5a102d7d74da1a4682b24f0320f8f/media/image6.png[image,width=624
 
 image:vertopal_49c5a102d7d74da1a4682b24f0320f8f/media/image5.png[image,width=624,height=53]
 
-[[fig-07a]]
+[[fig-07]]
 .Example of DwC mapping to the original headers in an Occurrence Core table with a two-way relationship between vertebrate hosts, a tick and the pathogen detected in the vector.
 image::img/web/fig-07a.png[]
 image::img/web/fig-07b.png[][image,width=624,height=70]
@@ -695,7 +695,7 @@ image::img/web/fig-08.png[]
 The https://rs.gbif.org/extension/gbif/1.0/speciesprofile_2019-01-29.xml[Species Profile^] extension is a basic species profile with characteristics in addition to textural description which are covered by the description extension and can be used in addition to the checklist core.
 
 [[table-10]]
-.Recommended terms from the Species profile Extension (a selection) footnote:[Example data were taken from the following published datasets: https://doi.org/10.15468/b52b9z[https://doi.org/10.15468/b52b9z^], https://doi.org/10.15468/sxcpfp[https://doi.org/10.15468/sxcpfp^], https://doi.org/10.15468/c4cauy[https://doi.org/10.15468/c4cauy^]
+.Recommended terms from the Species Profile Extension, with examples from the following datasets: https://doi.org/10.15468/b52b9z[NEON ticks sampled using drag cloths and tick pathogen status^], https://doi.org/10.15468/sxcpfp[Fiocruz/COLFLEB - Coleção de Flebotomíneos^], https://doi.org/10.15468/c4cauy[Catálogo Taxonômico da Fauna do Brasil^].
 [width="100%",cols="24%,23%,30%,23%",options="header",]
 |===
 |*Term name* |*Definition* |*Examples* |*Status*
@@ -759,22 +759,22 @@ vocabulary like http://en.wikipedia.org/wiki/Geologic_column[http://en.wikipedia
 
 ==== Species Distribution
 
-The Species Distribution extension is a geographic distribution of a taxon. It can be used with the checklist core.
+The Species Distribution extension is a geographic distribution of a taxon and can be used with the Checklist Core.
 
-In addition to the terms on the table, we recommend using the following terms: http://purl.org/dc/terms/source[[.underline]#source#] and http://rs.tdwg.org/dwc/terms/datasetID[[.underline]#datasetID#] to which description, example and status can be found above in table 9.
+In addition to the terms in <<table-11,Table 11>>, we recommend using the terms: http://purl.org/dc/terms/source[source^] and term:dwc[dwc:datasetID] described above in <<table-09,Table 9>>.
 
 [[table-11]]
-.Recommended terms from the Species profile Extension (a selection)footnote:[Example data were taken from the following published dataset: https://doi.org/10.15468/v8fvyn[[.underline]#https://doi.org/10.15468/v8fvyn#]]
+.Recommended terms from the Species profile Extension, with examples from the dataset: https://doi.org/10.15468/v8fvyn[Anopheles collections in the health districts of Korhogo (Côte d'Ivoire) and Diébougou (Burkina Faso) (2016-2018)^].
 [width="99%",cols="24%,13%,45%,18%",options="header",]
 |===
 |*Term name* |*Definition* |*Examples* |*Status*
 
-|http://rs.tdwg.org/dwc/terms/locationID[locationID^] 
+|term:dwc[dwc:locationID] 
 |A code for the named area this distribution record is about. Use a prefix for each code to indicate the source of the code, see http://rs.gbif.org/areas/ for list of coding schemes and their recommended prefix. See also http://rs.gbif.org/areas/[[.underline]#http://rs.gbif.org/areas/#]
 |`1BOH1`
 |Strongly recommended
 
-|http://rs.tdwg.org/dwc/terms/locality[locality^]
+|http://rs.tdwg.org/dwc/terms/locality[locality^] :dwc[dwc:
 |The verbatim name of the area this distribution record is about.
 |`Bohéro`
 |Strongly recommended
