@@ -4,6 +4,7 @@ Here we provide a list of useful or relevant links to websites and resources to 
 
 === General information and guides
 
+///
 * {blank}
 +
 ____
@@ -318,3 +319,4 @@ ____
 ____
 https://www.gbif.org/become-a-publisher[[.underline]#Become a GBIF
 publisher#]: necessary for dataset publication in GBIF
+///
