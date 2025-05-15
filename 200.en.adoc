@@ -459,10 +459,10 @@ The https://rs.gbif.org/extension/eco/Humboldt_2024-04-16.xml[Humboldt Extension
 For guidance on how to include the Humboldt Extension in a sampling event dataset, see the guide https://doi.org/10.35035/doc-7t3p-ve38[Updating an existing DwC Event dataset with the Humboldt Extension^].
 
 [[table-07]]
-.Selected recommended terms from the Humboldt Extension
+.Selected recommended terms from the Humboldt Extension.
 [width="100%",cols="20%,40%,20%,40%",options="header"]
 |===
-|*Term name* |*Definition* |*Examples* |*Status
+|*Term name* |*Definition* |*Examples* |*Status*
 
 |term:eco[eco:inventoryTypes]
 |The type(s) of search processes used to conduct the inventory.
