@@ -27,4 +27,4 @@ Community review edition, v0.1, May 2025
 
 === Cover image credit
 
-GBIF secretariat 2025, licensed under https://creativecommons.org/licenses/by/4.0/[CC BY]
+GBIF Secretariat 2025, licensed under https://creativecommons.org/licenses/by/4.0/[CC BY 4.0]
