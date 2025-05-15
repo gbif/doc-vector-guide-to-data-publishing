@@ -897,149 +897,148 @@ Here we propose additional terms that are useful in vector datasets, either by p
 .Recommended additional terms of relevance to vector data (a selection) footnote:[Example data were taken from the following published datasets: https://doi.org/10.15472/dxbowv[https://doi.org/10.15472/dxbowv^], https://doi.org/10.15468/excax3[https://doi.org/10.15468/excax3^], https://doi.org/10.15468/sxcpfp[https://doi.org/10.15468/sxcpfp^]
 [width="100%",cols="26%,18%,37%,19%",options="header",]
 |===
-|*Term name* |*Examples* |*Definition* |*Status*
+|*Term name* |*Definition* Examples* |*Status*
 
 |term:dwc[dwc:rightsHolder]
-|`University of Kinshasa` 
 |A person or organization owning or managing rights over the resource.
+|`University of Kinshasa` 
 |Share if available
 
 |term:dwc[dwc:institutionCode]
-|`UNIKIN` 
 |The name (or acronym) in use by the institution having custody of the object(s) or information referred to in the record.
+|`UNIKIN` 
 |Share if available
 
 |term:dwc[dwc:informationWithheld]
-|`This dataset is a simplified version of the original one. We have removed non-biological information, information that could compromise the privacy of citizen scientists and some redundant information.`
 |Additional information that exists, but that has not been shared in the given record.
+|`This dataset is a simplified version of the original one. We have removed non-biological information, information that could compromise the privacy of citizen scientists and some redundant information.`
 |Share if available
 
 |term:dwc[dwc:organismRemarks]
-|`Nulliparous`
 |Comments or notes about the dwc:Organism instance.
+|`Nulliparous`
 |Share if available
 
 |term:dwc[dwc:pathway]
-|https://dwc.tdwg.org/pw/#dwcpw_p032[`container/bulk`], https://dwc.tdwg.org/pw/#dwcpw_p038[[`ship/boat ballast
-water`]
 |The process by which a dwc:Organism came to be in a given place at a given time.+
 Recommended best practice is to use controlled value strings from the controlled vocabulary designated for use with this term, listed at http://rs.tdwg.org/dwc/doc/pw/. For details, refer to https://doi.org/10.3897/biss.3.38084. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.
+|https://dwc.tdwg.org/pw/#dwcpw_p032[`container/bulk`], https://dwc.tdwg.org/pw/#dwcpw_p038[[`ship/boat ballast water`]
 |Share if available
 
-|https://dwc.tdwg.org/terms/#dwc:associatedOccurrences[[.underline]#associatedOccurrences#]
+|tem=rm:dwc[dwc:associatedOccurrences]
+|The process by which a dwc:Organism came to be in a given place at a given time. +
+Recommended best practice is to use controlled value strings from the controlled vocabulary designated for use with this term, listed at http://rs.tdwg.org/dwc/doc/pw/. For details, refer to https://doi.org/10.3897/biss.3.38084. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.
 |`pathogen test of:2a85f793-09aa-4e49-b5fe-523b2440440f-00006`
-|The process by which a dwc:Organism came to be in a given place at a given time.+
-Recommended best practice is to use controlled value strings from the controlled vocabulary designated for use with this term, listed at http://rs.tdwg.org/dwc/doc/pw/. For details, refer to https://doi.org/10.3897/biss.3.38084. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.
 |Share if available
 
-|https://dwc.tdwg.org/terms/#dwc:associatedSequences[[.underline]#associatedSequences#]
-|http://www.ncbi.nlm.nih.gov/nuccore/U34853.1[http://www.ncbi.nlm.nih.gov/nuccore/U34853.1^]
+|term:dwc[dwc:associatedSequences]
 |A list (concatenated and separated) of identifiers (publication, global unique identifier, URI) of genetic sequence information associated with the dwc:MaterialEntity.
+|`http://www.ncbi.nlm.nih.gov/nuccore/U34853.1`
 |Share if available
 
-|https://dwc.tdwg.org/terms/#dwc:year[[.underline]#year#]
-|`2020`
+|term:dwc[dwc:year]
 |The four-digit year in which the dwc:Event occurred, according to the Common Era Calendar.
+|`2020`
 |Share if available
 
-|https://dwc.tdwg.org/terms/#dwc:month[[.underline]#month#] 
-|`12` 
+|term:dwc[dwc:month] 
 |The integer month in which the dwc:Event occurred.
+|`12` 
 |Share if available
 
-|https://dwc.tdwg.org/terms/#dwc:day[[.underline]#day#]
-|`21`
+|term:dwc[dwc:day]
 |The integer day of the month on which the dwc:Event occurred.
+|`21`
 |Share if available
 
-|https://dwc.tdwg.org/terms/#dwc:verbatimEventDate[[.underline]#verbatimEventDate#]
-|`X-1936`
+|term:dwc[dwc:verbatimEventDate]
 |The verbatim original representation of the date and time information for a dwc:Event.
+|`X-1936`
 |Share if available
 
-|https://dwc.tdwg.org/terms/#dwc:county[[.underline]#county#] 
-|`Miranda`
+|term:dwc[dwc:county] 
 |The full, unabbreviated name of the next smaller administrative region than stateProvince (county, shire, department, etc.) in which the dcterms:Location occurs. +
+|`Miranda`
 Recommended best practice is to use a controlled vocabulary such as the Getty Thesaurus of Geographic Names. Recommended best practice is to leave this term blank if the dcterms:Location spans multiple entities at this administrative level or if the dcterms:Location might be in one or another of multiple possible entities at this level. Multiplicity and uncertainty of the geographic entity can be captured either in the term dwc:higherGeography or in the term dwc:locality, or both.
 |Share if available
 
-|https://dwc.tdwg.org/terms/#dwc:municipality[[.underline]#municipality#]
-|`Divinópolis a`
-|The full, unabbreviated name of the next smaller administrative region than county (city, municipality, etc.) in which the dcterms:Location occurs. Do not use this term for a nearby named place that does not contain the actual dcterms:Location.+
+|term:dwc[dwc:municipality]
+|The full, unabbreviated name of the next smaller administrative region than county (city, municipality, etc.) in which the dcterms:Location occurs. Do not use this term for a nearby named place that does not contain the actual dcterms:Location. +
 Recommended best practice is to use a controlled vocabulary such as the Getty Thesaurus of Geographic Names. Recommended best practice is to leave this term blank if the dcterms:Location spans multiple entities at this administrative level or if the dcterms:Location might be in one or another of multiple possible entities at this level. Multiplicity and uncertainty of the geographic entity can be captured either in the term dwc:higherGeography or in the term dwc:locality, or both.
+|`Divinópolis`
 |Share if available
 
-|https://dwc.tdwg.org/terms/#dwc:locationRemarks[[.underline]#locationRemarks#]
-|pigeon loft at 50m
+|term:dwc[dwc:locationRemarks]
 |Comments or notes about the dcterms:Location.
+|`pigeon loft at 50m`
 |Share if available
 
-|https://dwc.tdwg.org/terms/#dwc:verbatimLatitude[[.underline]#verbatimLatitude#]
-|25° 33' 0" S
+|term:dwc[dwc:verbatimLatitude]
 |The verbatim original latitude of the dcterms:Location. The coordinate ellipsoid, geodeticDatum, or full Spatial Reference System (SRS) for these coordinates should be stored in dwc:verbatimSRS and the coordinate system should be stored in dwc:verbatimCoordinateSystem.
+|`25° 33' 0" S`
 |Share if available
 
-|https://dwc.tdwg.org/terms/#dwc:verbatimLongitude[[.underline]#verbatimLongitude#]
-|54° 34' 60" W
+|term:dwc[dwc:verbatimLongitude]
 |The verbatim original longitude of the dcterms:Location. The coordinate ellipsoid, geodeticDatum, or full Spatial Reference System (SRS) for these coordinates should be stored in dwc:verbatimSRS and the coordinate system should be stored in dwc:verbatimCoordinateSystem. 
+|`54° 34' 60" W`
 |Share if available
 
 |term:dwc[dwc:footprintWKT]
-|`POLYGON ((10 20, 11 20, 11 21, 10 21, 10 20)) a`
-|A Well-Known Text (WKT) representation of the shape (footprint, geometry) that defines the dcterms:Location. A dcterms:Location may have both a point-radius representation (see dwc:decimalLatitude) and a footprint representation, and they may differ from each other.+
+|A Well-Known Text (WKT) representation of the shape (footprint, geometry) that defines the dcterms:Location. A dcterms:Location may have both a point-radius representation (see dwc:decimalLatitude) and a footprint representation, and they may differ from each other. +
 This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.
+|`POLYGON ((10 20, 11 20, 11 21, 10 21, 10 20)`
 |Share if available
 
 |term:dwc[dwc:phylum]
-|`Arthropoda`
 |The full scientific name of the phylum or division in which the term:dwc[dwc:taxon] is classified.
+|`Arthropoda`
 |Strongly recommended
 
 |term:dwc[dwc:class]
-|`Insecta`
 |The full scientific name of the class in which the dwc:Taxon is classified.
+|`Insecta`
 |Share if available
 
 |term:dwc[dwc:order] 
-|`Diptera`
 |The full scientific name of the order in which the term:dwc[dwc:taxon] is classified.
+|`Diptera`
 |Share if available
 
 |term:dwc[dwc:family]
-|`Culicidae`
 |The full scientific name of the family in which the term:dwc[dwc:taxon] is classified.
+|`Culicidae`
 |Share if available
 
 |term:dwc[dwc:identificationQualifier]
-|`_Sciopemyia_ _aff_.`, `_microps_ a`
-|A brief phrase or a standard term ("cf.", "aff.") to express the determiner's doubts about the dwc:Identification.+
+|A brief phrase or a standard term ("cf.", "aff.") to express the determiner's doubts about the dwc:Identification. +
 This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.
+|`_Sciopemyia_' aff. `_microps_`
 |Strongly recommended
 
 |term:dwc[dwcidentificationVerificationStatus]
-|`1 a`
 | A categorical indicator of the extent to which the taxonomic identification has been verified to be correct.+
 Recommended best practice is to use a controlled vocabulary such as that used in HISPID and ABCD. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.
+|`1 a`
 |Share if available
 
 |term:dwc[dwc:nameAccordingTo]
 |`Harbach, R.E. 2013. Mosquito Taxonomic Inventory, https://mosquito-taxonomic-inventory.myspecies.info/ accessed on 25 april 2023`
-|The reference to the source in which the specific taxon concept circumscription is defined or implied - traditionally signified by the Latin "sensu" or "sec." (from secundum, meaning "according to"). For taxa that result from identifications, a reference to the keys, monographs, experts and other sources should be given. This term provides context to the dwc:scientificName. Together with the dwc:scientificName, separated by sensu or sec., it forms the taxon concept label, which may be seen as having the same relationship to dwc:taxonConceptID as, for example, dwc:acceptedNameUsage has to dwc:acceptedNameUsageID. When not provided, in Taxon Core data sets the dwc:nameAccordingTo can be taken to be the data set. In this case the data set mostly provides sufficient context to infer the delimitation of the taxon and its relationship with other taxa. In Occurrence Core data sets, when not provided, dwc:nameAccordingTo can be an underlying taxonomy of the data set, e.g. Plants of the World Online (http://powo.science.kew.org/) for vascular plant records in iNaturalist (in which case it should be provided), or, which is the case for most dwc:PreservedSpecimen data sets, the dwc:Identification, in which case there is no further context.
+|The reference to the source in which the specific taxon concept circumscription is defined or implied - traditionally signified by the Latin "sensu" or "sec." (from secundum, meaning "according to"). For taxa that result from identifications, a reference to the keys, monographs, experts and other sources should be given. This term provides context to the term:dwc[dwc:scientificName]. Together with the term:dwc[dwc:scientificName], separated by sensu or sec., it forms the taxon concept label, which may be seen as having the same relationship to term:dwc[dwc:taxonConceptID] as, for example, term:dwc[dwc:acceptedNameUsage] has to term:dwc[dwc:acceptedNameUsageID]. When not provided, in Taxon Core data sets the term:dwc[dwc:nameAccordingTo] can be taken to be the data set. In this case the data set mostly provides sufficient context to infer the delimitation of the taxon and its relationship with other taxa. In Occurrence Core data sets, when not provided, term:dwc[dwc:nameAccordingTo] can be an underlying taxonomy of the dataset, e.g. http://powo.science.kew.org[Plants of the World Online^] for vascular plant records in iNaturalist (in which case it should be provided), or, which is the case for most term:dwc[dwc:PreservedSpecimen] datasets, the dwc:Identification, in which case there is no further context.
 |Strongly recommended
 
-|https://dwc.tdwg.org/terms/#dwciri:behavior[behavior^]
-|`Endophagic`, `exophylic`, `zoophylic a`
+|term:dwc[dwc:behavior]
 |A description of the behavior shown by the subject at the time the term:dwc[dwc:occurrence] was recorded.+ Recommended best practice is to use a controlled vocabulary. Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.
+|`Endophagic`, `exophylic`, `zoophylic`
 |Share if available
 
-|https://dwc.tdwg.org/terms/#dwciri:dataGeneralizations[dataGeneralizations^]
-|Coordinates reflect the location of the study site where the sample was collected
+|term:dwc[dwc:dataGeneralizations]
 |Actions taken to make the shared data less specific or complete than in its original form. Suggests that alternative data of higher quality may be available on request. Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.
+|Coordinates reflect the location of the study site where the sample was collected
 |Share if available
 
-|https://dwc.tdwg.org/terms/#dwciri:vitality[[.underline]#vitality#]
+|term:dwc[dwc:vitality]
+|An indication of whether a term:dwc[dwc:organism] was alive or dead at the time of collection or observation. Recommended best practice is to use a controlled vocabulary. Intended to be used with records having a term:dwc[dwc:basisOfRecord] of `preservedSpecimen`, `materialEntity`, `materialSample`, or `humanObservation`. Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.
 |`dead`
-|An indication of whether a dwc:Organism was alive or dead at the time of collection or observation. Recommended best practice is to use a controlled vocabulary. Intended to be used with records having a term:dwc[dwc:basisOfRecord] of `preservedSpecimen`, `materialEntity`, `materialSample`, or `humanObservation`. Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.
 |Share if available
 |===
 
