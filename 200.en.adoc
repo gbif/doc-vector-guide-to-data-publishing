@@ -48,7 +48,7 @@ If geographic coordinates are not provided in decimal lat-long, the following te
 |*Term name* |*Definition* |*Examples* |*Status*
 
 |term:dwc[dwc:eventID]`
-|An identifier for the set of information associated with an event (something that occurs at a place and time). May be a global unique identifier or an identifier specific to the data set.
+|An identifier for the set of information associated with an event (something that occurs at a place and time). May be a global unique identifier or an identifier specific to the dataset.
 |`E-AL-Tr-1-200518 `
 |Required
 
@@ -88,7 +88,7 @@ If geographic coordinates are not provided in decimal lat-long, the following te
 |Share if available
 
 |term:dwc[dwc:parentEventID]
-|An identifier for the broader term:dwc[dwc:event] that groups this and potentially other dwc:Events. Use a globally unique identifier for a term:dwc[dwc:event] or an identifier for a term:dwc[dwc:event] that is specific to the data set.
+|An identifier for the broader term:dwc[dwc:event] that groups this and potentially other dwc:Events. Use a globally unique identifier for a term:dwc[dwc:event] or an identifier for a term:dwc[dwc:event] that is specific to the dataset.
 |`E-AL-Tr-1`
 |Strongly recommended
 
@@ -173,7 +173,7 @@ If geographic coordinates are not provided in decimal lat-long, the following te
 |Strongly recommended
 
 |term:dwc[dwc:locationID]
-|An identifier for the set of dcterms:Location information. May be a global unique identifier or an identifier specific to the data set.
+|An identifier for the set of dcterms:Location information. May be a global unique identifier or an identifier specific to the dataset.
 |`BG323`
 |Strongly recommended
 
@@ -330,7 +330,7 @@ following published dataset: https://ecoevorxiv.org/repository/view/7150/[https:
 |*Term name* |*Definition* |*Examples* |*Status*
 
 |term:dwc[dwc:eventID]
-|An identifier for the set of information associated with an event (something that occurs at a place and time). May be a global unique identifier or an identifier specific to the data set.
+|An identifier for the set of information associated with an event (something that occurs at a place and time). May be a global unique identifier or an identifier specific to the dataset.
 |`OS BZ1995`
 |Required
 
@@ -411,7 +411,7 @@ The https://rs.gbif.org/extension/measurements_or_facts_2024-02-19.xml[MoF^] pro
 |*Term name* |*Definition* |*Examples*
 
 |https://dwc.tdwg.org/terms/#dwc:measurementID[[.underline]#measurementID#]
-|An identifier for the dwc:MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set.
+|An identifier for the dwc:MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the dataset.
 |`1BAP1_16`
 
 |https://dwc.tdwg.org/terms/#dwc:measurementType[[.underline]#measurementType#]
@@ -574,31 +574,28 @@ For guidance on how to include the Humboldt Extension in a sampling event datase
 |Share if available
 |===
 
-`CREATE AS BULLETED ADDENDUM`
+* SCOPE TERMS - Taxonomic 
+** See terms list here: term:eco[eco:taxonomic-scope]
 
-|SCOPE TERMS - Taxonomic 
-|a
-|See terms list [here^]https://eco.tdwg.org/terms/#taxonomic-scope]
+* SCOPE TERMS - Organismal
+** term:eco[eco:organismalScope]
+* Additional recommended terms to include -- any scope terms for which information is available such as: ** term:eco[eco:excludedTaxonomicScope] and other taxonomic scope terms
 
-|SCOPE TERMS - Organismal |
-|Shttps://eco.tdwg.org/terms/#organismal-scope.[[.underline]#https://eco.tdwg.org/terms/#organismal-scope#]
-| Additional recommended terms to include -- any scope terms for which information is available such as: eco:excludedTaxonomicScope, and other taxonomic scope terms
-Are there life stage or other scopes deliberately included or excluded?
+* Are there life stage or other scopes deliberately included or excluded?
+* SCOPE TERMS - Habitat: See terms list here:
+** term:eco[eco:habitatScope]
 
-|SCOPE TERMS - Habitat | |See terms list here:
-https://eco.tdwg.org/terms/#habitat-scope.[[.underline]#https://eco.tdwg.org/terms/#habitat-scope.#]
-Are habitat scope (deliberately targeted or excluded) indicated in the
-data?
+* Are habitat scope (deliberately targeted or excluded) indicated in the data?
 
-|MATERIALS TERMS | |See terms list here:
-https://eco.tdwg.org/terms/#material-collected.[[.underline]#https://eco.tdwg.org/terms/#material-collected.#]
-Are material samples collected and saved? If so, recommended terms to
-include are: eco:hasMaterialSamples, eco:materialSampleTypes
-|===
+* MATERIALS TERMS: See terms list here:
+** term:eco[eco:materialCollected]
+* Are material samples collected and saved? If so, recommended terms to include are: 
+** term:eco[eco:hasMaterialSamples]
+** term:eco[eco:materialSampleTypes]
 
 ==== Resource Relationship
 
-The https://rs.gbif.org/extension/resource_relationship_2024-02-19.xml[[.underline]#Resource Relationship#] extension provides support for relationships between resources in a Darwin Core Occurrence, Event, or Taxon Core to resources in an extension or external to the data set. The identifiers for subject (resourceID) and object (relatedResourceID) may exist in the dataset or be accessible via an externally resolvable identifier. The recommended status for these terms is to share if available.
+The https://rs.gbif.org/extension/resource_relationship_2024-02-19.xml[Resource Relationship extension^] provides support for relationships between resources in a Darwin Core Occurrence, Event, or Taxon Core to resources in an extension or external to the dataset. The identifiers for subject (resourceID) and object (relatedResourceID) may exist in the dataset or be accessible via an externally resolvable identifier. The recommended status for these terms is to share if available.
 
 Relationships can be one-way as of between a vector and the pathogens detected by a molecular assay, or it can be two-way, that is, between a vertebrate host, a vector and the pathogen detected in the vector. We provide examples below of a one way relationship (tick and pathogens) and a two-way relationship (tick, vertebrate host and pathogen).
 
@@ -696,7 +693,7 @@ The https://rs.gbif.org/extension/gbif/1.0/speciesprofile_2019-01-29.xml[Species
 
 [[table-10]]
 .Recommended terms from the Species Profile Extension, with examples from the following datasets: https://doi.org/10.15468/b52b9z[NEON ticks sampled using drag cloths and tick pathogen status^], https://doi.org/10.15468/sxcpfp[Fiocruz/COLFLEB - Coleção de Flebotomíneos^], https://doi.org/10.15468/c4cauy[Catálogo Taxonômico da Fauna do Brasil^].
-[width="100%",cols="24%,23%,30%,23%",options="header",]
+[width="100%",cols="24%,23%,30%,23%",options="header"]
 |===
 |*Term name* |*Definition* |*Examples* |*Status*
 
@@ -765,12 +762,12 @@ In addition to the terms in <<table-11,Table 11>>, we recommend using the terms:
 
 [[table-11]]
 .Recommended terms from the Species profile Extension, with examples from the dataset: https://doi.org/10.15468/v8fvyn[Anopheles collections in the health districts of Korhogo (Côte d'Ivoire) and Diébougou (Burkina Faso) (2016-2018)^].
-[width="99%",cols="24%,13%,45%,18%",options="header",]
+[width="99%",cols="24%,13%,45%,18%",options="header"]
 |===
 |*Term name* |*Definition* |*Examples* |*Status*
 
 |term:dwc[dwc:locationID] 
-|A code for the named area this distribution record is about. Use a prefix for each code to indicate the source of the code, see http://rs.gbif.org/areas/ for list of coding schemes and their recommended prefix. See also http://rs.gbif.org/areas/[[.underline]#http://rs.gbif.org/areas/#]
+|A code for the named area this distribution record is about. Use a prefix for each code to indicate the source of the code, see http://rs.gbif.org/areas/ for list of coding schemes and their recommended prefix. See also http://rs.gbif.org/areas/[http://rs.gbif.org/areas/^]
 |`1BOH1`
 |Strongly recommended
 
@@ -886,8 +883,7 @@ It is important to consider the level of granularity of the data, that is how mu
 
 Another thing to consider is opacity, or how much the identifier allows us to learn anything from the format of the identifier itself.
 
-For a general introduction to identifiers, see 
-https://doi.org/10.35035/mjgq-d052[White et al. 2011] and this https://discourse.gbif.org/t/do-you-really-need-uuids-in-your-datasets-a-quick-rant/4396[GBIF Community Forum post] about UUIDs (Universally Unique Identifiers) and opacity.
+For a general introduction to identifiers, see https://doi.org/10.35035/mjgq-d052[White et al. 2011] and this https://discourse.gbif.org/t/do-you-really-need-uuids-in-your-datasets-a-quick-rant/4396[GBIF Community Forum post] about UUIDs (Universally Unique Identifiers) and opacity.
 
 ==== Recommended additional terms of relevance
 
@@ -1023,7 +1019,7 @@ Recommended best practice is to use a controlled vocabulary such as that used in
 
 |term:dwc[dwc:nameAccordingTo]
 |`Harbach, R.E. 2013. Mosquito Taxonomic Inventory, https://mosquito-taxonomic-inventory.myspecies.info/ accessed on 25 april 2023`
-|The reference to the source in which the specific taxon concept circumscription is defined or implied - traditionally signified by the Latin "sensu" or "sec." (from secundum, meaning "according to"). For taxa that result from identifications, a reference to the keys, monographs, experts and other sources should be given. This term provides context to the term:dwc[dwc:scientificName]. Together with the term:dwc[dwc:scientificName], separated by sensu or sec., it forms the taxon concept label, which may be seen as having the same relationship to term:dwc[dwc:taxonConceptID] as, for example, term:dwc[dwc:acceptedNameUsage] has to term:dwc[dwc:acceptedNameUsageID]. When not provided, in Taxon Core data sets the term:dwc[dwc:nameAccordingTo] can be taken to be the data set. In this case the data set mostly provides sufficient context to infer the delimitation of the taxon and its relationship with other taxa. In Occurrence Core data sets, when not provided, term:dwc[dwc:nameAccordingTo] can be an underlying taxonomy of the dataset, e.g. http://powo.science.kew.org[Plants of the World Online^] for vascular plant records in iNaturalist (in which case it should be provided), or, which is the case for most term:dwc[dwc:PreservedSpecimen] datasets, the dwc:Identification, in which case there is no further context.
+|The reference to the source in which the specific taxon concept circumscription is defined or implied - traditionally signified by the Latin "sensu" or "sec." (from secundum, meaning "according to"). For taxa that result from identifications, a reference to the keys, monographs, experts and other sources should be given. This term provides context to the term:dwc[dwc:scientificName]. Together with the term:dwc[dwc:scientificName], separated by sensu or sec., it forms the taxon concept label, which may be seen as having the same relationship to term:dwc[dwc:taxonConceptID] as, for example, term:dwc[dwc:acceptedNameUsage] has to term:dwc[dwc:acceptedNameUsageID]. When not provided, in Taxon Core datasets the term:dwc[dwc:nameAccordingTo] can be taken to be the dataset. In this case the dataset mostly provides sufficient context to infer the delimitation of the taxon and its relationship with other taxa. In Occurrence Core datasets, when not provided, term:dwc[dwc:nameAccordingTo] can be an underlying taxonomy of the dataset, e.g. http://powo.science.kew.org[Plants of the World Online^] for vascular plant records in iNaturalist (in which case it should be provided), or, which is the case for most term:dwc[dwc:PreservedSpecimen] datasets, the dwc:Identification, in which case there is no further context.
 |Strongly recommended
 
 |term:dwc[dwc:behavior]
