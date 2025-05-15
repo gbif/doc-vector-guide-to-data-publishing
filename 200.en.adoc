@@ -527,6 +527,7 @@ For guidance on how to include the Humboldt Extension in a sampling event datase
 |term:eco[eco:isAbundanceCapReported]
 |A maximum number of term:dwc[dwc:organism]s was reported, as specified or restricted by the protocol used. Values of abundance cap should be captured under the term term:eco[eco:abundanceCap].
 |`TRUE`
+|Share if available
 
 |term:eco[eco:abundanceCap]
 |A maximum number of term:dwc[dwc:organism]s was reported, as specified or restricted by the protocol used. Values of abundance cap should be captured under the term term:eco[eco:abundanceCap].
@@ -534,7 +535,7 @@ For guidance on how to include the Humboldt Extension in a sampling event datase
 |Share if available
 
 |term:eco[eco:eventDurationValue]
-|The numeric value for the duration of the dwc:Event. An |term:eco[eco:eventDurationValue] must have a corresponding term:eco[eco:eventDurationUnit].
+|The numeric value for the duration of the DwC Event. An term:eco[eco:eventDurationValue] must have a corresponding term:eco[eco:eventDurationUnit].
 |`3`
 |Share if available
 
@@ -544,7 +545,7 @@ For guidance on how to include the Humboldt Extension in a sampling event datase
 |Share if available
 
 |term:eco[eco:siteNestingDescription]
-|Textual description of the hierarchical sampling design.…Study consists of a series of sampling events at 10 different sites. Each Event site is identified using X coding system.
+|Textual description of the hierarchical sampling design, e.g. Study consists of a series of sampling events at 10 different sites. Each Event site is identified using X coding system.
 |`2 sampling sites per habitat`
 |Share if available
 
