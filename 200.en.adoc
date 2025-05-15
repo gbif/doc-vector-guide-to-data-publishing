@@ -458,7 +458,7 @@ The https://rs.gbif.org/extension/eco/Humboldt_2024-04-16.xml[Humboldt Extension
 
 For guidance on how to include the Humboldt Extension in a sampling event dataset, see the guide https://doi.org/10.35035/doc-7t3p-ve38[Updating an existing DwC Event dataset with the Humboldt Extension^].
 
-[[table-07]]
+[[table-06]]
 .Selected recommended terms from the Humboldt Extension.
 [width="100%",cols="20%,40%,20%,40%",options="header"]
 |===
@@ -599,11 +599,11 @@ The https://rs.gbif.org/extension/resource_relationship_2024-02-19.xml[Resource 
 
 Relationships can be one-way as of between a vector and the pathogens detected by a molecular assay, or it can be two-way, that is, between a vertebrate host, a vector and the pathogen detected in the vector. We provide examples below of a one way relationship (tick and pathogens) and a two-way relationship (tick, vertebrate host and pathogen).
 
-[[table-08]]
+[[table-07]]
 .Recommended terms from the ResourceRelationship Extension for one way relationship involving ticks and pathogens (a selection)footnote:[Example data were taken from the following published dataset: unpublished data by the One Health VBD Hub. Tick Occurrences in the UK - Review of Literature. Occurrence dataset]
 [width="100%",cols="27%,39%,20%,14%",options="header",]
 |===
-|*Field name* |*Examples* |*Definition* |*Status*
+|*Field name* |*Definition* |*Examples* |*Status*
 
 |term:dwc[dwc:ResourceRelationship]
 |an instance of a dwc:Organism is the vector of another instance of a dwc:Organism
