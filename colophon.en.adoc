@@ -11,7 +11,7 @@ Shimabukuro PHF, Campbell L, Fouque F, Etang J, Cecarelli S, Groom Q, Ingenloff 
 
 === Authors
 
-http://orcid.org/0000-0002-5114-953X[Paloma Shimabukuro^], [Lindsay Campbell^], [Florence Fouque^], [Josiane Etang^], [Soledad Cecarelli^], [Quentin Groom^], [Kate Ingenloff^], [Cecilie Svenningsen^], [Marie Grosjean^], [Javier Gamboa Martínez^] & [Dmitry Schigel^]
+http://orcid.org/0000-0002-5114-953X[Paloma Shimabukuro^], https://orcid.org/0000-0001-6069-1198[Lindsay Campbell^], https://orcid.org/0000-0001-9731-3270[Florence Fouque^], https://orcid.org/0000-0001-8953-0419[Josiane Etang^], https://orcid.org/0000-0002-9790-0157[Soledad Cecarelli^], https://orcid.org/0000-0002-0596-5376[Quentin Groom^], https://orcid.org/0000-0001-5942-9053[Kate Ingenloff^], https://orcid.org/0000-0002-9216-2917[Cecilie Svenningsen^], https://orcid.org/0000-0002-2685-8078[Marie Grosjean^], https://orcid.org/0000-0002-1789-1183[Javier Gamboa Martínez^] & https://orcid.org/0000-0002-2919-1168[Dmitry Schigel^]
 
 === Licence
 
