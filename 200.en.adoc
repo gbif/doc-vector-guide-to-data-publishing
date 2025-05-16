@@ -848,7 +848,7 @@ The DwC term term:dwc[dwc:dynamicProperties] provides a way to list additional m
 [[controlled-vocabularty]]
 ==== Controlled vocabulary
 
-Controlled vocabularies are standardized words and phrases and they provide a consistent way to organize knowledge for subsequent retrieval. In addition to the links in sectionlink:#controlled-vocabulary-ontologies[[.underline]#1.5.3. Controlled vocabularies & ontologies#], we provide an <<appendix>> with DwC terms, such as https://www.gbif.org/data-quality-requirements-sampling-events#dcSamplingProtocol[samplingProtocol^], term:dwc[dwc:lifeStage], term:dwc[dwc:sex], https://dwc.tdwg.org/list/#dwciri_degreeOfEstablishment[degreeOfEstablishment], https://dwc.tdwg.org/list/#dwciri_habitat[habitat].
+Controlled vocabularies are standardized words and phrases and they provide a consistent way to organize knowledge for subsequent retrieval. In addition to the links in <<controlled-vocabulary-ontologies,§1.5.3>>], we provide an <<appendix>> with DwC terms, such as https://www.gbif.org/data-quality-requirements-sampling-events#dcSamplingProtocol[samplingProtocol^], term:dwc[dwc:lifeStage], term:dwc[dwc:sex], https://dwc.tdwg.org/list/#dwciri_degreeOfEstablishment[degreeOfEstablishment], https://dwc.tdwg.org/list/#dwciri_habitat[habitat].
 
 [[unique-identifiers-within-datasets]]
 ==== Unique identifiers within datasets
@@ -874,7 +874,7 @@ Here we propose additional terms that are useful in vector datasets, either by p
 .Recommended additional terms of relevance to vector data, with examples from the datasets: https://doi.org/10.15472/dxbowv[Registros de los dípteros causantes de la transmisión del agente etiológico del dengue en el departamento del Cauca, Colombia^], https://doi.org/10.15468/excax3[Species composition and distribution of anopheles gambiae complex circulating in Kinshasa^], https://doi.org/10.15468/sxcpfp[Fiocruz/COLFLEB - Coleção de Flebotomíneos^]
 [width="100%",cols="25%,17%,40%,18%",options="header",]
 |===
-|*Term name* |*Definition* Examples* |*Status*
+|*Term name* |*Definition* |Examples* |*Status*
 
 |term:dwc[dwc:rightsHolder]
 |A person or organization owning or managing rights over the resource.
