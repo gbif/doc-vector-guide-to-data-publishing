@@ -43,7 +43,7 @@ If geographic coordinates are not provided in decimal lat-long, the following te
 
 [[table-03]]
 .Recommended terms for https://rs.gbif.org/core/dwc_event_2024-02-19.xml[Event Core^] for vector data, with examples from the following datasets: https://doi.org/10.15472/dxbowv[Registros de los dípteros causantes de la transmisión del agente etiológico del dengue en el departamento del Cauca, Colombia^]; https://doi.org/10.15468/excax3[Species composition and distribution of anopheles gambiae complex circulating in Kinshasa^]; https://doi.org/10.15468/zr6frj[Data from: Rodent trapping studies as an overlooked information source for understanding endemic and novel zoonotic spillover^]; https://doi.org/10.15468/fbywtn[Datos de ocurrencia de triatominos americanos del Laboratorio de Triatominos del CEPAVE (CONICET-UNLP)^]
-[width="100%",cols="32%,25%,28%,15%",options="header",]
+[width="100%",cols="32%,25%,28%,15%",options="header"]
 |===
 |*Term name* |*Definition* |*Examples* |*Status*
 
