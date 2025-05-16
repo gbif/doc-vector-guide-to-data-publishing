@@ -621,7 +621,7 @@ Relationships can be one-way as of between a vector and the pathogens detected b
 
 [table-09]
 .Recommended terms from the ResourceRelationship extension for two-way relationships involving ticks and pathogens, with examples from the following published dataset: https://doi.org/10.15468/f3k8r9[VectorNet^]
-[width="100%",cols="31%,29%,40%",options="header",]
+[width="100%",cols="31%,29%,40%",options="header"]
 |===
 |*Terms name* |*Examples* |*Definition*
 
@@ -650,7 +650,7 @@ Relationships can be one-way as of between a vector and the pathogens detected b
 |Comments or notes about the relationship between the two resources.
 |===
 
-<<fig-07aFigure 7a>> and <<fig-07b,7b>> below presents some example of how a resourceRelationship table from the https://rs.gbif.org/core/dwc_occurrence_2024-02-23.xml[Occurrence Core^] would look like.
+<<fig-07a,  Figure 7a>> and <<fig-07b,7b>> below presents some examples of how resourceRelationship tables from the https://rs.gbif.org/core/dwc_occurrence_2024-02-23.xml[Occurrence Core^] may look.
 
 [[fig-07a]]
 image::img/web/fig-07a.png[]
@@ -809,9 +809,9 @@ In addition to the terms in <<table-11,Table 11>>, we recommend using the terms:
 
 ==== How to better describe species complexes/assemblages or sibling species with the DwC standard
 
-Vector data presents some specificities when it comes to taxonomy, as in many groups the occurrence of species complexes/assemblages or sibling species is well-documented (WHO 2007, Garros et al. 2005, Motoki et al. 2009, Harbach 2012, Gutierrez et al. 2021, Aguilar-Vega et al. 2021, Cotes-Perdomo et al. 2023).
+Vector data presents some specific demands with regard to to taxonomy, because in many groups, the occurrence of species complexes and assemblages or sibling species is well-documented (https://iris.who.int/handle/10665/204779[WHO 2007^], https://doi.org/10.1093/jmedent/42.4.522[Garros et al. 2005^], https://doi.org/10.1590/s0074-02762009000600004[Motoki et al. 2009^], https://doi.org/10.2987/8756-971X-28.4.10[Harbach 2012^], https://doi.org/10.1016/j.actatropica.2021.105983[Gutierrez et al. 2021^], https://doi.org/10.1186/s13071-021-04841-z[Aguilar-Vega et al. 2021^], https://doi.org/10.1016/j.ttbdis.2023.102125[Cotes-Perdomo et al. 2023^]).
 
-The DwC standard can only handle subspecies with the term:dwc[dwc:infraspecificEpithet] term but there is no appropriate term to accommodate well species complexes/assemblages or sibling species.
+The DwC standard can only handle subspecies with the term:dwc[dwc:infraspecificEpithet] term, but there is no appropriate term to accommodate well species complexes/assemblages or sibling species.
 
 One way to sort out this specific issue with vector data is to leave the term:dwc[dwc:scientificName] at the lowest level of identification possible, in this case, at genus level, and then display the species complexes/assemblages or sibling species status in the term:dwc[dwc:verbatimIdentification] term, or even include any qualifier (such as `s.l.`, `sp.`, `cf.` or `aff.` in the term:dwc[dwc:verbatimTaxonRank] term to improve the alignment with the taxonomic backbone. `Identification qualifiers` {Ed.: too loose? Isn't there a specific DwC term to borrow phrasing from here?} should not be included in the term:dwc[dwc:scientificName] term.
 
@@ -821,9 +821,9 @@ It is important to remember that when the dataset is uploaded in GBIF, the taxon
 
 Understanding how vectors spread and where they come from is an important aspect of disease surveillance. The global distribution of VBDs is already affected by climate change, land use changes, deforestation, global trade, among other factors, causing varying degrees of impacts across regions.
 
-There are several examples of how human activity is reshaping the distribution of vector species, as with _Aedes aegypti_, which has spread to more than 300 cities since its introduction to California in the U.S. in 2013 (Kelly et al. 2021); the introduction and spread of _Anopheles stephensi_ in Africa (Sinka et al. 2020); and the reappearance of _Anopheles sacharovi_ in Italy after more than 50 years, due to an increase of natural areas with favourable climatic and environmental conditions (Raele et al. 2024). These introductions, reintroductions, and spread of vector species require constant updates in their status as invasive, established or native to better inform both decision-making and the design of control strategies.
+There are several examples of how human activity is reshaping the distribution of vector species, as with _Aedes aegypti_, which has spread to more than 300 cities since its introduction to California in the U.S. in 2013 (https://doi.org/10.3389/fitd.2021.703873[Kelly et al. 2021^]); the introduction and spread of _Anopheles stephensi_ in Africa (https://doi.org/10.1073/pnas.2003976117[Sinka et al. 2020^]); and the reappearance of _Anopheles sacharovi_ in Italy after more than 50 years, due to an increase of natural areas with favourable climatic and environmental conditions (https://doi.org/10.1186/s13071-024-06252-2[Raele et al. 2024^]). These introductions, reintroductions, and spread of vector species require constant updates in their status as invasive, established or native to better inform both decision-making and the design of control strategies.
 
-Data sources originate from a wide range of data holders, e.g. governmental surveillance and control programmes, and routine activities, research, and private businesses which provide data without any standardization. Since standardized, good quality data are necessary to inform control strategies, species distribution models, risk assessments and early warning systems, it is best practice to use the appropriate terms and controlled vocabulary. These are provided by the DwC standard (e.g. introduction term:dwc[dwc:pathway] and the term:dwc[dwc:degreeOfEstablishment) and a suggested controlled vocabulary has been proposed by Groom et al. (2019), see <<appendix-a,Table A>> for the full list of controlled vocabulary for the term:dwc[dwc:degreeOf Establishment] term.
+Data sources originate from a wide range of data holders, e.g. governmental surveillance and control programmes, and routine activities, research, and private businesses which provide data without any standardization. Since standardized, good quality data are necessary to inform control strategies, species distribution models, risk assessments and early warning systems, it is best practice to use the appropriate terms and controlled vocabulary. These are provided by the DwC standard (e.g. introduction term:dwc[dwc:pathway] and the term:dwc[dwc:degreeOfEstablishment] and a suggested controlled vocabulary has been proposed by https://doi.org/10.3897/biss.3.38084[Groom et al. (2019)^], see <<appendix-table-01,Appendix: Table 1>> for the full list of controlled vocabulary for the term:dwc[dwc:degreeOf Establishment] term.
 
 ==== How to handle data that does not fit any DwC term available
 
@@ -845,10 +845,12 @@ The DwC term term:dwc[dwc:dynamicProperties] provides a way to list additional m
 |For environmental data
 |===
 
+[[controlled-vocabularty]]
 ==== Controlled vocabulary
 
 Controlled vocabularies are standardized words and phrases and they provide a consistent way to organize knowledge for subsequent retrieval. In addition to the links in sectionlink:#controlled-vocabulary-ontologies[[.underline]#1.5.3. Controlled vocabularies & ontologies#], we provide an <<appendix>> with DwC terms, such as https://www.gbif.org/data-quality-requirements-sampling-events#dcSamplingProtocol[samplingProtocol^], term:dwc[dwc:lifeStage], term:dwc[dwc:sex], https://dwc.tdwg.org/list/#dwciri_degreeOfEstablishment[degreeOfEstablishment], https://dwc.tdwg.org/list/#dwciri_habitat[habitat].
 
+[[unique-identifiers-within-datasets]]
 ==== Unique identifiers within datasets
 
 An identifier consists of a unique identification code assigned to an object for unambiguous retrieval. Three key DwC terms that must be either global unique identifiers or a uniquie to within a specific are: 
@@ -863,7 +865,8 @@ Another thing to consider is opacity, or how much the identifier allows us to le
 
 For a general introduction to identifiers, see https://doi.org/10.35035/mjgq-d052[White et al. 2011] and this https://discourse.gbif.org/t/do-you-really-need-uuids-in-your-datasets-a-quick-rant/4396[GBIF Community Forum post] about UUIDs (Universally Unique Identifiers) and opacity.
 
-==== Recommended additional terms of relevance
+[[additiona-recommendations on relevant terms]]
+==== Additional recommendations on relevant terms
 
 Here we propose additional terms that are useful in vector datasets, either by providing more detailed metadata, publication of verbatim data, more details on the classification, etc.
 
