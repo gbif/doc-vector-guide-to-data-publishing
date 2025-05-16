@@ -666,10 +666,10 @@ image::img/web/fig-08.png[]
 [[species-profile]]
 ==== Species Profile
 
-The https://rs.gbif.org/extension/gbif/1.0/speciesprofile_2019-01-29.xml[Species Profile^] extension is a basic species profile with characteristics in addition to textural description which are covered by the description extension and can be used in addition to the Taxon Core checklist.
+The https://rs.gbif.org/extension/gbif/1.0/speciesprofile_2019-01-29.xml[Species Profile extension^] provides a basic taxonomic profile  with characteristics in addition to written descriptions, which are covered by the description extension and can be used in addition to the Taxon Core checklist.
 
 [[table-10]]
-.Recommended terms from the Species Profile Extension, with examples from the following datasets: https://doi.org/10.15468/b52b9z[NEON ticks sampled using drag cloths and tick pathogen status^], https://doi.org/10.15468/sxcpfp[Fiocruz/COLFLEB - Coleção de Flebotomíneos^], https://doi.org/10.15468/c4cauy[Catálogo Taxonômico da Fauna do Brasil^].
+.Recommended terms from the Species Profile extension, with examples from the following datasets: https://doi.org/10.15468/b52b9z[NEON ticks sampled using drag cloths and tick pathogen status^], https://doi.org/10.15468/sxcpfp[Fiocruz/COLFLEB - Coleção de Flebotomíneos^], https://doi.org/10.15468/c4cauy[Catálogo Taxonômico da Fauna do Brasil^].
 [width="100%",cols="24%,23%,30%,23%",options="header"]
 |===
 |*Term name* |*Definition* |*Examples* |*Status*
@@ -736,7 +736,7 @@ vocabulary like http://en.wikipedia.org/wiki/Geologic_column[http://en.wikipedia
 
 The Species Distribution extension is a geographic distribution of a taxon and can be used with the Taxon Core checklist.
 
-In addition to the terms in <<table-11,Table 11>>, we recommend using the terms: http://purl.org/dc/terms/source[source^] and term:dwc[dwc:datasetID] described above in <<table-09,Table 9>>.
+In addition to the terms in <<table-11,Table 11>>, we recommend using the terms: http://purl.org/dc/terms/source[source^] and term:dwc[dwc:datasetID], which is described above in <<table-09,Table 9>>.
 
 [[table-11]]
 .Recommended terms from the Species profile Extension, with examples from the dataset: https://doi.org/10.15468/v8fvyn[Anopheles collections in the health districts of Korhogo (Côte d'Ivoire) and Diébougou (Burkina Faso) (2016-2018)^].
