@@ -412,11 +412,11 @@ The https://rs.gbif.org/extension/measurements_or_facts_2024-02-19.xml[Measureme
 |===
 |*Term name* |*Definition* |*Examples*
 
-|https://dwc.tdwg.org/terms/#dwc:measurementID[[.underline]#measurementID#]
+|term:dwc[dwc:measurementID]
 |An identifier for the dwc:MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the dataset.
 |`1BAP1_16`
 
-|https://dwc.tdwg.org/terms/#dwc:measurementType[[.underline]#measurementType#]
+|term:dwc[dwc:measurementType]
 |The nature of the measurement, fact, characteristic, or assertion. Recommended best practice is to use a controlled vocabulary. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.
 |`Daytime land surface temperature 1 weeks preceding the event`
 
