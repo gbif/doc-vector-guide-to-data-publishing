@@ -464,7 +464,7 @@ NOTE:
 For guidance on how to include the Humboldt Extension in a sampling event dataset, see https://doi.org/10.35035/doc-7t3p-ve38[Ingenloff (2025)^].
 
 [[table-07]]
-.Selected recommended terms from the Humboldt Extension.
+.Recommended terms from the Humboldt Extension, drawn from https://doi.org/10.35035/doc-7t3p-ve38[Ingenloff (2025)^].
 [width="100%",cols="20%,40%,40%",options="header"]
 |===
 |*Term name* |*Definition* |*Examples*
@@ -585,8 +585,8 @@ The https://rs.gbif.org/extension/resource_relationship_2024-02-19.xml[Resource 
 Relationships can be one-way as of between a vector and the pathogens detected by a molecular assay, or it can be two-way, that is, between a vertebrate host, a vector and the pathogen detected in the vector. We provide examples below of a one-way relationship between ticka and pathogens and a two-way relationship between ticks, vertebrate hosts and pathogens. The recommendation for each of these terms is "Share if available."
 
 [[table-08]]
-.Recommended terms from the ResourceRelationship Extension for one-way relationships involving ticks and pathogens, with examples from an as-yet unpublished dataset from the https://vbdhub.org[One Health VBD Hub^], "Tick Occurrences in the UK—Review of Literature."^]
-[width="100%",cols="27%,39%,20%,14%",options="header",]
+.Recommended terms from the ResourceRelationship Extension for one-way relationships involving ticks and pathogens, with examples from an as-yet unpublished dataset from the https://vbdhub.org[One Health VBD Hub, "Tick Occurrences in the UK—Review of Literature."^]
+[width="100%",cols="33%,40%,27%",options="header",]
 |===
 |*Field name* |*Definition* |*Examples*
 
