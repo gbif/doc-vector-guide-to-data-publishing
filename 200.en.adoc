@@ -935,8 +935,8 @@ Recommended best practice is to use controlled value strings from the controlled
 
 |term:dwc[dwc:county] 
 |The full, unabbreviated name of the next smaller administrative region than stateProvince (county, shire, department, etc.) in which the dcterms:Location occurs. +
-|`Miranda`
 Recommended best practice is to use a controlled vocabulary such as the Getty Thesaurus of Geographic Names. Recommended best practice is to leave this term blank if the dcterms:Location spans multiple entities at this administrative level or if the dcterms:Location might be in one or another of multiple possible entities at this level. Multiplicity and uncertainty of the geographic entity can be captured either in the term dwc:higherGeography or in the term dwc:locality, or both.
+|`Miranda`
 |Share if available
 
 |term:dwc[dwc:municipality]
