@@ -9,45 +9,43 @@ image::img/web/fig-04.png[]
 
 Before publishing a dataset in GBIF, the data has to be arranged in structured tables, these tables can be cores only or cores plus the use of extensions, which means that there are different options for sharing data through GBIF. Extensions are designed to accommodate types of data that do not fit a particular core.
 
-There has to be always a core table (Occurrence core or Event core) that can be published on its own or it can have several extensions. The decision on how to publish the data lies with the data holder to best choose how to represent their data best. The https://rs.gbif.org/core/dwc_occurrence_2024-02-23.xml[Occurrence Core^] was the first to be created, but there was a need to better represent data from surveys, and the https://rs.gbif.org/core/dwc_event_2024-02-19.xml[Event Core^] was created. But also, there was an increasing need to represent data associated with occurrences and https://rs.gbif.org/extensions.html[extensions^] started to be developed.
+There has to be always a core table (Occurrence Core or Event Core) that can be published on its own or it can have several extensions. The decision on how to publish the data lies with the data holder to best choose how to represent their data best. The https://rs.gbif.org/core/dwc_occurrence_2024-02-23.xml[Occurrence Core^] was the first to be created, but there was a need to better represent data from surveys, and the https://rs.gbif.org/core/dwc_event_2024-02-19.xml[Event Core^] was created. But also, there was an increasing need to represent data associated with occurrences and https://rs.gbif.org/extensions.html[extensions^] started to be developed.
 
-The simplest way to share data to GBIF is to use the https://rs.gbif.org/core/dwc_occurrence_2024-02-23.xml[Occurrence Core^] with no extensions, and the terms and examples are shown in section [[2.1.2. Mapping occurrences]], table 4.
+The simplest way to share data to GBIF is to use the https://rs.gbif.org/core/dwc_occurrence_2024-02-23.xml[Occurrence Core^] with no extensions, and the terms and examples are shown in section <<table-04,Table 4>>. An Occurrence Core will have observations and/or specimen records without information on sampling methods. However, vector data mostly fall into the sampling event category, as it is often obtained in the context of vector surveillance and/or monitoring for epidemiological purposes or vector control activities. In these cases, field collection consists of planned sampling events (trapping events) that are focused on capturing a particular vector group. Example: mosquito sampling event that focuses on the collection of _Anopheles gambiae_ s.l. or sand-fly sampling event carried out in rural properties targeting possible vectors of _Leishmania_ (<<fig-05,Figure 5>>).
 
-An Occurrence core will have observations and/or specimen records without information on sampling methods. However, vector data mostly fall into the sampling event category, as it is often obtained in the context of vector surveillance and/or monitoring for epidemiological purposes or vector control activities. In these cases, field collection consists of planned sampling events (trapping events) that are focused on capturing a particular vector group. Example: mosquito sampling event that focuses on the collection of _Anopheles gambiae_ s.l. or sand-fly sampling event carried out in rural properties targeting possible vectors of _Leishmania_ (Figure 5).
+The Occurrence Core can be used with the following extensions: https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2024-07-11.xml[DNA derived^], <<measurement-or-facts-extension,Measurement or Fact>>, and <<Resource Relationship>> extensions. For example, a dataset of _Aedes_ mosquitoes will have information on the taxonomy, spatial data, identification, etc., and would have data from molecular assays for mosquito DNA barcode and identify Dengue virus that can be displayed in the https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2024-07-11.xml[DNA-derived extension^].
 
-The Occurrence core can be used with the following extensions: DNA derived, Measurement or Facts and Resource Relationship. For example, a dataset of _Aedes_ mosquitoes will have information on the taxonomy, spatial data, identification, etc., and would have data from molecular assays for mosquito DNA barcode and identify Dengue virus that can be displayed in the https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2024-07-11.xml[DNA-derived^] extension.
+The https://rs.gbif.org/core/dwc_taxon_2024-02-19.xml[Taxon Core^] (checklist) can be used with the Species Profile and Species Distribution extensions.
 
-The Checklist core and be used with the Species Profile and Species Distribution extensions.
+And the Event Core can be used with the following extensions: <<occurrence-extension,Occurrence>>, <<emof,Extended Measurement or Fact>, <<humboldt-eco,Humboldt>>, and the <<resource-relationship-extension,Resource Relationship>>. For example, a dataset with monitoring data on Anopheles mosquitoes with additional environmental data might have been collected, i.e. air temperature, air humidity, satellite data on vegetation cover and these data can be shown by the <<emof,eMOF extension>>.
 
-And the Event core can be used with the following extensions: Occurrence, Extended Measurement or Facts, Humboldt, and the Resource Relationship. For example, a dataset with monitoring data on Anopheles mosquitoes with additional environmental data might have been collected, i.e. air temperature, air humidity, satellite data on vegetation cover and these data can be shown by the https://rs.gbif.org/extension/obis/extended_measurement_or_fact_2023-08-28.xml[Extended Measurement or Fact extension^].
-
-The Extended Measurement or Fact (eMoF) extension can be used for an Event core with an Occurrence extension. The eMoF extension will allow measurements for the *events* (temperature, air humidity, vegetation cover, etc.) and the measurements associated with the occurrences (length of appendices, ratio between body parts, etc.) to be published together.
+The Extended Measurement or Fact (eMoF) extension can be used for an Event Core with an Occurrence extension. The eMoF extension will allow measurements for the *events* (temperature, air humidity, vegetation cover, etc.) and the measurements associated with the occurrences (length of appendices, ratio between body parts, etc.) to be published together.
 
 The Measurement or Facts extension allows only measurements of the occurrence.
 
 [[fig-05]]
-.Examples of three dataset classes: 1. Checklist, a list of _Aedes_ species from the countries of South America; 2. Occurrence, _Aedes_ mosquitoes collected at the Iguazu National Park, Brazil, between 15-20 February 2020 at two different sites (trails 1 and 2); 3. Sampling event, _Aedes_ mosquitoes collected in the Santa Maria Farm monthly during the rainy and dry season of 2021 using two different sampling methods for adults (BG Sentinel trap) and larvae (standard dipper).
+.Examples of three dataset classes: Checklist (_upper left_): a list of _Aedes_ species from the countries of South America; Occurrence (_upper right_): _Aedes_ mosquitoes collected at the Iguazu National Park, Brazil, between 15-20 February 2020 at two different sites (trails 1 and 2); *Sampling event* *bottom*): _Aedes_ mosquitoes collected in the Santa Maria Farm monthly during the rainy and dry season of 2021 using two different sampling methods for adults (BG Sentinel trap) and larvae (standard dipper).
 image::img/web/fig-05.png[]
 
-For the purpose of this guide, we present two ways of data publication in which all available data can be published in a single file and a more elaborate way with the use of extensions to accommodate the diversity of variables recorded along with vector records. In all cases, i.e. single file or use of extensions, we provide a comprehensive list of terms that might be relevant for vector data and we suggest using selected terms and controlled vocabulary only to improve consistency among datasets. We also provide https://docs.google.com/spreadsheets/d/1lfddRXSV5OiOhLlmAT83YviWexEUPsJdXFpYrF23fjY/edit?gid=0#gid=0[Excel templates^] for occurrence and sampling event datasets, as well as the extensions.
+For the purpose of this guide, we present two ways of data publication in which all available data can be published in a single file as well as a more elaborate way with the use of extensions to accommodate the diversity of variables recorded along with vector records. We provide a comprehensive list of potentially relevant terms for vector data and suggest using these terms to improve consistency among datasets. We also provide https://docs.google.com/spreadsheets/d/1lfddRXSV5OiOhLlmAT83YviWexEUPsJdXFpYrF23fjY/edit?gid=0#gid=0[Excel templates] for both the occurrence and sampling-event datasets as well as the extensions.
 
 Below is the mapping for a https://docs.google.com/document/d/1O4rE5xdg-H4ouxMyUUj7T4-jiLqVyIW5HE3wgcq9ZNs/edit?pli=1&tab=t.0#heading=h.fc4aiyqo08od[sampling event^] followed by an https://docs.google.com/document/d/1O4rE5xdg-H4ouxMyUUj7T4-jiLqVyIW5HE3wgcq9ZNs/edit?pli=1&tab=t.0#heading=h.p9gh7jv2v6x7[occurrence^] dataset mapping, please note that most terms are very similar for both types of datasets, so consider repeating the same terms from the sampling event mapping as we present only the terms that are applicable to an occurrence dataset in the appropriate section.
 
-=== Vector data mapping - single file
+=== Vector data mapping: single file
 
 ==== Mapping sampling events
 
 This section provides mapping recommendations for sampling event datasets in which all available data can be published as a single file.
 
-If geographic coordinates are not provided in decimal lat-long, the following terms can be used `dwc:verbatimLatitude`, `dwc:verbatimLongitude`, and `dwc:verbatimCoordinateSystem`.
+If geographic coordinates are not provided in decimal lat-long, the following terms can be used term:dwc[dwc:verbatimLatitude], term:dwc[dwc:verbatimLongitude], and term:dwc[dwc:verbatimCoordinateSystem].
 
 [[table-03]]
-.Recommended terms for https://rs.gbif.org/core/dwc_event_2024-02-19.xml[Event Core^] for vector datafootnote:[Example data were taken from the following published datasets: 1) https://doi.org/10.15472/dxbowv[https://doi.org/10.15472/dxbowv^]; 2) https://doi.org/10.15468/excax3[https://doi.org/10.15468/excax3^]; 3) https://doi.org/10.15468/zr6frj[https://doi.org/10.15468/zr6frj^]; 4) https://doi.org/10.15468/fbywtn[https://doi.org/10.15468/fbywtn]
+.Recommended terms for https://rs.gbif.org/core/dwc_event_2024-02-19.xml[Event Core^] for vector data with examples from the following dataset: https://doi.org/10.15472/dxbowv[Registros de los dípteros causantes de la transmisión del agente etiológico del dengue en el departamento del Cauca, Colombia^]; https://doi.org/10.15468/excax3[Species composition and distribution of anopheles gambiae complex circulating in Kinshasa^]; https://doi.org/10.15468/zr6frj[Data from: Rodent trapping studies as an overlooked information source for understanding endemic and novel zoonotic spillover^]; https://doi.org/10.15468/fbywtn[Datos de ocurrencia de triatominos americanos del Laboratorio de Triatominos del CEPAVE (CONICET-UNLP)^]
 [width="100%",cols="32%,25%,28%,15%",options="header",]
 |===
 |*Term name* |*Definition* |*Examples* |*Status*
 
-|term:dwc[dwc:eventID]`
+|term:dwc[dwc:eventID]
 |An identifier for the set of information associated with an event (something that occurs at a place and time). May be a global unique identifier or an identifier specific to the dataset.
 |`E-AL-Tr-1-200518 `
 |Required
@@ -310,7 +308,7 @@ For detailed explanation and examples for the above terms, please refer to <<tab
 
 === Vector data mapping using extensions
 
-This section provides mapping recommendations for the use of extensions with either the occurrence core, the sampling-event core or the taxon core (checklist).
+This section provides mapping recommendations for the use of extensions with either the Occurrence Core, the Event Core or the Taxon Core (checklist).
 
 GBIF has a list of registered https://rs.gbif.org/extensions.html[extensions^] and https://rs.gbif.org/vocabulary/[vocabulary^] that can be useful in the standardization of terms, but we also suggest checking the link:#controlled-vocabulary-ontologies[[.underline]#controlled vocabulary & ontologies#] section for more specific information.
 
@@ -450,7 +448,7 @@ Recommended best practice is to separate the values in a list with space vertica
 
 ==== Occurrence Extension
 
-This extension will have the same terms as the occurrence core, please see <<table-03,Table 3>> for more details.
+This extension will have the same terms as the Occurrence Core, please see <<table-03,Table 3>> for more details.
 
 ==== Humboldt Extension
 
@@ -688,7 +686,7 @@ image::img/web/fig-08.png[]
 
 ==== Species Profile
 
-The https://rs.gbif.org/extension/gbif/1.0/speciesprofile_2019-01-29.xml[Species Profile^] extension is a basic species profile with characteristics in addition to textural description which are covered by the description extension and can be used in addition to the checklist core.
+The https://rs.gbif.org/extension/gbif/1.0/speciesprofile_2019-01-29.xml[Species Profile^] extension is a basic species profile with characteristics in addition to textural description which are covered by the description extension and can be used in addition to the Taxon Core checklist.
 
 [[table-10]]
 .Recommended terms from the Species Profile Extension, with examples from the following datasets: https://doi.org/10.15468/b52b9z[NEON ticks sampled using drag cloths and tick pathogen status^], https://doi.org/10.15468/sxcpfp[Fiocruz/COLFLEB - Coleção de Flebotomíneos^], https://doi.org/10.15468/c4cauy[Catálogo Taxonômico da Fauna do Brasil^].
@@ -755,7 +753,7 @@ vocabulary like http://en.wikipedia.org/wiki/Geologic_column[http://en.wikipedia
 
 ==== Species Distribution
 
-The Species Distribution extension is a geographic distribution of a taxon and can be used with the Checklist Core.
+The Species Distribution extension is a geographic distribution of a taxon and can be used with the Taxon Core checklist.
 
 In addition to the terms in <<table-11,Table 11>>, we recommend using the terms: http://purl.org/dc/terms/source[source^] and term:dwc[dwc:datasetID] described above in <<table-09,Table 9>>.
 
@@ -1053,4 +1051,4 @@ To better address these sensitive data but still be able to contribute with data
 * https://www.simplemappr.net/[SimpleMappr^], a free tool to create point maps but also provides polygons’ coordinates (Shorthouse 2010).
 * Generalizing location information by obtaining wider, regional coordinates using http://www.getty.edu/research/tools/vocabularies/tgn/Getty Thesaurus of Geographic Names^] or http://maps.google.com[Google Maps^]
 
-With regards to health-related data, WHO has specific principles (https://cdn.who.int/media/docs/default-source/publishing-policies/data-policy/who-policy-on-use-and-sharing-of-data-collected-in-member-states-outside-phe_en.pdf?sfvrsn=713112d4_27  https://cdn.who.int/media/docs/default-source/publishing-policies/data-policy/who-policy-statement-on-data-sharing-by-who-in-context-of-phe.pdf?sfvrsn=a97091f7_5[WHO 2016^], https://cdn.who.int/media/docs/default-source/publishing-policies/data-policy/who-policy-on-use-and-sharing-of-data-collected-in-member-states-outside-phe_en.pdf?sfvrsn=713112d4_27[WHO 2017^], https://cdn.who.int/media/docs/default-source/documents/about-us/infodisclosurepolicy.pdf?sfvrsn=c1520275_11[WHO 2024^]) and https://cdn.who.int/media/docs/default-source/world-health-data-platform/who_personal_data_protection_policy.pdf?sfvrsn=f7089a28_3[policies^] on how to handle health-related data, including https://www.who.int/news/item/16-09-2022-new-who-policy-requires-sharing-of-all-research-data[WHO’s policy on sharing and reuse of research data^] which includes instructions on how to handle sensitive data with anonymization and de-identification information.
+With regards to health-related data, WHO has specific principles (https://cdn.who.int/media/docs/default-source/publishing-policies/data-policy/who-policy-on-use-and-sharing-of-data-collected-in-member-states-outside-phe_en.pdf?sfvrsn=713112d4_27  https://cdn.who.int/media/docs/default-source/publishing-policies/data-policy/who-policy-statement-on-data-sharing-by-who-in-context-of-phe.pdf?sfvrsn=a97091f7_5[WHO 2016^], https://cdn.who.int/media/docs/default-source/publishing-policies/data-policy/who-policy-on-use-and-sharing-of-data-collected-in-member-states-outside-phe_en.pdf?sfvrsn=713112d4_27[WHO 2017b^], https://cdn.who.int/media/docs/default-source/documents/about-us/infodisclosurepolicy.pdf?sfvrsn=c1520275_11[WHO 2024b^]) and https://cdn.who.int/media/docs/default-source/world-health-data-platform/who_personal_data_protection_policy.pdf?sfvrsn=f7089a28_3[policies^] on how to handle health-related data, including https://www.who.int/news/item/16-09-2022-new-who-policy-requires-sharing-of-all-research-data[WHO’s policy on sharing and reuse of research data^] which includes instructions on how to handle sensitive data with anonymization and de-identification information.
