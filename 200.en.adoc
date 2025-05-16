@@ -731,6 +731,7 @@ vocabulary like http://en.wikipedia.org/wiki/Geologic_column[http://en.wikipedia
 |Strongly recommended
 |===
 
+[[species-distribution]]
 ==== Species Distribution
 
 The Species Distribution extension is a geographic distribution of a taxon and can be used with the Taxon Core checklist.
