@@ -672,7 +672,7 @@ The https://rs.gbif.org/extension/gbif/1.0/speciesprofile_2019-01-29.xml[Species
 
 [[table-10]]
 .Recommended terms from the Species Profile extension, with examples from the following datasets: https://doi.org/10.15468/b52b9z[NEON ticks sampled using drag cloths and tick pathogen status^], https://doi.org/10.15468/sxcpfp[Fiocruz/COLFLEB - Coleção de Flebotomíneos^], https://doi.org/10.15468/c4cauy[Catálogo Taxonômico da Fauna do Brasil^].
-[width="100%",cols="24%,23%,30%,23%",options="header"]
+[width="100%",cols="24%,23%,30%,15%",options="header"]
 |===
 |*Term name* |*Definition* |*Examples* |*Status*
 
@@ -724,12 +724,12 @@ vocabulary like http://en.wikipedia.org/wiki/Geologic_column[http://en.wikipedia
 
 |http://purl.org/dc/terms/source[source^]
 |Source reference for this distribution record. Can be proper publication citation, a web page URL, etc.
-|`Catálogo Taxonômico da Fauna do Brasil. Published on the Internet http://fauna.jbrj.gov.br/fauna/faunadobrasil/55443` 
+|\`Catálogo Taxonômico da Fauna do Brasil. Published on the Internet http://fauna.jbrj.gov.br/fauna/faunadobrasil/55443` 
 |Share if available
 
 |term:dwc[dwc:datasetID]
 |An identifier for a subset of data. See also http://rs.tdwg.org/dwc/terms/index.htm#datasetID[datasetID]
-|`https://doi.org/10.48443/nygx-dm71`
+|\`https://doi.org/10.48443/nygx-dm71`
 |Strongly recommended
 |===
 
@@ -874,7 +874,7 @@ Here we propose additional terms that are useful in vector datasets, either by p
 
 [[table-13]]
 .Recommended additional terms of relevance to vector data, with examples from the datasets: https://doi.org/10.15472/dxbowv[Registros de los dípteros causantes de la transmisión del agente etiológico del dengue en el departamento del Cauca, Colombia^], https://doi.org/10.15468/excax3[Species composition and distribution of anopheles gambiae complex circulating in Kinshasa^], https://doi.org/10.15468/sxcpfp[Fiocruz/COLFLEB - Coleção de Flebotomíneos^]
-[width="100%",cols="25%,17%,40%,18%",options="header",]
+[width="100%",cols="25%,17%,40%,18%",options="header"]
 |===
 |*Term name* |*Definition* |Examples* |*Status*
 
