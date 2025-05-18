@@ -724,12 +724,12 @@ vocabulary like http://en.wikipedia.org/wiki/Geologic_column[http://en.wikipedia
 
 |http://purl.org/dc/terms/source[source^]
 |Source reference for this distribution record. Can be proper publication citation, a web page URL, etc.
-|`Catálogo Taxonômico da Fauna do Brasil. Published on the Internet \http://fauna.jbrj.gov.br/fauna/faunadobrasil/55443` 
+|Catálogo Taxonômico da Fauna do Brasil. Published on the Internet \http://fauna.jbrj.gov.br/fauna/faunadobrasil/55443
 |Share if available
 
 |term:dwc[dwc:datasetID]
 |An identifier for a subset of data. See also http://rs.tdwg.org/dwc/terms/index.htm#datasetID[datasetID]
-|`\https://doi.org/10.48443/nygx-dm71`
+|\https://doi.org/10.48443/nygx-dm71
 |Strongly recommended
 |===
 
