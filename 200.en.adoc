@@ -29,7 +29,7 @@ image::img/web/fig-05.png[]
 
 For the purpose of this guide, we present two ways of data publication in which all available data can be published in a single file as well as a more elaborate way with the use of extensions to accommodate the diversity of variables recorded along with vector records. We provide a comprehensive list of potentially relevant terms for vector data and suggest using these terms to improve consistency among datasets. We also provide an link:data/dwc-vector-data-templates.xlsx[Excel spreadsheet] whose sheets provide templates for the occurrence datasets, sampling-event datasets and the extensions discussed in this guide.
 
-Below are mappings for both a <<mapping-sampling-events,sampling-event datatset>> and an <<mapping-occurrences,occurrence dataset>.
+The next section provide mapping for both <<mapping-sampling-events,sampling-event datatsets>> and an <<mapping-occurrences,occurrence datasets>>.
 
 NOTE: Most terms are very similar for both types of datasets, so consider repeating the same terms from the sampling-event mapping as we present only the terms that are applicable to an occurrence dataset in the appropriate section.
 
