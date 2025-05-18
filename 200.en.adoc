@@ -445,7 +445,7 @@ Recommended best practice is to separate the values in a list with space vertica
 
 |term:dwc[dwc:measurementMethod]
 |A description of or reference to (publication, URI) the method or protocol used to determine the measurement, fact, characteristic, or assertion. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.
-|`Derived from satellite products (detailed method : https://doi.org/10.1186/s13071-021-04851-x)`
+|`Derived from satellite products (detailed method:` \https://doi.org/10.1186/s13071-021-04851-x)
 
 |term:dwc[dwc:measurementRemarks]
 |Comments or notes accompanying the term:dwc[dwc:MeasurementOrFact].
@@ -605,7 +605,7 @@ Relationships can be one-way as of between a <<vector>> and the pathogens detect
 |An identifier for the resource that is the subject of the relationship.
 
 |term:dwc[dwc:relationshipOfResourceID]
-|http://purl.obolibrary.org/obo/RO_0002459[http://purl.obolibrary.org/obo/RO_0002459]
+|\http://purl.obolibrary.org/obo/RO_0002459
 |An identifier for the relationship type (predicate) that connects the subject identified by dwc:resourceID to its object identified by dwc:relatedResourceID. Recommended best practice is to use the identifiers of the terms in a controlled vocabulary, such as the OBO Relation Ontology.
 
 |term:dwc[dwc:relatedResourceID]
@@ -636,7 +636,7 @@ Relationships can be one-way as of between a <<vector>> and the pathogens detect
 |An identifier for the resource that is the subject of the relationship.
 
 |term:dwc[dwc:relationshipOfResourceID]
-|http://purl.obolibrary.org/obo/RO_0002459[[.underline]#http://purl.obolibrary.org/obo/RO_0002459#]
+|\http://purl.obolibrary.org/obo/RO_0002459
 |An identifier for the relationship type (predicate) that connects the subject identified by dwc:resourceID to its object identified by dwc:relatedResourceID. Recommended best practice is to use the identifiers of the terms in a controlled vocabulary, such as the OBO Relation Ontology.
 
 |term:dwc[dwc:relatedResourceID]
