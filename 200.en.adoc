@@ -904,7 +904,7 @@ Recommended best practice is to use controlled value strings from the controlled
 |https://dwc.tdwg.org/pw/#dwcpw_p032[`container/bulk`], https://dwc.tdwg.org/pw/#dwcpw_p038[[`ship/boat ballast water`]
 |Share if available
 
-|tem=rm:dwc[dwc:associatedOccurrences]
+|term:dwc[dwc:associatedOccurrences]
 |The process by which a dwc:Organism came to be in a given place at a given time. +
 Recommended best practice is to use controlled value strings from the controlled vocabulary designated for use with this term, listed at http://rs.tdwg.org/dwc/doc/pw/. For details, refer to https://doi.org/10.3897/biss.3.38084. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.
 |`pathogen test of:2a85f793-09aa-4e49-b5fe-523b2440440f-00006`
