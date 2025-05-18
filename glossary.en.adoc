@@ -2,7 +2,6 @@
 == Glossary
 
 [glossary]
-[[anchor]]term:: Add short tags corresponding to an anchor name in HTML between brackets (no spaces allowed), then list the term, which should be written as you wish it to appear.
 [[anthropophily]]anthropophily:: Description of vectors that show a preference for feeding on humans, even when non-human hosts are available.
 [[biting-rate]]biting rate:: Average number of vector bites a host receives in a unit of time, specified according to host and vector species (usually measured by human landing catch).
 [[dwca]]Darwin Core Archive (DwC-A):: Compressed (ZIP) file format for exchange of biodiversity data compiled in accordance with the https://dwc.tdwg.org[Darwin Core standard] (DwC). This self-contained set of interconnected CSV files and an XML document includes files and data columns and describes their mutual relationships.
