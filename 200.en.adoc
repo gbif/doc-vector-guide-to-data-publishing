@@ -190,8 +190,8 @@ If geographic coordinates are not provided in decimal lat-long, the following te
 |Share if available
 
 |term:dwc[dwc:identifiedByID]
-|`https://orcid.org/0000-0002-0750-6106`
 |ORCID iD of person or people who identified the organism
+|\https://orcid.org/0000-0002-0750-6106
 |Share if available
 
 |term:dwc[dwc:IdentificationRemarks]
@@ -476,7 +476,7 @@ For guidance on how to include the Humboldt Extension in a sampling-event datase
 |`restrictedSearch`
 
 |term:eco[eco:protocolNames]
-|Categorical descriptive names for the methods used during the dwc:Event.. Recommended best practice is to use a controlled vocabulary and separate multiple values in a list with space-post-space. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.
+|Categorical descriptive names for the methods used during the dwc:Event.. Recommended best practice is to use a controlled vocabulary and separate multiple values in a list with \|. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.
 |`vectorSurveillance`
 
 |term:eco[eco:protocolDescriptions]
@@ -544,8 +544,8 @@ For guidance on how to include the Humboldt Extension in a sampling-event datase
 |`code(s) for specific event`
 
 |term:eco[eco:verbatimSiteDescriptions]
-|Original textual description of the site(s). Site refers to the location at which observations are made or samples/measurements are taken. The site can be at any level of hierarchy. Recommended best practice is to separate multiple values in a list with space-pipe-space.
-|`Patch of forest`, `Barn where sheep spend nights` 
+|Original textual description of the site(s). Site refers to the location at which observations are made or samples/measurements are taken. The site can be at any level of hierarchy. Recommended best practice is to separate multiple values in a list with the post character: \|.
+|`Patch of forest` \| `Barn where sheep spend nights` 
 
 |term:eco[eco:verbatimTargetScope]
 |The verbatim original description of the term:dwc[dwc:event] scope.
@@ -557,7 +557,7 @@ For guidance on how to include the Humboldt Extension in a sampling-event datase
 
 |term:eco[eco:targetLifeStageScope]
 |The age classes or life stages of the term:dwc[dwc:organism]s targeted for sampling during the term:dwc[dwc:event].
-|`Nymph`, `adult`
+|`Nymph` \| `adult`
 |===
 
 * SCOPE TERMS - Taxonomic 
@@ -625,31 +625,31 @@ Relationships can be one-way as of between a <<vector>> and the pathogens detect
 .Recommended terms from the ResourceRelationship extension for two-way relationships involving ticks and pathogens, with examples from the following published dataset: https://doi.org/10.15468/f3k8r9[VectorNet^]
 [width="100%",cols="31%,29%,40%",options="header"]
 |===
-|*Terms name* |*Examples* |*Definition*
+|*Terms name* |*Definition* |*Examples*
 
 |term:dwc[dwc:resourceRelationshipID]
-|2A
 |An identifier for an instance of relationship between one resource (the subject) and another (dwc:relatedResource, the object).
+|`2A`
 
 |term:dwc[dwc:resourceID]
-|1A
 |An identifier for the resource that is the subject of the relationship.
+|`1A`
 
 |term:dwc[dwc:relationshipOfResourceID]
-|\http://purl.obolibrary.org/obo/RO_0002459
 |An identifier for the relationship type (predicate) that connects the subject identified by dwc:resourceID to its object identified by dwc:relatedResourceID. Recommended best practice is to use the identifiers of the terms in a controlled vocabulary, such as the OBO Relation Ontology.
+|\http://purl.obolibrary.org/obo/RO_0002459
 
 |term:dwc[dwc:relatedResourceID]
-|`1A:2A`
 |An identifier for a related resource (the object, rather than the subject of the relationship).
+|`1A:2A`
 
 |term:dwc[dwc:relationshipOfResource]
-|`is vector for`, `reservoir host of`, `pathogen of`
 |The relationship of the subject (identified by dwc:resourceID) to the object (identified by dwc:relatedResourceID). Recommended best practice is to use a controlled vocabulary.
+|`is vector for` \| `reservoir host of` \| `pathogen of`
 
 |term:dwc[dwc:relationshipRemarks`]
-|`pathogen 1`
 |Comments or notes about the relationship between the two resources.
+|`pathogen 1`
 |===
 
 <<fig-07a,  Figure 7a>> and <<fig-07b,7b>> below presents some examples of how resourceRelationship tables from the https://rs.gbif.org/core/dwc_occurrence_2024-02-23.xml[Occurrence Core^] may look.
@@ -719,7 +719,7 @@ vocabulary like http://en.wikipedia.org/wiki/Geologic_column[http://en.wikipedia
 
 |term:dwc[dwc:habitat]
 |A category or description of the habitat in which the term:dwc[dwc:event] occurred. Can include outdoor/indoor collection, urban/rural environments. Recommended practice is to use https://www.ebi.ac.uk/ols4/ontologies/envo?viewMode=list[ENVO environmental ontology].
-|`rural environment`, `outdoor`, `chicken coop`
+|`rural environment`\| `outdoor` \| `chicken coop`
 |Strongly recommended
 
 |http://purl.org/dc/terms/source[source^]
@@ -901,7 +901,7 @@ Here we propose additional terms that are useful in vector datasets, either by p
 |term:dwc[dwc:pathway]
 |The process by which a dwc:Organism came to be in a given place at a given time.+
 Recommended best practice is to use controlled value strings from the controlled vocabulary designated for use with this term, listed at http://rs.tdwg.org/dwc/doc/pw/. For details, refer to https://doi.org/10.3897/biss.3.38084. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.
-|https://dwc.tdwg.org/pw/#dwcpw_p032[`container/bulk`], https://dwc.tdwg.org/pw/#dwcpw_p038[[`ship/boat ballast water`]
+|https://dwc.tdwg.org/pw/#dwcpw_p032[`container/bulk`] \| https://dwc.tdwg.org/pw/#dwcpw_p038[[`ship/boat ballast water`]
 |Share if available
 
 |term:dwc[dwc:associatedOccurrences]
@@ -1007,7 +1007,7 @@ Recommended best practice is to use a controlled vocabulary such as that used in
 
 |term:dwc[dwc:behavior]
 |A description of the behavior shown by the subject at the time the term:dwc[dwc:occurrence] was recorded.+ Recommended best practice is to use a controlled vocabulary. Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.
-|`Endophagic`, `exophylic`, `zoophylic`
+|`Endophagic` \| `exophylic` \| `zoophylic`
 |Share if available
 
 |term:dwc[dwc:dataGeneralizations]
