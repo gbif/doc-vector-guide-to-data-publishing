@@ -96,7 +96,7 @@ If geographic coordinates are not provided in decimal lat-long, the following te
 
 |term:dwc[dwc:recordedBy]
 |Person or people who recorded the original occurrence.
-|`Erika Santamaría`, `Harold Fernández` 
+|`Erika Santamaría` \| `Harold Fernández` 
 |Share if available
 
 |term:dwc[dwc:recordedByID]
