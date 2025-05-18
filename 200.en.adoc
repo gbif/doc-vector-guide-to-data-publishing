@@ -1,19 +1,19 @@
 [[data-categorization]]
 == Data categorization
 
-GBIF supports the publication of four classes of datasets: resource metadata, checklist, occurrence and sampling-event. <<fig-04,Figure 4>> provides a decision tree to help find the most suitable dataset class based on a minimum of attributes associated with the data.
+GBIF supports the publication of four classes of datasets: resource metadata, checklist, <<occurrence>> and <<sampling event>>. <<fig-04,Figure 4>> provides a decision tree to help find the most suitable dataset class based on a minimum of attributes associated with the data.
 
 [[fig-04]]
-.A decision tree for vector data categorization. Datasets can be published as checklists, lists of names that may have occurrences attached to them, better expressed in extensions such as the species profile and species distribution. Occurrence and sampling event datasets may have additional environmental, biological or epidemiological data that can be published in extensions such as the measurement or fact or the extended measurement or fact or data on pathogens and hosts best captured by the resource relationship extension.And the Humboldt Extension can be used to convey more detailed information on ecological inventories, much similar to vector surveillance studies.
+.A decision tree for vector data categorization. Datasets can be published as checklists, lists of names that may have occurrences attached to them, better expressed in extensions such as the species profile and species distribution. Occurrence and sampling-event datasets may have additional environmental, biological or epidemiological data that can be published in extensions such as the measurement or fact or the extended measurement or fact or data on pathogens and <<host,hosts>> best captured by the <<resource-relationship-extension,Resource Relationship extension>>. And the Humboldt Extension can be used to convey more detailed information on ecological inventories, much similar to vector surveillance studies.
 image::img/web/fig-04.png[]
 
 Before publishing a dataset in GBIF, the data has to be arranged in structured tables, these tables can be cores only or cores plus the use of extensions, which means that there are different options for sharing data through GBIF. Extensions are designed to accommodate types of data that do not fit a particular core.
 
 There has to be always a core table (Occurrence Core or Event Core) that can be published on its own or it can have several extensions. The decision on how to publish the data lies with the data holder to best choose how to represent their data best. The https://rs.gbif.org/core/dwc_occurrence_2024-02-23.xml[Occurrence Core^] was the first to be created, but there was a need to better represent data from surveys, and the https://rs.gbif.org/core/dwc_event_2024-02-19.xml[Event Core^] was created. But also, there was an increasing need to represent data associated with occurrences and https://rs.gbif.org/extensions.html[extensions^] started to be developed.
 
-The simplest way to share data to GBIF is to use the https://rs.gbif.org/core/dwc_occurrence_2024-02-23.xml[Occurrence Core^] with no extensions, and the terms and examples are shown in section <<table-04,Table 4>>. An Occurrence Core will have observations and/or specimen records without information on sampling methods. However, vector data mostly fall into the sampling event category, as it is often obtained in the context of vector surveillance and/or monitoring for epidemiological purposes or vector control activities. In these cases, field collection consists of planned sampling events (trapping events) that are focused on capturing a particular vector group. Example: mosquito sampling event that focuses on the collection of _Anopheles gambiae_ s.l. or sand-fly sampling event carried out in rural properties targeting possible vectors of _Leishmania_ (<<fig-05,Figure 5>>).
+The simplest way to share data to GBIF is to use the https://rs.gbif.org/core/dwc_occurrence_2024-02-23.xml[Occurrence Core^] with no extensions, and the terms and examples are shown in section <<table-04,Table 4>>. An Occurrence Core will have observations and/or specimen records without information on sampling methods. However, vector data mostly fall into the sampling-event category, as it is often obtained in the context of vector surveillance and/or monitoring for epidemiological purposes or vector control activities. In these cases, field collection consists of planned sampling events (trapping events) that are focused on capturing a particular vector group. Example: mosquito sampling event that focuses on the collection of _Anopheles gambiae_ s.l. or sand-fly sampling event carried out in rural properties targeting possible <<vector,vectors>> of _Leishmania_ (<<fig-05,Figure 5>>).
 
-The Occurrence Core can be used with the following extensions: https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2024-07-11.xml[DNA derived^], <<measurement-or-facts-extension,Measurement or Fact>>, and <<Resource Relationship>> extensions. For example, a dataset of _Aedes_ mosquitoes will have information on the taxonomy, spatial data, identification, etc., and would have data from molecular assays for mosquito DNA barcode and identify Dengue virus that can be displayed in the https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2024-07-11.xml[DNA-derived extension^].
+The Occurrence Core can be used with the following extensions: https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2024-07-11.xml[DNA derived^], <<measurement-or-facts-extension,Measurement or Fact>>, and <<resource-relationship-extension,Resource Relationship>> extensions. For example, a dataset of _Aedes_ mosquitoes will have information on the taxonomy, spatial data, identification, etc., and would have data from molecular assays for mosquito DNA barcode and identify Dengue virus that can be displayed in the https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2024-07-11.xml[DNA-derived extension^].
 
 The https://rs.gbif.org/core/dwc_taxon_2024-02-19.xml[Taxon Core^] (checklist) can be used with the Species Profile and Species Distribution extensions.
 
@@ -39,7 +39,7 @@ NOTE: Most terms are very similar for both types of datasets, so consider repeat
 [[mapping-sampling-events]]
 ==== Mapping sampling events
 
-This section provides mapping recommendations for sampling event datasets in which all available data can be published as a single file.
+This section provides mapping recommendations for sampling-event datasets in which all available data can be published as a single file.
 
 If geographic coordinates are not provided in decimal lat-long, the following terms can be used term:dwc[dwc:verbatimLatitude], term:dwc[dwc:verbatimLongitude], and term:dwc[dwc:verbatimCoordinateSystem].
 
@@ -463,7 +463,7 @@ This extension uses the same terms as the Occurrence Core (see <<table-03,Table 
 The https://rs.gbif.org/extension/eco/Humboldt_2024-04-16.xml[Humboldt Extension for Ecological Inventories] provides support for term:dwc[dwc:Event]s related to ecological inventories. The recommendation for each of these terms is "Share if available."
 
 NOTE:
-For guidance on how to include the Humboldt Extension in a sampling event dataset, see https://doi.org/10.35035/doc-7t3p-ve38[Ingenloff (2025)^].
+For guidance on how to include the Humboldt Extension in a sampling-event dataset, see https://doi.org/10.35035/doc-7t3p-ve38[Ingenloff (2025)^].
 
 [[table-07]]
 .Recommended terms from the Humboldt Extension, drawn from https://doi.org/10.35035/doc-7t3p-ve38[Ingenloff (2025)^].
@@ -584,7 +584,7 @@ For guidance on how to include the Humboldt Extension in a sampling event datase
 
 The https://rs.gbif.org/extension/resource_relationship_2024-02-19.xml[Resource Relationship extension^] provides support for relationships between resources in a Darwin Core Occurrence, Event, or Taxon Core to resources in an extension or external to the dataset. The identifiers for subject (resourceID) and object (relatedResourceID) may exist in the dataset or be accessible via an externally resolvable identifier.
 
-Relationships can be one-way as of between a vector and the pathogens detected by a molecular assay, or it can be two-way, that is, between a vertebrate host, a vector and the pathogen detected in the vector. We provide examples below of a one-way relationship between ticka and pathogens and a two-way relationship between ticks, vertebrate hosts and pathogens. The recommendation for each of these terms is "Share if available."
+Relationships can be one-way as of between a <<vector>> and the pathogens detected by a molecular assay, or it can be two-way, that is, between a vertebrate <<host>>, a vector and the pathogen detected in the vector. We provide examples below of a one-way relationship between ticka and pathogens and a two-way relationship between ticks, vertebrate hosts and pathogens. The recommendation for each of these terms is "Share if available."
 
 [[table-08]]
 .Recommended terms from the ResourceRelationship Extension for one-way relationships involving ticks and pathogens, with examples from an as-yet unpublished dataset from the https://vbdhub.org[One Health VBD Hub, "Tick Occurrences in the UK—Review of Literature."^]
@@ -817,11 +817,11 @@ The DwC standard can only handle subspecies with the term:dwc[dwc:infraspecificE
 
 One way to sort out this specific issue with vector data is to leave the term:dwc[dwc:scientificName] at the lowest level of identification possible, in this case, at genus level, and then display the species complexes/assemblages or sibling species status in the term:dwc[dwc:verbatimIdentification] term, or even include any qualifier (such as `s.l.`, `sp.`, `cf.` or `aff.` in the term:dwc[dwc:verbatimTaxonRank] term to improve the alignment with the taxonomic backbone. `Identification qualifiers` {Ed.: too loose? Isn't there a specific DwC term to borrow phrasing from here?} should not be included in the term:dwc[dwc:scientificName] term.
 
-It is important to remember that when the dataset is uploaded in GBIF, the taxon names are matched to https://doi.org/10.15468/39omei[GBIF Taxonomic Backbone^], which is an updated list of names. However, to improve the IPT's ability to handle the names in a unambiguous way, it's important to add higher taxonomy to the data, even if just at kingdom level. This way, similar species names that are found in different kingdoms, can be classified correctly and it prevents the IPT from assigning _Incertae sedis_ to the names.
+It is important to remember that when the dataset is uploaded in GBIF, the taxon names are matched to https://doi.org/10.15468/39omei[GBIF Taxonomic Backbone^], which is an updated list of names. However, to improve the IPT's ability to handle the names in a unambiguous way, it's important to add higher taxonomy to the data, even if just at kingdom level. This way, similar species names that are found in different kingdoms, can be classified correctly and it prevents the <<IPT>> from assigning _Incertae sedis_ to the names.
 
 ==== How to best describe the native status of vectors
 
-Understanding how vectors spread and where they come from is an important aspect of disease surveillance. The global distribution of VBDs is already affected by climate change, land use changes, deforestation, global trade, among other factors, causing varying degrees of impacts across regions.
+Understanding how vectors spread and where they come from is an important aspect of disease surveillance. The global distribution of <<vbd,VBDs>> is already affected by climate change, land use changes, deforestation, global trade, among other factors, causing varying degrees of impacts across regions.
 
 There are several examples of how human activity is reshaping the distribution of vector species, as with _Aedes aegypti_, which has spread to more than 300 cities since its introduction to California in the U.S. in 2013 (https://doi.org/10.3389/fitd.2021.703873[Kelly et al. 2021^]); the introduction and spread of _Anopheles stephensi_ in Africa (https://doi.org/10.1073/pnas.2003976117[Sinka et al. 2020^]); and the reappearance of _Anopheles sacharovi_ in Italy after more than 50 years, due to an increase of natural areas with favourable climatic and environmental conditions (https://doi.org/10.1186/s13071-024-06252-2[Raele et al. 2024^]). These introductions, reintroductions, and spread of vector species require constant updates in their status as invasive, established or native to better inform both decision-making and the design of control strategies.
 

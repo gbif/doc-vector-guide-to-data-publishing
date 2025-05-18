@@ -27,7 +27,6 @@
 [[sporozoite-rate]]sporozoite rate:: Proportion of adult female vectors with sporozoites (motile stage of the malaria parasite) in their salivary glands.
 [[vector]]vector:: Invertebrates or non-human vertebrates which transmit infective organisms from one host to another.
 [[vbd]]vector-borne diseases (VBDs):: Infectious diseases transmitted by vectors.
-[[who]]World Health Organization (WHO):: The World Health Organization is a specialized agency of the United Nations responsible for international public health.
 [[zoophily]]zoophily:: Preferring or seeking a non-human host over another animal.
 
 <<<
