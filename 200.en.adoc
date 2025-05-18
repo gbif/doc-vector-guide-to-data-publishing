@@ -146,17 +146,17 @@ If geographic coordinates are not provided in decimal lat-long, the following te
 
 |term:dwc[dwc:occurrenceRemarks]
 |Comments or notes about the term:dwc[dwc:occurrence].
-|`Abdomen missing`, `Female taking in blood meal`, `Vouchered: Registered Collection`, `found dead` 
+|`Abdomen missing` \| `Female taking in blood meal`\| `Vouchered: Registered Collection`|\ `found dead` 
 |Share if available
 
 |term:dwc[dwc:habitat] 
 |A category or description of the habitat in which the dwc:Event occurred. Can include outdoor/indoor collection, urban/rural environments. Recommended practice is to use https://www.ebi.ac.uk/ols4/ontologies/envo?viewMode=list[ENVO environmental ontology].
-|`rural environment`, `outdoor`, `plastic container`
+|`rural environment` \| `outdoor` \| `plastic container`
 |Strongly recommended
 
 |term:dwc[dwc:eventRemarks]
 |Comments or notes about the term:dwc[dwc:event].
-|`Rain` , `TrapStatus:Valid`
+|`Rain` \| `TrapStatus:Valid`
 |Share if available
 
 |term:dwc[dwc:countryCode]
@@ -201,7 +201,7 @@ If geographic coordinates are not provided in decimal lat-long, the following te
 
 |term:dwc[dwc:identificationReferences]
 |A list (concatenated and separated) of references (publication, global unique identifier, URI) used in the dwc:Identification.
-|`Gillies M, Meillon D. 1968. The Anophelinae of Africa south of the Sahara. Publication of the South African Institute for Medical Research, Johannesburg, 54, 1–343. Gillies MT. 1987. A supplement to the Anophelinae of Africa south of the Sahara (Afrotropical Region). Publications of the South African Institute for Medical Research, 55, 1–143`
+|`Gillies M, Meillon D. 1968. The Anophelinae of Africa south of the Sahara. Publication of the South African Institute for Medical Research, Johannesburg, 54, 1–343.`\| `Gillies MT. 1987. A supplement to the Anophelinae of Africa south of the Sahara (Afrotropical Region). Publications of the South African Institute for Medical Research, 55, 1–143`
 |Share if available
 
 |term:dwc[dwc:taxonRank]
@@ -287,7 +287,7 @@ For detailed explanation and examples for the above terms, please refer to <<tab
 
 |term:dwc[dwc:preparations]
 |A preparation or preservation method for a specimen.
-|`Placed in RNA Later`, `Pinned`
+|`Placed in RNA Later` \| `Pinned`
 |Share if available
 
 |term:dwc[dwc:associatedSequences]
