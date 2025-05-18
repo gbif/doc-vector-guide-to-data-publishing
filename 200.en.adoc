@@ -101,7 +101,7 @@ If geographic coordinates are not provided in decimal lat-long, the following te
 
 |term:dwc[dwc:recordedByID]
 |ORCID iD of person/ people that recorded the original occurrence
-|`https://orcid.org/0000-0002-7232-718X`
+|\https://orcid.org/0000-0002-7232-718X
 |Share if available
 
 |term:dwc[dwc:individualCount]
@@ -271,7 +271,7 @@ For detailed explanation and examples for the above terms, please refer to <<tab
 
 [[table-04]]
 .Recommended term for http://rs.gbif.org/core/dwc_occurrence_2020-04-15.xml[Occurrence Core^] for vector data, with examples from the following datasets: https://doi.org/10.15472/dxbowv[Registros de los dípteros causantes de la transmisión del agente etiológico del dengue en el departamento del Cauca, Colombia^]; https://doi.org/10.15468/excax3[Species composition and distribution of anopheles gambiae complex circulating in Kinshasa^]; https://doi.org/10.15468/zr6frj[Data from: Rodent trapping studies as an overlooked information source for understanding endemic and novel zoonotic spillover^]; https://doi.org/10.15468/fbywtn[Datos de ocurrencia de triatominos americanos del Laboratorio de Triatominos del CEPAVE (CONICET-UNLP)^]
-[width="100%",cols="25%,39%,21%,15%",options="header"]
+[width="100%",cols="25%,40%,20%,15%",options="header"]
 |===
 |*Term name* |*Definition* |*Examples* |*Status*
 
@@ -292,7 +292,7 @@ For detailed explanation and examples for the above terms, please refer to <<tab
 
 |term:dwc[dwc:associatedSequences]
 |A list (concatenated and separated) of identifiers (publication, global unique identifier, URI) of genetic sequence information associated with the term:dwc[dwc:materialEntity].
-|`https://www.ncbi.nlm.nih.gov/nuccore/MK918898`
+|\https://www.ncbi.nlm.nih.gov/nuccore/MK918898
 |Share if available
 
 |term:dwc[dwc:kingdom]
@@ -364,8 +364,8 @@ The https://rs.gbif.org/extension/obis/extended_measurement_or_fact_2023-08-28.x
 |Share if available
 
 |term:dwc[dwc:measurementMethod]
-|`qPCR`
 |A description of or reference to (publication, URI) the method or protocol used to determine the measurement, fact, characteristic, or assertion.
+|`qPCR`
 |Share if available
 
 |term:dwc[dwc:measurementRemarks]
@@ -378,9 +378,9 @@ The https://rs.gbif.org/extension/obis/extended_measurement_or_fact_2023-08-28.x
 |`wing length` 
 |Share if available
 
-|http://rs.iobis.org/obis/terms/measurementTypeID[#measurementTypeID^]
+|http://rs.iobis.org/obis/terms/measurementTypeID[measurementTypeID^]
 |An identifier for the measurementType (global unique identifier, URI). The identifier should reference the measurementType in a vocabulary.
-|`http://vocab.nerc.ac.uk/collection/P01/current/ODRYBM01`
+|\http://vocab.nerc.ac.uk/collection/P01/current/ODRYBM01
 |Share if available
 
 |term:dwc[dwc:measurementUnit]
@@ -390,7 +390,7 @@ The https://rs.gbif.org/extension/obis/extended_measurement_or_fact_2023-08-28.x
 
 |http://rs.iobis.org/obis/terms/measurementUnitID[measurementUnitID^]
 |An identifier for the measurementUnit (global unique identifier, URI). The identifier should reference the measurementUnit in a vocabulary.
-|`http://vocab.nerc.ac.uk/collection/P06/current/ULCM`
+|\http://vocab.nerc.ac.uk/collection/P06/current/ULCM
 |Share if available
 
 |term:dwc[dwc:measurementValue]
@@ -410,7 +410,7 @@ The https://rs.gbif.org/extension/measurements_or_facts_2024-02-19.xml[Measureme
 
 [[table-06]]
 .Recommended terms from the Measurement or Fact extension, with examplee from the following dataset: https://doi.org/10.15468/v8fvyn[^Anopheles collections in the health districts of Korhogo (Côte d'Ivoire) and Diébougou (Burkina Faso) (2016-2018)^]
-[width="100%",cols="36%,20%,44%",options="header",]
+[width="100%",cols="36%,44%,20%",options="header",]
 |===
 |*Term name* |*Definition* |*Examples*
 
@@ -436,7 +436,7 @@ The https://rs.gbif.org/extension/measurements_or_facts_2024-02-19.xml[Measureme
 
 |term:dwc[dwc:measurementDeterminedBy]
 |A list (concatenated and separated) of names of people, groups, or organizations who determined the value of the term:dwc[dwc:MeasurementOrFact]. +
-Recommended best practice is to separate the values in a list with space vertical bar space ( `post` ). This term has an equivalent in the dwciri:namespace that allows only an IRI as a value, whereas this term allows for any string literal value.
+Recommended best practice is to separate the values in a list with the post character, \|. This term has an equivalent in the dwciri:namespace that allows only an IRI as a value, whereas this term allows for any string literal value.
 |`Paul Taconet`
 
 |term:dwc[dwc:measurementDeterminedDate]
