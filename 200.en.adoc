@@ -146,7 +146,7 @@ If geographic coordinates are not provided in decimal lat-long, the following te
 
 |term:dwc[dwc:occurrenceRemarks]
 |Comments or notes about the term:dwc[dwc:occurrence].
-|`Abdomen missing` \| `Female taking in blood meal`\| `Vouchered: Registered Collection`|\ `found dead` 
+|`Abdomen missing` \| `Female taking in blood meal`\| `Vouchered: Registered Collection`\| `found dead` 
 |Share if available
 
 |term:dwc[dwc:habitat] 
