@@ -101,7 +101,7 @@ If geographic coordinates are not provided in decimal lat-long, the following te
 
 |term:dwc[dwc:recordedByID]
 |ORCID iD of person/ people that recorded the original occurrence
-|\https://orcid.org/0000-0002-7232-718X
+|[.break-all]#`\https://orcid.org/0000-0002-7232-718X`#
 |Share if available
 
 |term:dwc[dwc:individualCount]
@@ -191,7 +191,7 @@ If geographic coordinates are not provided in decimal lat-long, the following te
 
 |term:dwc[dwc:identifiedByID]
 |ORCID iD of person or people who identified the organism
-|\https://orcid.org/0000-0002-0750-6106
+|[.break-all]#`\https://orcid.org/0000-0002-0750-6106`#
 |Share if available
 
 |term:dwc[dwc:IdentificationRemarks]
@@ -282,7 +282,7 @@ For detailed explanation and examples for the above terms, please refer to <<tab
 
 |term:dwc[dwc:occurrenceID]
 |An identifier for the dwc:Occurrence (as opposed to a particular digital record of the dwc:Occurrence). In the absence of a persistent global unique identifier, construct one from a combination of identifiers in the record that will most closely make the dwc:occurrenceID globally unique.
-|`308-Anopheles_Collection_308-CD`
+|[.break-all]#`308-Anopheles_Collection_308-CD`#
 |Required
 
 |term:dwc[dwc:preparations]
@@ -292,7 +292,7 @@ For detailed explanation and examples for the above terms, please refer to <<tab
 
 |term:dwc[dwc:associatedSequences]
 |A list (concatenated and separated) of identifiers (publication, global unique identifier, URI) of genetic sequence information associated with the term:dwc[dwc:materialEntity].
-|\https://www.ncbi.nlm.nih.gov/nuccore/MK918898
+|[.break-all]#`\https://www.ncbi.nlm.nih.gov/nuccore/MK918898`#
 |Share if available
 
 |term:dwc[dwc:kingdom]
