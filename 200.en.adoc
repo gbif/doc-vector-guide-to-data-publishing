@@ -560,25 +560,6 @@ For guidance on how to include the Humboldt Extension in a sampling-event datase
 |`Nymph` \| `adult`
 |===
 
-* SCOPE TERMS - Taxonomic 
-** See terms list here: term:eco[eco:taxonomic-scope]
-
-* SCOPE TERMS - Organismal
-** term:eco[eco:organismalScope]
-* Additional recommended terms to include -- any scope terms for which information is available such as: ** term:eco[eco:excludedTaxonomicScope] and other taxonomic scope terms
-
-* Are there life stage or other scopes deliberately included or excluded?
-* SCOPE TERMS - Habitat: See terms list here:
-** term:eco[eco:habitatScope]
-
-* Are habitat scope (deliberately targeted or excluded) indicated in the data?
-
-* MATERIALS TERMS: See terms list here:
-** term:eco[eco:materialCollected]
-* Are material samples collected and saved? If so, recommended terms to include are: 
-** term:eco[eco:hasMaterialSamples]
-** term:eco[eco:materialSampleTypes]
-
 [[resource-relationship]]
 ==== Resource Relationship
 
