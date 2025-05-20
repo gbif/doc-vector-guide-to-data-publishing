@@ -16,8 +16,6 @@ endif::backend-html5[]
 
 include::colophon.en.adoc[]
 
-include::preface.en.adoc[]
-
 :sectnums:
 
 include::100.en.adoc[]
