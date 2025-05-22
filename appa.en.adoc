@@ -9,27 +9,34 @@
 .Suggested controlled vocabulary for degree of establishment (from Groom et al. 2019).
 [width="100%",cols="76%,24%",options="header",]
 |===
-.2+|https://dwc.tdwg.org/list/#dwciri_degreeOfEstablishment[degreeOfEstablishment,role=term]
+2+|https://dwc.tdwg.org/list/#dwciri_degreeOfEstablishment[degreeOfEstablishment,role=term]
 
-|*Definition* |*Controlled value string*
+|*Definition*
+|*Controlled value string*
 
-|Not transported beyond limits of native range |native
+|Not transported beyond limits of native range
+|native
 
 |Individuals in captivity or quarantine (i.e. individuals provided with
 conditions suitable for them, but explicit measures of containment are
-in place) |captive
+in place)
+|captive
 
 |Individuals in cultivation (i.e. individuals provided with conditions
 suitable for them, but explicit measures to prevent dispersal are
-limited at best) |cultivated
+limited at best) 
+|cultivated
 
-|Individuals directly released into novel environment |released
+|Individuals directly released into novel environment
+|released
 
 |Individuals released outside of captivity or cultivation in a location,
-but incapable of surviving for a significant period |failing
+but incapable of surviving for a significant period
+|failing
 
 |Individuals surviving outside of captivity or cultivation in a
-location, no reproduction |casual
+location, no reproduction
+|casual
 
 |Individuals surviving outside of captivity or cultivation in a
 location, reproduction is occurring, but population not self-sustaining
@@ -41,15 +48,18 @@ location, reproduction occurring, and population self-sustaining
 
 |Self-sustaining population outside of captivity or cultivation, with
 individuals surviving a significant distance from the original point of
-introduction |colonising
+introduction
+|colonising
 
 |Self-sustaining population outside of captivity or cultivation, with
 individuals surviving and reproducing a significant distance from the
-original point of introduction |invasive
+original point of introduction
+|invasive
 
 |Fully invasive species, with individuals dispersing, surviving and
 reproducing at multiple sites across a greater or lesser spectrum of
-habitats and extent of occurrence |widespreadInvasive
+habitats and extent of occurrence
+|widespreadInvasive
 |===
 
 Table B. Suggested controlled vocabulary for traps (from VectorNet).
