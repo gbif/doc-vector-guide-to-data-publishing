@@ -9,8 +9,8 @@
 .Suggested controlled vocabulary for degree of establishment (from Groom et al. 2019).
 [width="100%",cols="76%,24%",options="header",]
 |===
-https://dwc.tdwg.org/list/#dwciri_degreeOfEstablishment[degreeOfEstablishment,role=term]
-|
+.2+|https://dwc.tdwg.org/list/#dwciri_degreeOfEstablishment[degreeOfEstablishment,role=term]
+
 |*Definition* |*Controlled value string*
 
 |Not transported beyond limits of native range |native
