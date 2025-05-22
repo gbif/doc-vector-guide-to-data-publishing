@@ -67,115 +67,115 @@ habitats and extent of occurrence
 [width="100%",cols="100%",options="header",]
 |===
 |https://www.gbif.org/data-quality-requirements-sampling-events#dcSamplingProtocol[dwc:samplingProtocol,role=term]
-|Active collections
+|`Active collections`
 
-|Aedes gravid trap
+|`Aedes gravid trap`
 
-|Aspiration from animal bait
+|`Aspiration from animal bait`
 
-|Aspirator collection from resting places
+|`Aspirator collection from resting places`
 
-|BG sentinel (+ UV light) trap
+|`BG sentinel (+ UV light) trap`
 
-|BG Sentinel + CO2
+|`BG Sentinel + CO2`
 
-|BG Sentinel trap with chemical lure
+|`BG Sentinel trap with chemical lure`
 
-|BG Sentinel trap with lure and CO2
+|`BG Sentinel trap with lure and CO2`
 
-|Blacklight
+|`Blacklight`
 
-|Box animal baited trap
+|`Box animal baited trap`
 
-|Carbon dioxide trap without light
+|`Carbon dioxide trap without light`
 
-|CDC Light trap
+|`CDC Light trap`
 
-|CDC Light trap + CO2
+|`CDC Light trap + CO2`
 
-|CO2 baited trap
+|`CO2 baited trap`
 
-|Collection from live/dead hosts
+|`Collection from live/dead hosts`
 
-|Cone animal baited trap
+|`Cone animal baited trap`
 
-|Disney animal baited trap
+|`Disney animal baited trap`
 
-|Dragging/flagging by surface
+|`Dragging/flagging by surface`
 
-|Dragging/flagging by time
+|`Dragging/flagging by time`
 
-|Emergence trap
+|`Emergence trap`
 
-|EVS Light trap
+|`EVS Light trap`
 
-|EVS Light trap + CO2
+|`EVS Light trap + CO2`
 
-|Gravid trap
+|`Gravid trap`
 
-|Hair dryer by area
+|`Hair dryer by area`
 
-|Hair dryer by time
+|`Hair dryer by time`
 
-|Host-baited trap
+|`Host-baited trap`
 
-|Human landing catches
+|`Human landing catches`
 
-|IMT trap
+|`IMT trap`
 
-|Lethal ovitrap
+|`Lethal ovitrap`
 
-|Light CO2 sticky
+|`Light CO2 sticky`
 
-|Light sticky trap
+|`Light sticky trap`
 
-|Light trap
+|`Light trap`
 
-|Light trap + CO2
+|`Light trap + CO2`
 
-|Malaise trap
+|`Malaise trap`
 
-|Mosquito magnet trap
+|`Mosquito magnet trap`
 
-|Netting
+|`Netting`
 
-|Non-standard dipping
+|`Non-standard dipping`
 
-|NS trap + CO2
+|`NS trap + CO2`
 
-|Onderstepoort Veterinary Institute (OVI) black-light trap
+|`Onderstepoort Veterinary Institute (OVI) black-light trap`
 
-|Other
+|`Other`
 
-|Other CO2 trap
+|`Other CO2 trap`
 
-|Other sticky trap
+|`Other sticky trap`
 
-|Ovitrap
+|`Ovitrap`
 
-|Resting catch (outdoor/indoor)
+|`Resting catch (outdoor/indoor)`
 
-|RIEB light trap
+|`RIEB light trap`
 
-|Rothamsted trap
+|`Rothamsted trap`
 
-|Soil sampling
+|`Soil sampling`
 
-|Soil screening by surface
+|`Soil screening by surface`
 
-|Soil screening by weight
+|`Soil screening by weight`
 
-|Soil screening by weight
+|`Soil screening by weight`
 
-|Standard dipping
+|`Standard dipping`
 
-|Sticky trap
+|`Sticky trap`
 
-|UK light trap
+|`UK light trap`
 
-|Unknown
+|`Unknown`
 
-|Updraft box trap with light
+|`Updraft box trap with light`
 |===
 
 Table C. Suggested controlled vocabulary for life stage.
