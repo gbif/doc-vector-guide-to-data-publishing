@@ -203,9 +203,7 @@ habitats and extent of occurrence
 |===
 
 [caption="Table E. "] 
-.Suggested controlled vocabulary for production sites for
-mosquitoes from the https://iris.who.int/handle/10665/204894[Comprehensive Guidelines for Prevention
-and Control of Dengue and Dengue Haemorrhagic Fever].
+.Suggested controlled vocabulary for production sites for mosquitoes from the https://iris.who.int/handle/10665/204894[Comprehensive Guidelines for Prevention and Control of Dengue and Dengue Haemorrhagic Fever].
 [width="100%",cols="100%",options="header",]
 |===
 |https://dwc.tdwg.org/list/#dwc_habitat[habitat,role=term]
@@ -227,9 +225,7 @@ and Control of Dengue and Dengue Haemorrhagic Fever].
 |===
 
 [caption="Table F. "]
-.Suggested controlled vocabulary for depicting relationships, based on the
-https://purl.obolibrary.org/obo/ro/subsets/ro-interaction.owl[OBO Ontology].
-
+.Suggested controlled vocabulary for depicting relationships, based on the https://purl.obolibrary.org/obo/ro/subsets/ro-interaction.owl[OBO Ontology].
 [width="100%",cols="100%",options="header",]
 |===
 |https://purl.obolibrary.org/obo/ro/subsets/ro-interaction.owl[resourceRelationshipID,role=term]
