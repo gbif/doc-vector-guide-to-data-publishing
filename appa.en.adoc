@@ -9,7 +9,7 @@
 .Suggested controlled vocabulary for degree of establishment (from Groom et al. 2019).
 [width="100%",cols="76%,24%",options="header",]
 |===
-term:dwciri[degreeOfEstablishment]
+https://dwc.tdwg.org/list/#dwciri_degreeOfEstablishment[degreeOfEstablishment,role=term]
 |
 |*Definition* |*Controlled value string*
 
