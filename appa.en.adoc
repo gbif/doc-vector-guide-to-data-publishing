@@ -178,93 +178,86 @@ habitats and extent of occurrence
 |`Updraft box trap with light`
 |===
 
-Table C. Suggested controlled vocabulary for life stage.
+[caption="Table C. "] 
+.Suggested controlled vocabulary for life stage.
+[width="100%",cols="100%",options="header",]
+|===
+|https://dwc.tdwg.org/list/#dwc_lifeStage[lifeStage,role=term]
+|`egg`
+|`larva`
+|`nymph`
+|`pupa`
+|`adult`
+|`subadult`
+|`juvenile`
+|===
+
+[caption="Table D. "]
+.Suggested controlled vocabulary for sex.
+[width="100%",cols="100%",options="header",]
+|===
+|https://dwc.tdwg.org/list/#dwc_sex[sex,role=term]
+|`female`
+|`male`
+|`hermaphrodite`
+|===
+
+[caption="Table E. "] 
+.Suggested controlled vocabulary for production sites for
+mosquitoes from the https://iris.who.int/handle/10665/204894[Comprehensive Guidelines for Prevention
+and Control of Dengue and Dengue Haemorrhagic Fever].
+[width="100%",cols="100%",options="header",]
+|===
+|https://dwc.tdwg.org/list/#dwc_habitat[habitat,role=term]
+|`Water evaporation cooler`
+|`Water storage tank/cisternrelation`
+|`Drum (40–55 gallons)`
+|`Flower vase with water`
+|`Potted plants with saucers`
+|`Ornamental pool/fountain`
+|`Roof gutter/sun shades`
+|`Animal water container`
+|`Ant-trap`
+|`Used tyres`
+|`Discarded large appliances`
+|`Discarded buckets`
+|`Discarded food and drink containers`
+|`Tree holes`
+|`Rock holes`
+|===
+
+[caption="Table F. "]
+.Suggested controlled vocabulary for depicting relationships, based on the
+https://purl.obolibrary.org/obo/ro/subsets/ro-interaction.owl[OBO Ontology].
 
 [width="100%",cols="100%",options="header",]
 |===
-|https://dwc.tdwg.org/list/#dwc_lifeStage[[.underline]#lifeStage#]
-|egg
-|larva
-|nymph
-|pupa
-|adult
-|subadult
-|juvenile
-|===
+|https://purl.obolibrary.org/obo/ro/subsets/ro-interaction.owl[resourceRelationshipID,role=term]
+|http://purl.obolibrary.org/obo/RO_0002227[`obligate parasite of`]
 
-Table D. Suggested controlled vocabulary for sex.
+|http://purl.obolibrary.org/obo/RO_0002459[`is vector for`]
 
-[width="100%",cols="100%",options="header",]
-|===
-|https://dwc.tdwg.org/list/#dwc_sex[[.underline]#sex#]
-|female
-|male
-|hermaphrodite
-|===
+|http://purl.obolibrary.org/obo/RO_0002640[`intracellular endoparasite of`]
 
-Table E. Suggested controlled vocabulary for production sites for
-mosquitoes from the [.underline]#Comprehensive Guidelines for Prevention
-and Control of Dengue and Dengue Haemorrhagic Fever#.
+|http://purl.obolibrary.org/obo/RO_0002803[`has reservoir host`]
 
-[width="100%",cols="100%",options="header",]
-|===
-|[.underline]#habitat#
-|Water evaporation cooler
-|Water storage tank/cisternrelation
-|Drum (40–55 gallons)
-|Flower vase with water
-|Potted plants with saucers
-|Ornamental pool/fountain
-|Roof gutter/sun shades
-|Animal water container
-|Ant-trap
-|Used tyres
-|Discarded large appliances
-|Discarded buckets
-|Discarded food and drink containers
-|Tree holes
-|Rock holes
-|===
+|http://purl.obolibrary.org/obo/RO_0002802[`reservoir_host_of`]
 
-Table F. Suggested controlled vocabulary for depicting relationships,
-based on the
-[.underline]#https://purl.obolibrary.org/obo/ro/subsets/ro-interaction.owl[OBO
-Ontology].#
+|http://purl.obolibrary.org/obo/RO_0002460[`has vector`]
 
-[width="100%",cols="100%",options="header",]
-|===
-|https://purl.obolibrary.org/obo/ro/subsets/ro-interaction.owl[[.underline]#resourceRelationshipID#]
-|http://purl.obolibrary.org/obo/RO_0002227[[.underline]#obligate
-parasite of#]
+|http://purl.obolibrary.org/obo/RO_0002557[`has pathogen`]
 
-|http://purl.obolibrary.org/obo/RO_0002459[[.underline]#is vector for#]
+|http://purl.obolibrary.org/obo/RO_0002227[`obligate parasite of`]
 
-|http://purl.obolibrary.org/obo/RO_0002640[[.underline]#intracellular
-endoparasite of#]
+|http://purl.obolibrary.org/obo/RO_0002228[`facultative parasite of`]
 
-|http://purl.obolibrary.org/obo/RO_0002803[[.underline]#has reservoir
-host#]
+|http://purl.obolibrary.org/obo/RO_0002443[`interacts with via parasite-host interaction`]
 
-|http://purl.obolibrary.org/obo/RO_0002802[[.underline]#reservoir_host_of#]
+|http://purl.obolibrary.org/obo/RO_0002444[`parasite of`]
 
-|http://purl.obolibrary.org/obo/RO_0002460[[.underline]#has vector#]
+|http://purl.obolibrary.org/obo/RO_0002453[`host of`]
 
-|http://purl.obolibrary.org/obo/RO_0002557[[.underline]#has pathogen#]
-
-|http://purl.obolibrary.org/obo/RO_0002227[[.underline]#obligate
-parasite of#]
-
-|http://purl.obolibrary.org/obo/RO_0002228[[.underline]#facultative
-parasite of#]
-
-|http://purl.obolibrary.org/obo/RO_0002443[[.underline]#interacts with
-via parasite-host interaction#]
-
-|http://purl.obolibrary.org/obo/RO_0002444[[.underline]#parasite of#]
-
-|http://purl.obolibrary.org/obo/RO_0002453[[.underline]#host of#]
-
-|http://purl.obolibrary.org/obo/RO_0002556[[.underline]#pathogen of#]
+|http://purl.obolibrary.org/obo/RO_0002556[`pathogen of`]
 |===
 
 <<<
