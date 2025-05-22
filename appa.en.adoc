@@ -15,58 +15,58 @@
 |*Controlled value string*
 
 |Not transported beyond limits of native range
-|native
+|`native`
 
 |Individuals in captivity or quarantine (i.e. individuals provided with
 conditions suitable for them, but explicit measures of containment are
 in place)
-|captive
+|`captive`
 
 |Individuals in cultivation (i.e. individuals provided with conditions
 suitable for them, but explicit measures to prevent dispersal are
 limited at best) 
-|cultivated
+|`cultivated`
 
 |Individuals directly released into novel environment
-|released
+|`released`
 
 |Individuals released outside of captivity or cultivation in a location,
 but incapable of surviving for a significant period
-|failing
+|`failing`
 
 |Individuals surviving outside of captivity or cultivation in a
 location, no reproduction
-|casual
+|`casual`
 
 |Individuals surviving outside of captivity or cultivation in a
 location, reproduction is occurring, but population not self-sustaining
-|reproducing
+|`reproducing`
 
 |Individuals surviving outside of captivity or cultivation in a
 location, reproduction occurring, and population self-sustaining
-|established
+|`established`
 
 |Self-sustaining population outside of captivity or cultivation, with
 individuals surviving a significant distance from the original point of
 introduction
-|colonising
+|`colonising`
 
 |Self-sustaining population outside of captivity or cultivation, with
 individuals surviving and reproducing a significant distance from the
 original point of introduction
-|invasive
+|`invasive`
 
 |Fully invasive species, with individuals dispersing, surviving and
 reproducing at multiple sites across a greater or lesser spectrum of
 habitats and extent of occurrence
-|widespreadInvasive
+|`widespreadInvasive`
 |===
 
-Table B. Suggested controlled vocabulary for traps (from VectorNet).
-
+[caption="Table B. "]
+.Suggested controlled vocabulary for traps (from VectorNet).
 [width="100%",cols="100%",options="header",]
 |===
-|https://www.gbif.org/data-quality-requirements-sampling-events#dcSamplingProtocol[[.underline]#samplingProtocol*#]
+|https://www.gbif.org/data-quality-requirements-sampling-events#dcSamplingProtocol[dwc:samplingProtocol,role=term]
 |Active collections
 
 |Aedes gravid trap
