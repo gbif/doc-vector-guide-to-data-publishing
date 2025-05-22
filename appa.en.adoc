@@ -3,8 +3,6 @@
 
 === Vocabularies
 
-`"Tables B-F" are really just lists: discuss`
-
 [caption="Table A. "]
 .Suggested controlled vocabulary for degree of establishment (from Groom et al. 2019).
 [width="100%",cols="76%,24%",options="header",]
