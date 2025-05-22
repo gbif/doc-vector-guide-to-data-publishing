@@ -1,10 +1,10 @@
-Quick links to resources
+### Quick links to resources
 
 Here we provide a list of useful or relevant links to websites and
 resources to facilitate data publishing in GBIF. For convenience, links
 are organized by category.
 
-General information and guides
+### General information and guides
 
 * https://dwc.tdwg.org/terms/[+++Darwin Core term Quick Reference
 Guide+++]
@@ -32,16 +32,14 @@ https://onlinelibrary.wiley.com/doi/abs/10.2903/sp.efsa.2020.EN-1841[+++https://
 * Consortium E, Jaroszynska F, Body G, Pamerlon S, Archambeau AS.
 Applying the Darwin Core data standard to wildlife disease –
 advancements toward a new data model. EFSA Supporting Publications.
-2022;19(11):7667E.
-
-https://onlinelibrary.wiley.com/doi/abs/10.2903/sp.efsa.2022.EN-7667[+++https://onlinelibrary.wiley.com/doi/abs/10.2903/sp.efsa.2022.EN-7667+++]
+2022;19(11):7667E. https://onlinelibrary.wiley.com/doi/abs/10.2903/sp.efsa.2022.EN-7667[+++https://onlinelibrary.wiley.com/doi/abs/10.2903/sp.efsa.2022.EN-7667+++]
 
 * Groom Q, Desmet P, Reyserhove L, Adriaens T, Oldoni D, Vanderhoeven S,
 et al. Improving Darwin Core for research and management of alien
 species. Biodiversity Information Science and Standards. 2019 Oct
 10;3:e38084.https://biss.pensoft.net/article/38084/[+++https://biss.pensoft.net/article/38084/+++]
 
-Coordinates, mapping and Georeferencing
+### Coordinates, mapping and georeferencing
 
 * http://data.canadensys.net/tools/coordinates[+++Coordinate Conversion
 Tool+++]: used to convert coordinates from degrees minutes seconds to
@@ -63,7 +61,7 @@ https://doi.org/10.35035/e09p-h128[+++https://doi.org/10.35035/e09p-h128+++]
 * https://www.getty.edu/research/tools/vocabularies/tgn/[+++Getty
 Thesaurus of Geographic Names+++]: search interface for place names
 
-Controlled vocabulary & ontologies
+### Controlled vocabulary and ontologies
 
 * https://rs.gbif.org/vocabulary/dwc/basis_of_record_2022-02-02.xml[+++Darwin
 Core Basis of Record Vocabulary+++]: definitions for terms used to
@@ -87,7 +85,7 @@ https://www.healthit.gov/topic/standards-technology/standards/fhir[+++HL7®
 FHIR®+++] is an interoperability standard designed to enable health data
 sharing.
 
-Taxonomy & Date issues
+### Taxonomy and date issues
 
 * https://www.gbif.org/tools/name-parser[+++GBIF Name parser+++]: tool
 to divide scientific names into their components and to check them
@@ -103,7 +101,7 @@ date issues
 * https://discourse.gbif.org/t/how-to-handle-the-event-dwc-fields-for-trap-base-occurrence/3162/4[+++How
 to+++] handle date intervals
 
-Quality control tools & resources
+### Quality control tools and resources
 
 * Data quality
 https://ipt.gbif.org/manual/en/ipt/latest/data-quality-checklist[+++checklist+++]
@@ -143,7 +141,7 @@ by GBIF Norway
 https://mycena.sibbr.gov.br/[+++https://mycena.sibbr.gov.br/+++] by GBIF
 Brazil - SiBBr (in Portuguese).
 
-Publishing Tools & Links
+### Publishing tools
 
 * https://ipt.gbif.org/manual/en/ipt/latest/[+++Integrated Publishing
 Toolkit (IPT) User Manual+++]
