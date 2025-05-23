@@ -17,7 +17,7 @@ There are four https://www.gbif.org/dataset-classes[dataset classes^] that are s
 - Metadata-only
 - Checklist
 - Occurrence
-- Sampling-event datasets.
+- Sampling-event datasets
 
 For more information, see https://data-blog.gbif.org/post/choose-dataset-type[how to choose a dataset class on GBIF^].
 
