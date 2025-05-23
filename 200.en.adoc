@@ -160,12 +160,12 @@ If geographic coordinates are not provided in decimal lat-long, the following te
 |Share if available
 
 |term:dwc[dwc:countryCode]
-|The standard code for the country in which the dcterms:Location occurs. Recommended best practice is to use an ISO 3166-1-alpha-2 country code.
+|The standard code for the country in which the http://purl.org/dc/terms/Location[`dcterms:Location`^] occurs. Recommended best practice is to use an ISO 3166-1-alpha-2 country code.
 |`TH`
 |Strongly recommended
 
 |term:dwc[dwc:stateProvince]
-|The name of the next smaller administrative region than country (state, province, canton, department, region, etc.) in which the dcterms:Location occurs.
+|The name of the next smaller administrative region than country (state, province, canton, department, region, etc.) in which the http://purl.org/dc/terms/Location[`dcterms:Location`^] occurs.
 |`Kinshasa`
 |Share if available
 
@@ -175,7 +175,7 @@ If geographic coordinates are not provided in decimal lat-long, the following te
 |Strongly recommended
 
 |term:dwc[dwc:locationID]
-|An identifier for the set of dcterms:Location information. May be a global unique identifier or an identifier specific to the dataset.
+|An identifier for the set of http://purl.org/dc/terms/Location[`dcterms:Location`^] information. May be a global unique identifier or an identifier specific to the dataset.
 |`BG323`
 |Strongly recommended
 
@@ -220,12 +220,12 @@ If geographic coordinates are not provided in decimal lat-long, the following te
 |Share if available
 
 |term:dwc[dwc:decimalLatitude]
-|The geographic latitude (in decimal degrees, using the spatial reference system given in term:dwc[dwc:geodeticDatum]) of the geographic center of a dcterms:Location. Positive values are north of the Equator, negative values are south of it. Legal values lie between -90 and 90, inclusive.
+|The geographic latitude (in decimal degrees, using the spatial reference system given in term:dwc[dwc:geodeticDatum]) of the geographic center of a http://purl.org/dc/terms/Location[`dcterms:Location`^]. Positive values are north of the Equator, negative values are south of it. Legal values lie between -90 and 90, inclusive.
 |`9.236691273`
 |Strongly recommended
 
 |term:dwc[dwc:decimalLongitude]
-|The geographic longitude (in decimal degrees, using the spatial reference system given in dwc:geodeticDatum) of the geographic center of a dcterms:Location. Positive values are east of the Greenwich Meridian, negative values are west of it. Legal values lie between -180 and 180, inclusive.
+|The geographic longitude (in decimal degrees, using the spatial reference system given in dwc:geodeticDatum) of the geographic center of a http://purl.org/dc/terms/Location[`dcterms:Location`^]. Positive values are east of the Greenwich Meridian, negative values are west of it. Legal values lie between -180 and 180, inclusive.
 |`-5.668395403`
 |Strongly recommended
 
@@ -235,7 +235,7 @@ If geographic coordinates are not provided in decimal lat-long, the following te
 |Strongly recommended
 
 |term:dwc[dwc:coordinateUncertaintyInMeters]
-|The horizontal distance (in meters) from the given term:dwc[dwc:decimalLatitude] and term:dwc[dwc:decimalLongitude] describing the smallest circle containing the whole of the dcterms:Location. Leave the value empty if the uncertainty is unknown, cannot be estimated, or is not applicable (because there are no coordinates). Zero is not a valid value for this term. 
+|The horizontal distance (in meters) from the given term:dwc[dwc:decimalLatitude] and term:dwc[dwc:decimalLongitude] describing the smallest circle containing the whole of the http://purl.org/dc/terms/Location[`dcterms:Location`^]. Leave the value empty if the uncertainty is unknown, cannot be estimated, or is not applicable (because there are no coordinates). Zero is not a valid value for this term. 
 |`100`
 |Strongly recommended
 
@@ -574,32 +574,32 @@ Relationships can be one-way as of between a <<vector>> and the pathogens detect
 |*Field name* |*Definition* |*Examples*
 
 |term:dwc[dwc:ResourceRelationship]
-|an instance of a dwc:Organism is the vector of another instance of a dwc:Organism
-|A relationship of one rdfs:Resource (http://www.w3.org/2000/01/rdf-schema#Resource) to another. Resources can be thought of as identifiable records or instances of classes and may include, but need not be limited to instances of term:dwc[dwc:occurrence], term:dwc[dwc:organism], term:dwc[dwc:materialEntity], term:dwc[dwc:event], dcterms:Location, term:dwc[dwc:geologicalContext], term:dwc[dwc:identification], or term:dwc[dwc:taxon].
+|A relationship of one http://www.w3.org/2000/01/rdf-schema#Resource[rdfs:Resource^] to another. Resources can be thought of as identifiable records or instances of classes and may include, but need not be limited to instances of term:dwc[dwc:occurrence], term:dwc[dwc:organism], term:dwc[dwc:materialEntity], term:dwc[dwc:event], http://purl.org/dc/terms/Location[`dcterms:Location`^], term:dwc[dwc:geologicalContext], term:dwc[dwc:identification], or term:dwc[dwc:taxon].
+|`an instance of a dwc:Organism is the vector of another instance of a term:dwc`
 
 |term:dwc[dwc:resourceRelationshipID]
-|ICL:UK:831:ICL:UK:1:1075
 |An identifier for an instance of relationship between one resource (the subject) and another (dwc:relatedResource, the object).
+|`ICL:UK:831:ICL:UK:1:1075`
 
 |term:dwc[dwc:resourceID]
-|ICL:UK:831
 |An identifier for the resource that is the subject of the relationship.
+|`ICL:UK:831`
 
 |term:dwc[dwc:relationshipOfResourceID]
-|\http://purl.obolibrary.org/obo/RO_0002459
 |An identifier for the relationship type (predicate) that connects the subject identified by dwc:resourceID to its object identified by dwc:relatedResourceID. Recommended best practice is to use the identifiers of the terms in a controlled vocabulary, such as the OBO Relation Ontology.
+|[.break-all]#`\http://purl.obolibrary.org/obo/RO_0002459`
 
 |term:dwc[dwc:relatedResourceID]
-|ICL:UK:1:1075
 |An identifier for a related resource (the object, rather than the subject of the relationship).
+|`ICL:UK:1:1075`
 
 |term:dwc[dwc:relationshipOfResource]
-|`is vector for` 
 |The relationship of the subject (identified by term:dwc[dwc:resourceID]) to the object (identified by term:dwc[dwc:relatedResourceID]). Recommended best practice is to use a controlled vocabulary.
+|`is vector for` 
 
 |term:dwc[dwc:relationshipRemarks]
-|`pathogen 1`
 |Comments or notes about the relationship between the two resources.
+|`pathogen 1`
 |===
 
 [table-09]
@@ -917,34 +917,34 @@ Recommended best practice is to use controlled value strings from the controlled
 |Share if available
 
 |term:dwc[dwc:county] 
-|The full, unabbreviated name of the next smaller administrative region than stateProvince (county, shire, department, etc.) in which the dcterms:Location occurs. +
-Recommended best practice is to use a controlled vocabulary such as the Getty Thesaurus of Geographic Names. Recommended best practice is to leave this term blank if the dcterms:Location spans multiple entities at this administrative level or if the dcterms:Location might be in one or another of multiple possible entities at this level. Multiplicity and uncertainty of the geographic entity can be captured either in the term dwc:higherGeography or in the term dwc:locality, or both.
+|The full, unabbreviated name of the next smaller administrative region than stateProvince (county, shire, department, etc.) in which the http://purl.org/dc/terms/Location[`dcterms:Location`^] occurs. +
+Recommended best practice is to use a controlled vocabulary such as the Getty Thesaurus of Geographic Names. Recommended best practice is to leave this term blank if the http://purl.org/dc/terms/Location[`dcterms:Location`^] spans multiple entities at this administrative level or if the http://purl.org/dc/terms/Location[`dcterms:Location`^] might be in one or another of multiple possible entities at this level. Multiplicity and uncertainty of the geographic entity can be captured either in the term term:dwc[dwc:higherGeography] or in the term term:dwc[dwc:locality], or both.
 |`Miranda`
 |Share if available
 
 |term:dwc[dwc:municipality]
-|The full, unabbreviated name of the next smaller administrative region than county (city, municipality, etc.) in which the dcterms:Location occurs. Do not use this term for a nearby named place that does not contain the actual dcterms:Location. +
-Recommended best practice is to use a controlled vocabulary such as the Getty Thesaurus of Geographic Names. Recommended best practice is to leave this term blank if the dcterms:Location spans multiple entities at this administrative level or if the dcterms:Location might be in one or another of multiple possible entities at this level. Multiplicity and uncertainty of the geographic entity can be captured either in the term dwc:higherGeography or in the term dwc:locality, or both.
+|The full, unabbreviated name of the next smaller administrative region than county (city, municipality, etc.) in which the http://purl.org/dc/terms/Location[`dcterms:Location`^] occurs. Do not use this term for a nearby named place that does not contain the actual http://purl.org/dc/terms/Location[`dcterms:Location`^]. +
+Recommended best practice is to use a controlled vocabulary such as the Getty Thesaurus of Geographic Names. Recommended best practice is to leave this term blank if the http://purl.org/dc/terms/Location[`dcterms:Location`^] spans multiple entities at this administrative level or if the http://purl.org/dc/terms/Location[`dcterms:Location`^] might be in one or another of multiple possible entities at this level. Multiplicity and uncertainty of the geographic entity can be captured either in the term dwc:higherGeography or in the term dwc:locality, or both.
 |`Divinópolis`
 |Share if available
 
 |term:dwc[dwc:locationRemarks]
-|Comments or notes about the dcterms:Location.
+|Comments or notes about the http://purl.org/dc/terms/Location[`dcterms:Location`^].
 |`pigeon loft at 50m`
 |Share if available
 
 |term:dwc[dwc:verbatimLatitude]
-|The verbatim original latitude of the dcterms:Location. The coordinate ellipsoid, geodeticDatum, or full Spatial Reference System (SRS) for these coordinates should be stored in dwc:verbatimSRS and the coordinate system should be stored in dwc:verbatimCoordinateSystem.
+|The verbatim original latitude of the http://purl.org/dc/terms/Location[`dcterms:Location`^]. The coordinate ellipsoid, geodeticDatum, or full Spatial Reference System (SRS) for these coordinates should be stored in dwc:verbatimSRS and the coordinate system should be stored in dwc:verbatimCoordinateSystem.
 |`25° 33' 0" S`
 |Share if available
 
 |term:dwc[dwc:verbatimLongitude]
-|The verbatim original longitude of the dcterms:Location. The coordinate ellipsoid, geodeticDatum, or full Spatial Reference System (SRS) for these coordinates should be stored in dwc:verbatimSRS and the coordinate system should be stored in dwc:verbatimCoordinateSystem. 
+|The verbatim original longitude of the http://purl.org/dc/terms/Location[`dcterms:Location`^]. The coordinate ellipsoid, geodeticDatum, or full Spatial Reference System (SRS) for these coordinates should be stored in dwc:verbatimSRS and the coordinate system should be stored in dwc:verbatimCoordinateSystem. 
 |`54° 34' 60" W`
 |Share if available
 
 |term:dwc[dwc:footprintWKT]
-|A Well-Known Text (WKT) representation of the shape (footprint, geometry) that defines the dcterms:Location. A dcterms:Location may have both a point-radius representation (see dwc:decimalLatitude) and a footprint representation, and they may differ from each other. +
+|A Well-Known Text (WKT) representation of the shape (footprint, geometry) that defines the http://purl.org/dc/terms/Location[`dcterms:Location`^]. A http://purl.org/dc/terms/Location[`dcterms:Location`^] may have both a point-radius representation (see term:dwc[dwc:decimalLatitude]) and a footprint representation, and they may differ from each other. +
 This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.
 |`POLYGON ((10 20, 11 20, 11 21, 10 21, 10 20)`
 |Share if available
