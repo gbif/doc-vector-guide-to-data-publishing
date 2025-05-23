@@ -406,7 +406,7 @@ The https://rs.gbif.org/extension/obis/extended_measurement_or_fact_2023-08-28.x
 
 ==== Measurement or Facts Extension
 
-The https://rs.gbif.org/extension/measurements_or_facts_2024-02-19.xml[Measurement or Fact extension^] (MoF) provides extended support for multiple measurements or facts associated with a Darwin Core Occurrence, Event, or Taxon Core dataset. The recommendation for each of these terms is "Share if available."
+The https://rs.gbif.org/extension/measurements_or_facts_2024-02-19.xml[Measurement or Fact extension^] (MoF) provides extended support for multiple measurements or facts associated with a Darwin Core Occurrence, Event, or Taxon Core dataset. _Note_: The recommendation for each of the terms in <<table-06,Table 6>> is *Share if available*.
 
 [[table-06]]
 .Recommended terms from the Measurement or Fact extension, with examplee from the following dataset: https://doi.org/10.15468/v8fvyn[^Anopheles collections in the health districts of Korhogo (Côte d'Ivoire) and Diébougou (Burkina Faso) (2016-2018)^]
@@ -460,7 +460,7 @@ This extension uses the same terms as the Occurrence Core (see <<table-03,Table 
 [[humboldt-eco]]
 ==== Humboldt Extension for Ecological Inventories
 
-The https://rs.gbif.org/extension/eco/Humboldt_2024-04-16.xml[Humboldt Extension for Ecological Inventories] provides support for term:dwc[dwc:Event]s related to ecological inventories. The recommendation for each of these terms is "Share if available."
+The https://rs.gbif.org/extension/eco/Humboldt_2024-04-16.xml[Humboldt Extension for Ecological Inventories] provides support for term:dwc[dwc:Event]s related to ecological inventories. _Note_: The recommendation for each of the terms in <<table-07,Table 7>> is *Share if available*.
 
 NOTE:
 For guidance on how to include the Humboldt Extension in a sampling-event dataset, see https://doi.org/10.35035/doc-7t3p-ve38[Ingenloff (2025)^].
@@ -565,7 +565,7 @@ For guidance on how to include the Humboldt Extension in a sampling-event datase
 
 The https://rs.gbif.org/extension/resource_relationship_2024-02-19.xml[Resource Relationship extension^] provides support for relationships between resources in a Darwin Core Occurrence, Event, or Taxon Core to resources in an extension or external to the dataset. The identifiers for subject (resourceID) and object (relatedResourceID) may exist in the dataset or be accessible via an externally resolvable identifier.
 
-Relationships can be one-way as of between a <<vector>> and the pathogens detected by a molecular assay, or it can be two-way, that is, between a vertebrate <<host>>, a vector and the pathogen detected in the vector. We provide examples below of a one-way relationship between ticka and pathogens and a two-way relationship between ticks, vertebrate hosts and pathogens. The recommendation for each of these terms is "Share if available."
+Relationships can be one-way as of between a <<vector>> and the pathogens detected by a molecular assay, or it can be two-way, that is, between a vertebrate <<host>>, a vector and the pathogen detected in the vector. We provide examples below of a one-way relationship between ticka and pathogens and a two-way relationship between ticks, vertebrate hosts and pathogens. _Note_: The recommendation for each of the terms in <<table-08,Table 8>> and <<table-09,Table 9>> is *Share if available*.
 
 [[table-08]]
 .Recommended terms from the ResourceRelationship Extension for one-way relationships involving ticks and pathogens, with examples from an as-yet unpublished dataset from the https://vbdhub.org[One Health VBD Hub, "Tick Occurrences in the UK—Review of Literature."^]
