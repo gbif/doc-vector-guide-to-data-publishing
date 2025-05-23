@@ -123,7 +123,7 @@ Corresponds to term:dwc[dwc:updateFrequency] in the IPT.
 |
 
 |licensed
-|Choose from three types, but recommended license is CC BY 4.0. +
+|Choose from three types: recommendation is to choose a licence that is as open as possible and only as closed as necessary. +
 Corresponds to term:dwc[dwc:dataLicense] in the IPT. +
 See https://www.gbif.org/terms#_data-licensing[GBIF Terms of use: Data licensing^]
 |`Creative Commons Attribution (CC BY 4.0)`
