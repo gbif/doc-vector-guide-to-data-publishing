@@ -101,7 +101,7 @@ If geographic coordinates are not provided in decimal lat-long, the following te
 
 |term:dwc[dwc:recordedByID]
 |ORCID iD of person/ people that recorded the original occurrence
-|[.break-all]#`\https://orcid.org/0000-0002-7232-718X`#
+|`\https://orcid.org/0000-0002-7232-718X`
 |Share if available
 
 |term:dwc[dwc:individualCount]
