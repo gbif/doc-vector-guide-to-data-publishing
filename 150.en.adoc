@@ -14,10 +14,10 @@ image::img/web/fig-01.png[]
 
 There are four https://www.gbif.org/dataset-classes[dataset classes^] that are supported for publication in GBIF:
 
-.Metadata-only
-.Checklist
-.Occurrence
-.Sampling-event datasets.
+- Metadata-only
+- Checklist
+- Occurrence
+- Sampling-event datasets.
 
 For more information, see https://data-blog.gbif.org/post/choose-dataset-type[how to choose a dataset class on GBIF^].
 
