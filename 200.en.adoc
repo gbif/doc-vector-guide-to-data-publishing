@@ -618,7 +618,7 @@ Relationships can be one-way as of between a <<vector>> and the pathogens detect
 
 |term:dwc[dwc:relationshipOfResourceID]
 |An identifier for the relationship type (predicate) that connects the subject identified by dwc:resourceID to its object identified by dwc:relatedResourceID. Recommended best practice is to use the identifiers of the terms in a controlled vocabulary, such as the OBO Relation Ontology.
-|\http://purl.obolibrary.org/obo/RO_0002459
+|`\http://purl.obolibrary.org/obo/RO_0002459`
 
 |term:dwc[dwc:relatedResourceID]
 |An identifier for a related resource (the object, rather than the subject of the relationship).
