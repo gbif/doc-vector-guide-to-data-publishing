@@ -5,7 +5,7 @@ Paloma Shimabukuro; Lindsay Campbell; Florence Fouque; Josiane Etang; Soledad Ce
 :numbered:
 :revnumber: {git-metadata-sha-short}
 :revdate: {git-metadata-date} {git-metadata-time} {git-metadata-timezone}
-:title-page-background-image: image::img/web/photo.jpg[position=top center]
+:title-page-background-image: image::img/web/vectors-cover-3.png[position=top center]
 :license: https://creativecommons.org/licenses/by-sa/4.0/
 
 ifdef::backend-html5[]
