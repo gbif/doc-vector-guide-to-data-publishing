@@ -17,14 +17,14 @@ The Occurrence Core can be used with the following extensions: https://rs.gbif.o
 
 The https://rs.gbif.org/core/dwc_taxon_2024-02-19.xml[Taxon Core^] (checklist) can be used with the Species Profile and Species Distribution extensions.
 
-And the Event Core can be used with the following extensions: <<occurrence-extension,Occurrence>>, <<emof,Extended Measurement or Fact>>, <<humboldt-eco,Humboldt>>, and the <<resource-relationship-extension,Resource Relationship>>. For example, a dataset with monitoring data on Anopheles mosquitoes with additional environmental data might have been collected, i.e. air temperature, air humidity, satellite data on vegetation cover and these data can be shown by the <<emof,eMOF extension>>.
+And the Event Core can be used with the following extensions: <<occurrence-extension,Occurrence>>, <<emof,Extended Measurement or Fact>>, <<humboldt-eco,Humboldt>>, and the <<resource-relationship-extension,Resource Relationship>>. For example, a dataset with monitoring data on _Anopheles_ mosquitoes with additional environmental data might have been collected, i.e. air temperature, air humidity, satellite data on vegetation cover and these data can be shown by the <<emof,eMOF extension>>.
 
 The Extended Measurement or Fact (eMoF) extension can be used for an Event Core with an Occurrence extension. The eMoF extension will allow measurements for the *events* (temperature, air humidity, vegetation cover, etc.) and the measurements associated with the occurrences (length of appendices, ratio between body parts, etc.) to be published together.
 
 The Measurement or Facts extension allows only measurements of the occurrence.
 
 [[fig-05]]
-.Examples of three dataset classes: Checklist (_upper left_): a list of _Aedes_ species from the countries of South America; Occurrence (_upper right_): _Aedes_ mosquitoes collected at the Iguazu National Park, Brazil, between 15-20 February 2020 at two different sites (trails 1 and 2); *Sampling event* *bottom*): _Aedes_ mosquitoes collected in the Santa Maria Farm monthly during the rainy and dry season of 2021 using two different sampling methods for adults (BG Sentinel trap) and larvae (standard dipper).
+.Examples of three dataset classes: Checklist (_upper left_): a list of Aedes species from the countries of South America; Occurrence (_upper right_): Aedes mosquitoes collected at the Iguazu National Park, Brazil, between 15-20 February 2020 at two different sites (trails 1 and 2); *Sampling event* *bottom*): Aedes mosquitoes collected in the Santa Maria Farm monthly during the rainy and dry season of 2021 using two different sampling methods for adults (BG Sentinel trap) and larvae (standard dipper).
 image::img/web/fig-05.png[]
 
 For the purpose of this guide, we present two ways of data publication in which all available data can be published in a single file as well as a more elaborate way with the use of extensions to accommodate the diversity of variables recorded along with vector records. We provide a comprehensive list of potentially relevant terms for vector data and suggest using these terms to improve consistency among datasets. We also provide an link:data/dwc-vector-data-templates.xlsx[Excel spreadsheet] whose sheets provide templates for the occurrence datasets, sampling-event datasets and the extensions discussed in this guide.
