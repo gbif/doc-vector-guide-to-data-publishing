@@ -328,7 +328,7 @@ image::img/web/fig-06.png[]
 The https://rs.gbif.org/extension/obis/extended_measurement_or_fact_2023-08-28.xml[Extended Measurement or Fact extension^] (eMoF) supports the publication of generic measurements or facts linking to occurrences. This extension was developed to be used in combination with the Event Core, but is also compatible with other cores.
 
 [[table-05]]
-.Recommended terms from the Extended Measurement or Fact extension, with examples from the following dataset: https://doi.org/10.1038/s41597-025-05332-x/[A minimum data standard for wildlife disease research and surveillance^]
+.Recommended terms from the Extended Measurement or Fact extension, with examples from the following dataset: https://www.nature.com/articles/s41597-025-05332-x/[A minimum data standard for wildlife disease research and surveillance^]
 [width="100%",cols="32%,16%,37%,15%",options="header",]
 |===
 |*Term name* |*Definition* |*Examples* |*Status*
