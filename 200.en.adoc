@@ -29,7 +29,7 @@ image::img/web/fig-05.png[]
 
 For the purpose of this guide, we present two ways of data publication in which all available data can be published in a single file as well as a more elaborate way with the use of extensions to accommodate the diversity of variables recorded along with vector records. We provide a comprehensive list of potentially relevant terms for vector data and suggest using these terms to improve consistency among datasets. We also provide an link:data/dwc-vector-data-templates.xlsx[Excel spreadsheet] whose sheets provide templates for the occurrence datasets, sampling-event datasets and the extensions discussed in this guide.
 
-The next section provide mapping for both <<mapping-sampling-events,sampling-event datatsets>> and an <<mapping-occurrences,occurrence datasets>>.
+The next section provide mapping for both <<mapping-sampling-events,sampling-event datasets>> and an <<mapping-occurrences,occurrence datasets>>.
 
 NOTE: Most terms are very similar for both types of datasets, so consider repeating the same terms from the sampling-event mapping as we present only the terms that are applicable to an occurrence dataset in the appropriate section.
 
@@ -1012,7 +1012,7 @@ There might be cases in which a dataset might contain sensitive information (e.g
 To better address these sensitive data but still be able to contribute with data in GBIF it is possible to use some strategies to blur location data:
 
 * Chapman AD (2020) Current Best Practices for Generalizing Sensitive Species Occurrence Data. Copenhagen: GBIF Secretariat. https://doi.org/10.15468/doc-5jp4-5g10[https://doi.org/10.15468/doc-5jp4-5g10^].
-* Astorga F, Rodrigues A & Waller J (2024) Sensitive species data generalization: Exploring risks, benefits and best practices. *openhagen: GBIF Secretariat. https://doi.org/10.35035/doc-yr9g-nx02[https://doi.org/10.35035/doc-yr9g-nx02^]
+* Astorga F, Rodrigues A & Waller J (2024) Sensitive species data generalization: Exploring risks, benefits and best practices. Copenhagen: GBIF Secretariat. https://doi.org/10.35035/doc-yr9g-nx02[https://doi.org/10.35035/doc-yr9g-nx02^]
 * https://arthur-e.github.io/Wicket/sandbox-gmaps3.html[Wicket^] is a Javascript library that reads and writes http://en.wikipedia.org/wiki/Well-known_text#Geometric_objects[well-known text^] (WKT) strings and generates a polygonal representation of the geometry to go into the term:dwc[dwc:footprintWKT] term.
 * https://www.simplemappr.net/[SimpleMappr^], a free tool to create point maps but also provides polygons’ coordinates (Shorthouse 2010).
 * Generalizing location information by obtaining wider, regional coordinates using http://www.getty.edu/research/tools/vocabularies/tgn/Getty Thesaurus of Geographic Names^] or http://maps.google.com[Google Maps^]
