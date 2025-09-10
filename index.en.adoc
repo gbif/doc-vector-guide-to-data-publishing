@@ -1,5 +1,5 @@
 = Publishing data on disease vectors, hosts and pathogens through biodiversity data platforms
-Paloma Shimabukuro; Lindsay Campbell; Florence Fouque; Josiane Etang; Soledad Cecarelli; Quentin Groom; Kate Ingenloff; Cecilie Svenningsen; Marie Grosjean; Javier Gamboa Martínez; Dmitry Schigel
+Paloma Shimabukuro; Lindsay Campbell; Florence Fouque; Josiane Etang; Soledad Ceccarelli; Quentin Groom; Kate Ingenloff; Cecilie Svenningsen; Marie Grosjean; Javier Gamboa Martínez; Dmitry Schigel
 :toc: left
 :toclevels: 3
 :numbered:
