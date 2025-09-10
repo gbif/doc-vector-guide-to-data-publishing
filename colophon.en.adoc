@@ -23,7 +23,7 @@ https://doi.org/10.35035/doc-mjj8-ng28
 
 === Document control
 
-Version 1.0, September 2025
+Version 1.0.1, September 2025
 
 === Cover image credit
 
